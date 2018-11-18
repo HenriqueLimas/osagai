@@ -1,0 +1,16 @@
+{
+  "name": "osagai-todomvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Henrique Limas <hlimas@ebay.com>",
+  "license": "ISC",
+  "dependencies": {
+    "osagai": "file:../ozagai",
+    "todomvc-app-css": "^2.1.2",
+    "todomvc-common": "^1.0.5"
+  }
+}
