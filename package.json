@@ -1,13 +1,13 @@
 {
   "name": "osagai",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
-  "main": "dist/osagai.js",
+  "main": "osagai.js",
   "scripts": {
     "build": "rollup -c",
-    "prepare": "npm run build",
+    "cp:package": "npm run build && cp package.json dist/",
     "test": "echo \"Error: no test specified\" && exit 0",
-    "release": "npm run -s prepare && npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+    "release": "npm run build && npm run cp:package && npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist"
   },
   "author": "Henrique Limas <hlimas@ebay.com>",
   "license": "ISC",
