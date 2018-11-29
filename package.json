@@ -5,7 +5,7 @@
   "main": "osagai.js",
   "scripts": {
     "build": "rollup -c",
-    "cp:package": "npm run build && cp package.json dist/",
+    "cp:package": "npm run build && cp package.json dist/ && cp README.md dist/",
     "test": "jest",
     "release": "npm run build && npm run cp:package && npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist"
   },
