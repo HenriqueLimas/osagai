@@ -1,38 +1,70 @@
-# Osagai
+# Osagai 🀄️ [![Build Status](https://travis-ci.com/HenriqueLimas/osagai.svg?branch=master)](https://travis-ci.com/HenriqueLimas/osagai)
 
-A tiny library in the browser way.
+A tiny library in a functional and browser way.
+
+## Why?
+
+Creating WebComponent shouldn't be limited to extending `class`es. It should be easy to create and in a functional way.
+It should be able to be framework-agnostic and be reused in different libraries. Updating components should be fast and it should
+use native solutions without VirtualDOM and data binding magics. It should not need build processes for compiling non
+native solution (JSX) and take advantage in what the language has. ([Template literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals))
+
+## Install
+
+You can get it on npm.
+
+```
+npm install osagai --save
+```
+
+Or import from unpkg
 
 ```js
-import { define } from "osagai";
-import { on } from "osagai/events";
+import { define } from "https://unpkg.com/osagai/osagai.mjs";
+import { on } from "https://unpkg.com/osagai/events.mjs";
+```
 
-function Hello({ update, query }) {
-  on("click", query(".btn"), () => {
-    update(currentState => {
-      currentState.items.push({
-        name: "New one"
+## Example
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <title>Osagai demo</title>
+
+  <x-items></x-items>
+
+  <script type="module">
+    import { define } from "https://unpkg.com/osagai/osagai.mjs";
+    import { on } from "https://unpkg.com/osagai/events.mjs";
+
+    function Items({ update, query }) {
+      const initialState = {
+        items: []
+      }
+
+      on("click", query(".btn"), () => {
+        update(({ items } = initialState) => {
+          items.push({
+            name: `Item nr ${items.length + 1}`
+          });
+
+          return {
+            items
+          };
+        });
       });
 
-      return currentState;
-    });
-  });
+      return ({ items } = initialState) =>
+        `<div>
+          <button class="btn">Add item</button>
+          ${`
+          <ul class="list">
+            ${items.map(item => `<li>${item.name}</li>`).join("")}
+          </ul>`}
+        </div>`;
+    }
 
-  return ({ state, items } = {}) =>
-    `<div>
-      <button class="btn">Click me</button>
-
-      ${state === "loading" ? "Loading..." : ""}
-      ${
-        state === "loaded"
-          ? `
-        <ul class="list">
-          ${items.map(item => `<li>${item.name}</li>`).join("")}
-        </ul>
-      `
-          : ""
-      }
-    </div>`;
-}
-
-export default define("x-hello", Hello);
+    define("x-items", Items);
+  </script>
+</html>
 ```
