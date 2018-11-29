@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rollup -c",
     "cp:package": "npm run build && cp package.json dist/",
-    "test": "echo \"Error: no test specified\" && exit 0",
+    "test": "jest",
     "release": "npm run build && npm run cp:package && npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist"
   },
   "author": "Henrique Limas <hlimas@ebay.com>",
