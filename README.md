@@ -68,3 +68,9 @@ import { on } from "https://unpkg.com/osagai/events.mjs";
   </script>
 </html>
 ```
+
+## Project status
+
+Osagai is still under development and it needs some feedback from the community. If you want to collaborate, please
+add an [issue](https://github.com/HenriqueLimas/osagai/issues) or [PR](https://github.com/HenriqueLimas/osagai/pulls) with 
+your suggestions or concerns.
