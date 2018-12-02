@@ -11,9 +11,7 @@
   },
   "author": "Henrique Limas <hlimas@ebay.com>",
   "license": "ISC",
-  "dependencies": {
-    "morphdom": "^2.3.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
