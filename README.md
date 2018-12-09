@@ -69,6 +69,8 @@ import { on } from "https://unpkg.com/osagai/events.mjs";
 </html>
 ```
 
+- Hacker News PWA example: https://github.com/HenriqueLimas/osagai-hn
+
 ## Project status
 
 Osagai is still under development and it needs some feedback from the community. If you want to collaborate, please
