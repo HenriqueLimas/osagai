@@ -1,0 +1,157 @@
+---
+title: "Home"
+description: "Create WebComponents with no class, just functions"
+---
+
+{namespace pageIndex}
+
+/**
+ */
+{template .render}
+	{@param site: ?}
+
+	{call main.render data="all"}
+		{param content kind="html"}
+			{call .header data="all" /}
+			{call .why /}
+			{call .features /}
+			{call .highlights /}
+			{call Footer.render data="all" /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ */
+{template .header}
+	{@param site: ?}
+
+	<header class="header">
+		<div class="container">
+			<h1 class="header-title">{$site.logo} {$site.title}</h1>
+			<h2 class="header-subtitle">{$site.index.description}</h2>
+			<div class="header-cta">
+				// <a href="#" class="btn btn-accent">Get Started</a>
+				// <a href="#" class="btn btn-default">Take the tutorial</a>
+			</div>
+		</div>
+
+		<p class="gh-btns">
+      <iframe src="//ghbtns.com/github-btn.html?user=HenriqueLimas&amp;repo=osagai&amp;type=watch&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="150" height="30"></iframe>
+      <iframe src="//ghbtns.com/github-btn.html?user=HenriqueLimas&amp;repo=osagai&amp;type=fork&amp;count=true&amp;size=large" allowtransparency="true" frameborder="0" scrolling="0" width="150" height="30"></iframe>
+    </p>
+	</header>
+{/template}
+
+/**
+ */
+{template .why}
+	<article class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-2">
+					<h3 class="about-title">Why?</h3>
+					<p class="about-description">
+						Creating WebComponents shouldn't be limited to extending classes and it should use native solution and no magic. 
+						<br> Osagai is a library that make WebComponents easier to create and use with only composing functions and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" title="Template literals link on MDN">template literals</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</article>
+{/template}
+
+/**
+ */
+{template .features}
+	<div class="features">
+		<div class="container">
+			<div class="row">
+				<section class="feature col-md-4 col-md-offset-2">
+					<div class="feature-graphic">
+						<span class="icon-16-command-line"></span>
+					</div>
+					<h3 class="feature-title">Easy to create</h3>
+					<p class="feature-description">Create and easily define WebComponents using functions. No needs to extends classes and OOO things.</p>
+				</section>
+				<section class="feature col-md-4">
+					<div class="feature-graphic">
+						<span class="icon-16-flash"></span>
+					</div>
+					<h3 class="feature-title">Fast updates</h3>
+					<p class="feature-description">Update when you say to update. It compares the current DOM tree with the new one and update only what it needs to be updated using the amazing <a href="https://github.com/patrick-steele-idem/morphdom" title="Morphdom link">Morphdom</a> library.</p>
+				</section>
+				<section class="feature col-md-4">
+					<div class="feature-graphic">
+						<span class="icon-16-globe"></span>
+					</div>
+					<h3 class="feature-title">Framework agnostic</h3>
+					<p class="feature-description">Take advantage of WebComponents purpose and use your component in whatever Framework/Library.</p>
+				</section>
+			</div>
+		</div>
+	</div>
+{/template}
+
+/**
+ */
+{template .how}
+	<article class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-2">
+					<h3 class="about-title">It's easier than you think</h3>
+					<p class="about-description">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros praesent commodo ultricies vehicula ut.</p>
+				</div>
+			</div>
+		</div>
+	</article>
+{/template}
+
+/**
+ */
+{template .highlights}
+	<div class="highlights">
+		<div class="container">
+			<section class="highlight row">
+				<div class="col-md-5 col-md-offset-1">
+					<h4 class="highlight-title">Simple component</h4>
+					<p class="highlight-description">Osagai export a <code>define()</code> function to create your WebComponent. Your component is a function that returns a template with the view definition</p>
+				</div>
+				<div class="col-md-7  col-md-offset-1">
+					<iframe class="gist simple-component" src="https://gist.github.com/HenriqueLimas/d7bfb65a4e3fbdf6c09de3aa96ce6ae7.pibb"></iframe>
+				</div>
+			</section>
+
+			<section class="highlight row">
+				<div class="col-md-5 col-md-offset-1">
+					<h4 class="highlight-title">Adding event listeners</h4>
+					<p class="highlight-description">In addition, in you component function it will be injected some useful methods like <code>query</code> that you could query inside the component tree and add event listeners with the <code>on</code> method from <code>osagai/events</code>.</p>
+				</div>
+				<div class="col-md-7  col-md-offset-1">
+					<iframe class="gist event-listener" src="https://gist.github.com/HenriqueLimas/9329005145894cbb4e62a343ced7eb43.pibb"></iframe>
+				</div>
+			</section>
+
+			<section class="highlight row">
+				<div class="col-md-5 col-md-offset-1">
+					<h4 class="highlight-title">An application</h4>
+					<p class="highlight-description">Besides <code>query</code>, Osagai will also inject an <code>update</code> function that you can use for changing the data (or state) being used in the template function. This will check what it needs to be changed in the DOM and apply the re-render</p>
+				</div>
+				<div class="col-md-7  col-md-offset-1">
+					<iframe class="gist application-example" src="https://gist.github.com/HenriqueLimas/dc75ac3595c44ef1b330f18d2cd0dc56.pibb"></iframe>
+				</div>
+			</section>
+
+			<section class="highlight row">
+				<div class="col-md-5 col-md-offset-1">
+					<h4 class="highlight-title">A real application</h4>
+					<p class="highlight-description">This a "real" example of the Hacker News implemented with Osagai as a PWA. You can se the code on <a href="https://github.com/HenriqueLimas/osagai-hn">Github</a>, or try it live <a href="https://osagai-hn.firebaseapp.com/">here</a>.</p>
+				</div>
+				<div class="col-md-7  col-md-offset-1">
+					<iframe class="gist application-example" src="https://osagai-hn.firebaseapp.com/"></iframe>
+				</div>
+			</section>
+		</div>
+	</div>
+{/template}

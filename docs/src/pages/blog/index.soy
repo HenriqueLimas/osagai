@@ -1,0 +1,42 @@
+---
+title: "Blog"
+description: "Discover all the latest about our project."
+type: "blog"
+---
+
+{namespace pageBlogIndex}
+
+/**
+ *
+ */
+{template .render}
+	{call main.render data="all"}
+    {param content kind="html"}
+      <div class="blog">
+        {call .allPosts data="all" /}
+      </div>
+    {/param}
+  {/call}
+{/template}
+
+/**
+ */
+{template .allPosts}
+	{@param site: ?}
+
+  <div class="posts-list posts-list-all">
+    <div class="container">
+      {foreach $childId in $site.index.children['blog'].childIds}
+        {let $childPage: $site.index.children['blog'].children[$childId] /}
+
+        <article class="post-item container-blog">
+          <a class="post-item__link" href="{$childPage.url}">
+            <small>By {$childPage.author} <span>| {$childPage.date}</span></small>
+            <h4 class="post-item__title">{$childPage.title}</h4>
+            <p>{$childPage.description}</p>
+          </a>
+        </article>
+      {/foreach}
+    </div>
+  </div>
+{/template}

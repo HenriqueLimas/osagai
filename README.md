@@ -1,4 +1,4 @@
-# Osagai 🀄️ [![Build Status](https://travis-ci.com/HenriqueLimas/osagai.svg?branch=master)](https://travis-ci.com/HenriqueLimas/osagai)
+# Osagai {\$site.logo} [![Build Status](https://travis-ci.com/HenriqueLimas/osagai.svg?branch=master)](https://travis-ci.com/HenriqueLimas/osagai)
 
 A tiny library in a functional and browser way.
 
@@ -40,7 +40,7 @@ import { on } from "https://unpkg.com/osagai/events.mjs";
     function Items({ update, query }) {
       const initialState = {
         items: []
-      }
+      };
 
       on("click", query(".btn"), () => {
         update(({ items } = initialState) => {
@@ -56,12 +56,12 @@ import { on } from "https://unpkg.com/osagai/events.mjs";
 
       return ({ items } = initialState) =>
         `<div>
-          <button class="btn">Add item</button>
-          ${`
+              <button class="btn">Add item</button>
+              ${`
           <ul class="list">
             ${items.map(item => `<li>${item.name}</li>`).join("")}
           </ul>`}
-        </div>`;
+            </div>`;
     }
 
     define("x-items", Items);
@@ -74,5 +74,5 @@ import { on } from "https://unpkg.com/osagai/events.mjs";
 ## Project status
 
 Osagai is still under development and it needs some feedback from the community. If you want to collaborate, please
-add an [issue](https://github.com/HenriqueLimas/osagai/issues) or [PR](https://github.com/HenriqueLimas/osagai/pulls) with 
+add an [issue](https://github.com/HenriqueLimas/osagai/issues) or [PR](https://github.com/HenriqueLimas/osagai/pulls) with
 your suggestions or concerns.

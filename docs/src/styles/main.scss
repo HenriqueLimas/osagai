@@ -1,0 +1,43 @@
+$accent: #4285f4;
+
+@import "marble";
+
+// Root
+@import "templates/root";
+
+// Landing
+@import "templates/landing";
+
+// Docs
+@import "templates/docs";
+
+// Search
+@import "templates/search";
+
+// Updates
+@import "templates/updates";
+
+// Blog
+@import "templates/blog";
+
+// Tutorial
+@import "templates/tutorial";
+
+.gist {
+  border: none;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+
+  &.simple-component {
+    height: 205px;
+  }
+
+  &.event-listener {
+    height: 330px;
+  }
+
+  &.application-example {
+    height: 800px;
+  }
+}
