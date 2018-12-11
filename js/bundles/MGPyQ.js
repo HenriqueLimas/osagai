@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([10,17,18,19,20,21],[
+webpackJsonppageComponent([12,17,18,19,20,21],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30784,14 +30784,12 @@ exports.default = parseFromAnchor;
 /* 310 */,
 /* 311 */,
 /* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */
+/* 313 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VPfeT", function() { return VPfeT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MGPyQ", function() { return MGPyQ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30803,15 +30801,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from nula.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace VPfeT.
+ * @fileoverview Templates in namespace MGPyQ.
  * @public
  */
 
-goog.module('VPfeT.incrementaldom');
+goog.module('MGPyQ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30845,10 +30843,10 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param395 = function() {
+  var param359 = function() {
     ie_open('h6');
-      var dyn34 = opt_data.page.description;
-      if (typeof dyn34 == 'function') dyn34(); else if (dyn34 != null) itext(dyn34);
+      var dyn32 = opt_data.page.description;
+      if (typeof dyn32 == 'function') dyn32(); else if (dyn32 != null) itext(dyn32);
     ie_close('h6');
     ie_open('article', null, null,
         'id', '1');
@@ -30856,11 +30854,12 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         itext('Lorem ipsum dolor sit amet');
       ie_close('h2');
       ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+        itext('Mauris iaculis, lectus sagittis consequat accumsan, tellus neque blandit justo, a consectetur odio turpis a magna. In ac euismod diam. Praesent non elementum turpis. Aliquam vitae vestibulum arcu. Praesent eleifend turpis arcu.');
       ie_close('p');
-      $templateAlias2({code: 'var oi = function() {\n    console.log(\'Oi mundo\');\n};', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: 'var hi = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: '.hi:before {\n    content: \'Hello, World\';\n}', mode: 'css'}, null, opt_ijData);
       ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
+        itext('Nunc eros risus, scelerisque sit amet magna at, venenatis mattis metus. Pellentesque scelerisque facilisis sagittis. Integer at eleifend urna, nec vehicula nibh. Morbi a fermentum purus. Mauris augue erat, consectetur quis massa ac, commodo vehicula augue. Cras in odio volutpat, maximus nunc eleifend, scelerisque erat. In hac habitasse platea dictumst.');
       ie_close('p');
       ie_open('p');
         itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
@@ -30914,11 +30913,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param395}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param359}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'VPfeT.render';
+  $render.soyTemplateName = 'MGPyQ.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30928,14 +30927,16 @@ return exports;
 
 });
 
-class VPfeT extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(VPfeT, templates);
+class MGPyQ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MGPyQ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 314 */,
+/* 315 */,
 /* 316 */,
 /* 317 */,
 /* 318 */,
@@ -30949,9 +30950,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(VPfeT, templates);
 /* 326 */,
 /* 327 */,
 /* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30991,9 +30990,9 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _nulaSoy = __webpack_require__(315);
+var _indexSoy = __webpack_require__(313);
 
-var _nulaSoy2 = _interopRequireDefault(_nulaSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31003,23 +31002,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var VPfeT = function (_Component) {
-  _inherits(VPfeT, _Component);
+var MGPyQ = function (_Component) {
+  _inherits(MGPyQ, _Component);
 
-  function VPfeT() {
-    _classCallCheck(this, VPfeT);
+  function MGPyQ() {
+    _classCallCheck(this, MGPyQ);
 
-    return _possibleConstructorReturn(this, (VPfeT.__proto__ || Object.getPrototypeOf(VPfeT)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (MGPyQ.__proto__ || Object.getPrototypeOf(MGPyQ)).apply(this, arguments));
   }
 
-  return VPfeT;
+  return MGPyQ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(VPfeT, _nulaSoy2.default);
+_metalSoy2.default.register(MGPyQ, _indexSoy2.default);
 
-exports.default = VPfeT;
+exports.default = MGPyQ;
 
 /***/ })
-],[331]);
+],[329]);
