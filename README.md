@@ -1,4 +1,4 @@
-# Osagai {\$site.logo} [![Build Status](https://travis-ci.com/HenriqueLimas/osagai.svg?branch=master)](https://travis-ci.com/HenriqueLimas/osagai)
+# Osagai 🀄️ [![Build Status](https://travis-ci.com/HenriqueLimas/osagai.svg?branch=master)](https://travis-ci.com/HenriqueLimas/osagai)
 
 A tiny library in a functional and browser way.
 
