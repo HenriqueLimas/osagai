@@ -36,14 +36,15 @@ import { on } from "https://unpkg.com/osagai/events.mjs";
   <script type="module">
     import { define } from "https://unpkg.com/osagai/osagai.mjs";
     import { on } from "https://unpkg.com/osagai/events.mjs";
+    import { update } from "https://unpkg.com/osagai/dom.mjs";
 
-    function Items({ update, query }) {
+    function Items({ element, query }) {
       const initialState = {
         items: []
       };
 
       on("click", query(".btn"), () => {
-        update(({ items } = initialState) => {
+        update(element, ({ items } = initialState) => {
           items.push({
             name: `Item nr ${items.length + 1}`
           });
