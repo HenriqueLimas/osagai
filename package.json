@@ -23,6 +23,7 @@
     "regenerator-runtime": "^0.13.1",
     "rollup": "^0.67.3",
     "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-filesize": "^5.0.1",
     "rollup-plugin-node-resolve": "^3.4.0"
   }
 }

@@ -1,5 +1,6 @@
 import resolve from "rollup-plugin-node-resolve";
 import commonjs from "rollup-plugin-commonjs";
+import filesize from "rollup-plugin-filesize";
 
 const modules = [
   {
@@ -43,5 +44,5 @@ export default modules.map(moduleConfig => ({
       format: "umd"
     }
   ],
-  plugins: [resolve({ browser: true }), commonjs()]
+  plugins: [resolve({ browser: true }), commonjs(), filesize()]
 }));
