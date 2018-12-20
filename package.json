@@ -3,6 +3,8 @@
   "version": "0.0.10",
   "description": "",
   "main": "osagai.js",
+  "repository": "github:HenriqueLimas/osagai",
+  "homepage": "https://henriquelimas.github.io/osagai/",
   "scripts": {
     "build": "rollup -c",
     "cp:package": "npm run build && cp package.json dist/ && cp README.md dist/",
@@ -10,7 +12,7 @@
     "prettier": "prettier --write 'lib/**/*.js'",
     "release": "npm run build && npm run cp:package && npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist"
   },
-  "author": "Henrique Limas <hlimas@ebay.com>",
+  "author": "Henrique Limas <henrique.ramos.limas@gmail.com>",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
