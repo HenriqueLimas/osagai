@@ -7,6 +7,7 @@
     "build": "rollup -c",
     "cp:package": "npm run build && cp package.json dist/ && cp README.md dist/",
     "test": "jest",
+    "prettier": "prettier --write 'lib/**/*.js'",
     "release": "npm run build && npm run cp:package && npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist"
   },
   "author": "Henrique Limas <hlimas@ebay.com>",
@@ -18,6 +19,7 @@
     "babel-preset-env": "^1.7.0",
     "electric-cli": "^3.0.4",
     "jest": "^23.6.0",
+    "prettier": "1.15.3",
     "regenerator-runtime": "^0.13.1",
     "rollup": "^0.67.3",
     "rollup-plugin-commonjs": "^9.2.0",
