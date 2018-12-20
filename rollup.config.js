@@ -16,6 +16,11 @@ const modules = [
     name: "osagai/lifecycles",
     fileName: "lifecycles",
     input: "./lib/lifecycles/index.js"
+  },
+  {
+    name: "osagai/dom",
+    fileName: "dom",
+    input: "./lib/dom/index.js"
   }
 ];
 
