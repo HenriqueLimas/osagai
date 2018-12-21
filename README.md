@@ -14,7 +14,7 @@ native solution (JSX) and take advantage in what the language has. ([Template li
 You can get it on npm.
 
 ```
-npm install osagai --save
+npm install osagai
 ```
 
 Or import from unpkg
@@ -55,14 +55,13 @@ import { on } from "https://unpkg.com/osagai/events.mjs";
         });
       });
 
-      return ({ items } = initialState) =>
-        `<div>
-              <button class="btn">Add item</button>
-              ${`
+      return ({ items } = initialState) => `
+        <div>
+          <button class="btn">Add item</button>
           <ul class="list">
             ${items.map(item => `<li>${item.name}</li>`).join("")}
-          </ul>`}
-            </div>`;
+          </ul>
+        </div>`;
     }
 
     define("x-items", Items);
