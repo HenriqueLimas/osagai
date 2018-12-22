@@ -1,7 +1,8 @@
-import { on } from "../node_modules/osagai/dist/events.mjs";
+import { on } from "../node_modules/osagai/events.mjs";
+import { update } from "../node_modules/osagai/dom.mjs";
 
-function TdTodos({ element, query, update }) {
-  update(async (currentState = {}) => {
+function TdTodos({ element, query }) {
+  update(element, async (currentState = {}) => {
     const model = await query("td-model");
     currentState.getTodos = model.filter;
     currentState.hasCompleted = model.hasCompleted;
@@ -12,7 +13,7 @@ function TdTodos({ element, query, update }) {
     event.preventDefault();
     const value = event.target.elements["new-todo"].value;
 
-    update(async currentState => {
+    update(element, async currentState => {
       const model = await query("td-model");
       model.addTodo(value);
       return currentState;
@@ -24,7 +25,7 @@ function TdTodos({ element, query, update }) {
 
     if (elm.classList.contains("destroy")) {
       const id = elm.dataset.id;
-      return update(async currentState => {
+      return update(element, async currentState => {
         const model = await query("td-model");
         model.removeTodo(id);
         return currentState;
@@ -33,7 +34,7 @@ function TdTodos({ element, query, update }) {
 
     if (elm.classList.contains("toggle")) {
       const id = elm.dataset.id;
-      return update(async currentState => {
+      return update(element, async currentState => {
         const model = await query("td-model");
         model.toggleTodo(id);
         return currentState;
@@ -42,7 +43,7 @@ function TdTodos({ element, query, update }) {
 
     if (elm.classList.contains("js-all")) {
       event.preventDefault();
-      return update(currentState => {
+      return update(element, currentState => {
         currentState.filter = "all";
         return currentState;
       });
@@ -50,7 +51,7 @@ function TdTodos({ element, query, update }) {
 
     if (elm.classList.contains("js-active")) {
       event.preventDefault();
-      return update(currentState => {
+      return update(element, currentState => {
         currentState.filter = "active";
         return currentState;
       });
@@ -58,14 +59,14 @@ function TdTodos({ element, query, update }) {
 
     if (elm.classList.contains("js-completed")) {
       event.preventDefault();
-      return update(currentState => {
+      return update(element, currentState => {
         currentState.filter = "completed";
         return currentState;
       });
     }
 
     if (elm.classList.contains("clear-completed")) {
-      return update(async currentState => {
+      return update(element, async currentState => {
         const model = await query("td-model");
         model.removeCompleted();
         return currentState;

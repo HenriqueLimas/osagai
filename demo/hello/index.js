@@ -1,12 +1,13 @@
-import { define } from "../dist/osagai.mjs";
-import { on } from "../dist/events.mjs";
+import { define } from "./node_modules/osagai/osagai.mjs";
+import { on } from "./node_modules/osagai/events.mjs";
+import { update } from "./node_modules/osagai/dom.mjs";
 import { fetchItemsAction } from "./actions.js";
 
-function Hello({ update, query }) {
-  fetchItemsAction({ update });
+function Hello({ element, query }) {
+  fetchItemsAction({ update: fn => update(element, fn) });
 
   on("click", query(".btn"), () => {
-    update(currentState => {
+    update(element, currentState => {
       currentState.items.push({
         name: "Yaya"
       });
