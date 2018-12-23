@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "electric run --env dev",
-    "publish": "NODE_ENV=production electric deploy"
+    "deploy": "NODE_ENV=production electric deploy"
   },
   "devDependencies": {
     "electric-cli": "^2.2.0",
