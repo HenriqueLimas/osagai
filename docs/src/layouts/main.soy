@@ -10,7 +10,7 @@
 	<div class="{$elementClasses ?: 'main'}">
 		<main class="content">
 			{call Topbar.render}
-				{param items: [] /}
+				{param items: $site.topbar /}
 				{param style: 'topbar-light' /}
 				{param logo: [
 					'text': $site.logo + ' ' + $site.title

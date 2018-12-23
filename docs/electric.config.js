@@ -9,7 +9,13 @@ module.exports = {
   },
   vendorSrc: ["node_modules/marble/build/fonts/**"],
   basePath: "/osagai",
+  envOptions: {
+    dev: {
+      basePath: ""
+    }
+  },
   deployOptions: {
     branch: "gh-pages"
-  }
+  },
+  codeMirrorLanguages: ["shell", "javascript", "xml", "css"]
 };
