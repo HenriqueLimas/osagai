@@ -84,6 +84,15 @@ This is the main module where you can find the function for defining your custom
 import { define } from 'osagai'
 ```
 
+### dom
+
+This is the module with useful methods like `update` for efficiently update the DOM tree of your custom element
+
+```javascript
+import { update } from 'osagai/dom'
+
+```
+
 ### events
 
 This is the module with useful methods like `on` for adding event listeners to components
