@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([2,17,18,19,20,21],[
+webpackJsonppageComponent([3,4,5,6,7,8],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4571,7 +4571,7 @@ module.exports = $export;
 
 "use strict";
 
-var fails = __webpack_require__(13);
+var fails = __webpack_require__(14);
 
 module.exports = function (method, arg) {
   return !!method && fails(function () {
@@ -4685,7 +4685,8 @@ module.exports = function (it) {
 
 /***/ }),
 /* 12 */,
-/* 13 */
+/* 13 */,
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -4698,7 +4699,7 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4754,7 +4755,6 @@ exports.ElectricUpdates = _ElectricUpdates2.default;
 exports.default = _ElectricNavigation2.default;
 
 /***/ }),
-/* 15 */,
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4780,7 +4780,7 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(13)(function () {
+module.exports = !__webpack_require__(14)(function () {
   return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -18068,7 +18068,7 @@ var _metalDom = __webpack_require__(5);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 var _metalState = __webpack_require__(12);
 
@@ -19264,7 +19264,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20022,14 +20022,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param3 = function() {
+  var param28 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param28}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -20054,24 +20054,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn0 = opt_data.page.author;
-        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+        var dyn3 = opt_data.page.author;
+        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn1 = opt_data.page.date;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+          var dyn4 = opt_data.page.date;
+          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn2 = opt_data.page.title;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn5 = opt_data.page.title;
+        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn6 = opt_data.content;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -20093,8 +20093,8 @@ if (goog.DEBUG) {
  * @suppress {checkTypes}
  */
 function $olderPosts(opt_data, opt_ignored, opt_ijData) {
-  var blogObject__soy23 = opt_data.site.index.children['blog'];
-  $templateAlias3({blogObject: blogObject__soy23, url: opt_data.page.url}, null, opt_ijData);
+  var blogObject__soy48 = opt_data.site.index.children['blog'];
+  $templateAlias3({blogObject: blogObject__soy48, url: opt_data.page.url}, null, opt_ijData);
 }
 exports.olderPosts = $olderPosts;
 if (goog.DEBUG) {
@@ -20193,7 +20193,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'class', 'guide');
       ie_open('div', null, null,
           'class', 'docs');
-        $templateAlias1({items: [], style: 'topbar-light topbar-docs', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, null, opt_ijData);
+        $templateAlias1(soy.$$assignDefaults({items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, opt_data), null, opt_ijData);
         $templateAlias2({section: opt_data.site.index.children['docs'], site: opt_data.site}, null, opt_ijData);
         $guide(opt_data, null, opt_ijData);
       ie_close('div');
@@ -20226,8 +20226,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn4 = opt_data.page.title;
-          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+          var dyn7 = opt_data.page.title;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
           itext(' Guide');
         ie_close('h1');
       ie_close('div');
@@ -20240,8 +20240,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn5 = opt_data.content;
-            if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+            var dyn8 = opt_data.content;
+            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -20287,7 +20287,7 @@ function $contribute(opt_data, opt_ignored, opt_ijData) {
       ie_open('p');
         itext('Contribute on Github! ');
         ie_open('a', null, null,
-            'href', 'https://github.com/' + opt_data.site.githubRepo + '/tree/master/' + opt_data.page.srcFilePath,
+            'href', 'https://github.com/' + opt_data.site.githubRepo + '/' + opt_data.page.srcFilePath,
             'class', 'contribute-link',
             'target', '_blank');
           itext('Edit this section');
@@ -20389,9 +20389,9 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null,
         'class', 'content');
-      $templateAlias1({items: [], style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, null, opt_ijData);
-      var dyn6 = opt_data.content;
-      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+      $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, null, opt_ijData);
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
   ie_close('div');
 }
@@ -20524,14 +20524,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn7 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn8 = opt_data.content;
-        if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+        var dyn11 = opt_data.content;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -20556,15 +20556,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy102 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy102.childIds.length) {
+    var tutorialObject__soy127 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy127.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy107 = tutorialObject__soy102.children[tutorialObject__soy102.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy132 = tutorialObject__soy127.children[tutorialObject__soy127.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy107,
+            'href', nextPageUrl__soy132,
             'class', 'btn btn-accent btn-sm');
-          var dyn9 = opt_data.page.buttonTitle;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn12 = opt_data.page.buttonTitle;
+          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
         ie_close('a');
       }
     }
@@ -20609,7 +20609,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s122_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s147_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -20618,23 +20618,23 @@ function __deltemplate_s122_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn10 = opt_data.page.weight;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn13 = opt_data.page.weight;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn11 = opt_data.page.title;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn14 = opt_data.page.title;
+      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s122_88c0813b = __deltemplate_s122_88c0813b;
+exports.__deltemplate_s147_88c0813b = __deltemplate_s147_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s122_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s122_88c0813b';
+  __deltemplate_s147_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s147_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s122_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s147_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -21857,7 +21857,7 @@ module.exports = function (it) {
 /* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(18) && !__webpack_require__(13)(function () {
+module.exports = !__webpack_require__(18) && !__webpack_require__(14)(function () {
   return Object.defineProperty(__webpack_require__(171)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -22457,7 +22457,7 @@ var $export = __webpack_require__(4);
 var createProperty = __webpack_require__(170);
 
 // WebKit Array.of isn't generic
-$export($export.S + $export.F * __webpack_require__(13)(function () {
+$export($export.S + $export.F * __webpack_require__(14)(function () {
   function F() { /* empty */ }
   return !(Array.of.call(F) instanceof F);
 }), 'Array', {
@@ -22521,7 +22521,7 @@ var toLength = __webpack_require__(8);
 var arraySlice = [].slice;
 
 // fallback for not array-like ES3 strings and DOM objects
-$export($export.P + $export.F * __webpack_require__(13)(function () {
+$export($export.P + $export.F * __webpack_require__(14)(function () {
   if (html) arraySlice.call(html);
 }), 'Array', {
   slice: function slice(begin, end) {
@@ -22568,7 +22568,7 @@ $export($export.P + $export.F * !__webpack_require__(6)([].some, true), 'Array',
 var $export = __webpack_require__(4);
 var aFunction = __webpack_require__(32);
 var toObject = __webpack_require__(11);
-var fails = __webpack_require__(13);
+var fails = __webpack_require__(14);
 var $sort = [].sort;
 var test = [1, 2, 3];
 
@@ -23522,7 +23522,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _ElectricCodeSoy = __webpack_require__(250);
 
@@ -23671,7 +23671,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _electricBaseComponents2 = _interopRequireDefault(_electricBaseComponents);
 
@@ -23927,7 +23927,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _ElectricReadingProgressSoy = __webpack_require__(254);
 
@@ -24061,7 +24061,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _ElectricSearchSoy = __webpack_require__(256);
 
@@ -24296,7 +24296,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _ElectricSearchAutocompleteSoy = __webpack_require__(258);
 
@@ -24437,7 +24437,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _ElectricUpdatesSoy = __webpack_require__(260);
 
@@ -24918,7 +24918,7 @@ var _metalDom = __webpack_require__(5);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 var _metalState = __webpack_require__(12);
 
@@ -25259,7 +25259,7 @@ var _metalState = __webpack_require__(12);
 
 var _metalState2 = _interopRequireDefault(_metalState);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 var _metalEvents2 = _interopRequireDefault(_metalEvents);
 
@@ -26430,7 +26430,7 @@ var _metal = __webpack_require__(3);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 var _metalEvents2 = _interopRequireDefault(_metalEvents);
 
@@ -29636,7 +29636,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30780,26 +30780,12 @@ exports.default = parseFromAnchor;
 /* 306 */,
 /* 307 */,
 /* 308 */,
-/* 309 */,
-/* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */
+/* 309 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lbJro", function() { return lbJro; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "jAIvK", function() { return jAIvK; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30811,15 +30797,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var templates;
 goog.loadModule(function(exports) {
 
-// This file was automatically generated from second-step.soy.
+// This file was automatically generated from index.soy.
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace lbJro.
+ * @fileoverview Templates in namespace jAIvK.
  * @public
  */
 
-goog.module('lbJro.incrementaldom');
+goog.module('jAIvK.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30842,7 +30828,7 @@ var iattr = IncrementalDom.attr;
 
 var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
 
-var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('tutorial.incrementaldom', 'render');
+var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
 /**
@@ -30853,18 +30839,105 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param464 = function() {
-    ie_open('h2');
-      var dyn38 = opt_data.page.title;
-      if (typeof dyn38 == 'function') dyn38(); else if (dyn38 != null) itext(dyn38);
-    ie_close('h2');
-    $templateAlias2({code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript'}, null, opt_ijData);
-    ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-    ie_close('p');
-    ie_open('p');
-      itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-    ie_close('p');
+  var param284 = function() {
+    ie_open('article', null, null,
+        'id', 'install');
+      ie_open('h2');
+        itext('Install');
+      ie_close('h2');
+      ie_open('h3');
+        itext('Using package managers');
+      ie_close('h3');
+      ie_open('p');
+        itext('You can get it on npm.');
+      ie_close('p');
+      $templateAlias2({code: 'npm install osagai', mode: 'text/x-sh'}, null, opt_ijData);
+      ie_open('p');
+        itext('Or with yarn');
+      ie_close('p');
+      $templateAlias2({code: 'yarn add osagai', mode: 'text/x-sh'}, null, opt_ijData);
+      ie_open('h3');
+        itext('Import from a CDN');
+      ie_close('h3');
+      ie_open('p');
+        itext('You can also import directly from ');
+        ie_open('a', null, null,
+            'href', 'https://unpkg.com/#/');
+          itext('unpkg');
+        ie_close('a');
+      ie_close('p');
+      $templateAlias2({code: 'import { define } from "https://unpkg.com/osagai/osagai.mjs";', mode: 'javascript'}, null, opt_ijData);
+      ie_open('h3');
+        itext('CDN links');
+      ie_close('h3');
+      ie_open('p');
+        itext('Osagai are available over a CDN.');
+      ie_close('p');
+      $templateAlias2({code: '<script src="https://unpkg.com/osagai/osagai.umd.js"><\/script>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'defineComponent');
+      ie_open('h2');
+        itext('Define a Web component');
+      ie_close('h2');
+      ie_open('p');
+        itext('Osagai comes with a function called ');
+        ie_open('code');
+          itext('define');
+        ie_close('code');
+        itext(' that defines a new custom element that you can use in your application.');
+        ie_open('code');
+          itext('define');
+        ie_close('code');
+        itext(' receives the name of the custom element (it must contain a hyphen) and the Osagai component. The Osagai component is a function that returns a Template with a string representing the layout of the web component.');
+      ie_close('p');
+      $templateAlias2({code: 'import { define } from \'osagai\'\n\nfunction MyComponent() {\n    return () => `<h1>Hi \uD83D\uDC4B!</h1>`\n}\n\ndefine(\'waving-hand\', MyComponent)', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Now, you just need to use your new custom element in your application.');
+      ie_close('p');
+      $templateAlias2({code: '<waving-hand></waving-hand>', mode: 'xml'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'modules');
+      ie_open('h2');
+        itext('Modules');
+      ie_close('h2');
+      ie_open('p');
+        itext('Osagai is separated by different modules, in a way that you can import only what you need for your custom element.');
+      ie_close('p');
+      ie_open('h3');
+        itext('osagai');
+      ie_close('h3');
+      ie_open('p');
+        itext('This is the main module where you can find the function for defining your custom element.');
+      ie_close('p');
+      $templateAlias2({code: 'import { define } from \'osagai\'', mode: 'javascript'}, null, opt_ijData);
+      ie_open('h3');
+        itext('events');
+      ie_close('h3');
+      ie_open('p');
+        itext('This is the module with useful methods like ');
+        ie_open('code');
+          itext('on');
+        ie_close('code');
+        itext(' for adding event listeners to components');
+      ie_close('p');
+      $templateAlias2({code: 'import { on } from \'osagai/events\'', mode: 'javascript'}, null, opt_ijData);
+      ie_open('h3');
+        itext('lifecycles');
+      ie_close('h3');
+      ie_open('p');
+        itext('This is the module for the custome elements lifecyles like ');
+        ie_open('code');
+          itext('connectedCallback');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('disconnectedCallback');
+        ie_close('code');
+      ie_close('p');
+      $templateAlias2({code: 'import { onConnected, onDisconnected } from \'osagai/lifecycles\'', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -30874,11 +30947,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param464}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param284}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'lbJro.render';
+  $render.soyTemplateName = 'jAIvK.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30888,30 +30961,18 @@ return exports;
 
 });
 
-class lbJro extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(lbJro, templates);
+class jAIvK extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(jAIvK, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30951,9 +31012,9 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _secondStepSoy = __webpack_require__(323);
+var _indexSoy = __webpack_require__(309);
 
-var _secondStepSoy2 = _interopRequireDefault(_secondStepSoy);
+var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30963,23 +31024,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var lbJro = function (_Component) {
-  _inherits(lbJro, _Component);
+var jAIvK = function (_Component) {
+  _inherits(jAIvK, _Component);
 
-  function lbJro() {
-    _classCallCheck(this, lbJro);
+  function jAIvK() {
+    _classCallCheck(this, jAIvK);
 
-    return _possibleConstructorReturn(this, (lbJro.__proto__ || Object.getPrototypeOf(lbJro)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (jAIvK.__proto__ || Object.getPrototypeOf(jAIvK)).apply(this, arguments));
   }
 
-  return lbJro;
+  return jAIvK;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(lbJro, _secondStepSoy2.default);
+_metalSoy2.default.register(jAIvK, _indexSoy2.default);
 
-exports.default = lbJro;
+exports.default = jAIvK;
 
 /***/ })
-],[339]);
+],[313]);

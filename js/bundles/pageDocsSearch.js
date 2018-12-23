@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([6,17,18,19,20,21],[
+webpackJsonppageComponent([1,4,5,6,7,8],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4571,7 +4571,7 @@ module.exports = $export;
 
 "use strict";
 
-var fails = __webpack_require__(13);
+var fails = __webpack_require__(14);
 
 module.exports = function (method, arg) {
   return !!method && fails(function () {
@@ -4685,7 +4685,8 @@ module.exports = function (it) {
 
 /***/ }),
 /* 12 */,
-/* 13 */
+/* 13 */,
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -4698,7 +4699,7 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4754,7 +4755,6 @@ exports.ElectricUpdates = _ElectricUpdates2.default;
 exports.default = _ElectricNavigation2.default;
 
 /***/ }),
-/* 15 */,
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4780,7 +4780,7 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(13)(function () {
+module.exports = !__webpack_require__(14)(function () {
   return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -18068,7 +18068,7 @@ var _metalDom = __webpack_require__(5);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 var _metalState = __webpack_require__(12);
 
@@ -19264,7 +19264,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20022,14 +20022,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param3 = function() {
+  var param28 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param28}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -20054,24 +20054,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn0 = opt_data.page.author;
-        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+        var dyn3 = opt_data.page.author;
+        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn1 = opt_data.page.date;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+          var dyn4 = opt_data.page.date;
+          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn2 = opt_data.page.title;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn5 = opt_data.page.title;
+        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn6 = opt_data.content;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -20093,8 +20093,8 @@ if (goog.DEBUG) {
  * @suppress {checkTypes}
  */
 function $olderPosts(opt_data, opt_ignored, opt_ijData) {
-  var blogObject__soy23 = opt_data.site.index.children['blog'];
-  $templateAlias3({blogObject: blogObject__soy23, url: opt_data.page.url}, null, opt_ijData);
+  var blogObject__soy48 = opt_data.site.index.children['blog'];
+  $templateAlias3({blogObject: blogObject__soy48, url: opt_data.page.url}, null, opt_ijData);
 }
 exports.olderPosts = $olderPosts;
 if (goog.DEBUG) {
@@ -20193,7 +20193,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'class', 'guide');
       ie_open('div', null, null,
           'class', 'docs');
-        $templateAlias1({items: [], style: 'topbar-light topbar-docs', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, null, opt_ijData);
+        $templateAlias1(soy.$$assignDefaults({items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, opt_data), null, opt_ijData);
         $templateAlias2({section: opt_data.site.index.children['docs'], site: opt_data.site}, null, opt_ijData);
         $guide(opt_data, null, opt_ijData);
       ie_close('div');
@@ -20226,8 +20226,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn4 = opt_data.page.title;
-          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+          var dyn7 = opt_data.page.title;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
           itext(' Guide');
         ie_close('h1');
       ie_close('div');
@@ -20240,8 +20240,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn5 = opt_data.content;
-            if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+            var dyn8 = opt_data.content;
+            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -20287,7 +20287,7 @@ function $contribute(opt_data, opt_ignored, opt_ijData) {
       ie_open('p');
         itext('Contribute on Github! ');
         ie_open('a', null, null,
-            'href', 'https://github.com/' + opt_data.site.githubRepo + '/tree/master/' + opt_data.page.srcFilePath,
+            'href', 'https://github.com/' + opt_data.site.githubRepo + '/' + opt_data.page.srcFilePath,
             'class', 'contribute-link',
             'target', '_blank');
           itext('Edit this section');
@@ -20389,9 +20389,9 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null,
         'class', 'content');
-      $templateAlias1({items: [], style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, null, opt_ijData);
-      var dyn6 = opt_data.content;
-      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+      $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, null, opt_ijData);
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
   ie_close('div');
 }
@@ -20524,14 +20524,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn7 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn8 = opt_data.content;
-        if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+        var dyn11 = opt_data.content;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -20556,15 +20556,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy102 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy102.childIds.length) {
+    var tutorialObject__soy127 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy127.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy107 = tutorialObject__soy102.children[tutorialObject__soy102.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy132 = tutorialObject__soy127.children[tutorialObject__soy127.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy107,
+            'href', nextPageUrl__soy132,
             'class', 'btn btn-accent btn-sm');
-          var dyn9 = opt_data.page.buttonTitle;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn12 = opt_data.page.buttonTitle;
+          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
         ie_close('a');
       }
     }
@@ -20609,7 +20609,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s122_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s147_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -20618,23 +20618,23 @@ function __deltemplate_s122_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn10 = opt_data.page.weight;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn13 = opt_data.page.weight;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn11 = opt_data.page.title;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn14 = opt_data.page.title;
+      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s122_88c0813b = __deltemplate_s122_88c0813b;
+exports.__deltemplate_s147_88c0813b = __deltemplate_s147_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s122_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s122_88c0813b';
+  __deltemplate_s147_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s147_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s122_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s147_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -21857,7 +21857,7 @@ module.exports = function (it) {
 /* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(18) && !__webpack_require__(13)(function () {
+module.exports = !__webpack_require__(18) && !__webpack_require__(14)(function () {
   return Object.defineProperty(__webpack_require__(171)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -22457,7 +22457,7 @@ var $export = __webpack_require__(4);
 var createProperty = __webpack_require__(170);
 
 // WebKit Array.of isn't generic
-$export($export.S + $export.F * __webpack_require__(13)(function () {
+$export($export.S + $export.F * __webpack_require__(14)(function () {
   function F() { /* empty */ }
   return !(Array.of.call(F) instanceof F);
 }), 'Array', {
@@ -22521,7 +22521,7 @@ var toLength = __webpack_require__(8);
 var arraySlice = [].slice;
 
 // fallback for not array-like ES3 strings and DOM objects
-$export($export.P + $export.F * __webpack_require__(13)(function () {
+$export($export.P + $export.F * __webpack_require__(14)(function () {
   if (html) arraySlice.call(html);
 }), 'Array', {
   slice: function slice(begin, end) {
@@ -22568,7 +22568,7 @@ $export($export.P + $export.F * !__webpack_require__(6)([].some, true), 'Array',
 var $export = __webpack_require__(4);
 var aFunction = __webpack_require__(32);
 var toObject = __webpack_require__(11);
-var fails = __webpack_require__(13);
+var fails = __webpack_require__(14);
 var $sort = [].sort;
 var test = [1, 2, 3];
 
@@ -23522,7 +23522,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _ElectricCodeSoy = __webpack_require__(250);
 
@@ -23671,7 +23671,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _electricBaseComponents2 = _interopRequireDefault(_electricBaseComponents);
 
@@ -23927,7 +23927,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _ElectricReadingProgressSoy = __webpack_require__(254);
 
@@ -24061,7 +24061,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _ElectricSearchSoy = __webpack_require__(256);
 
@@ -24296,7 +24296,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _ElectricSearchAutocompleteSoy = __webpack_require__(258);
 
@@ -24437,7 +24437,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(14);
+var _electricBaseComponents = __webpack_require__(15);
 
 var _ElectricUpdatesSoy = __webpack_require__(260);
 
@@ -24918,7 +24918,7 @@ var _metalDom = __webpack_require__(5);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 var _metalState = __webpack_require__(12);
 
@@ -25259,7 +25259,7 @@ var _metalState = __webpack_require__(12);
 
 var _metalState2 = _interopRequireDefault(_metalState);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 var _metalEvents2 = _interopRequireDefault(_metalEvents);
 
@@ -26430,7 +26430,7 @@ var _metal = __webpack_require__(3);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 var _metalEvents2 = _interopRequireDefault(_metalEvents);
 
@@ -29636,7 +29636,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalEvents = __webpack_require__(15);
+var _metalEvents = __webpack_require__(13);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30782,15 +30782,7 @@ exports.default = parseFromAnchor;
 /* 308 */,
 /* 309 */,
 /* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */,
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */
+/* 311 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30856,7 +30848,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   var $$temp;
-  var param310 = function() {
+  var param268 = function() {
     $templateAlias2({section: opt_data.site.index.children['docs'], site: opt_data.site}, null, opt_ijData);
     ie_open('div', null, null,
         'class', 'sidebar-offset');
@@ -30876,8 +30868,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
             ie_open('p', null, null,
                 'class', 'docs-home-top-description');
               itext('Start learning how to leverage the power of ');
-              var dyn28 = opt_data.site.title;
-              if (typeof dyn28 == 'function') dyn28(); else if (dyn28 != null) itext(dyn28);
+              var dyn22 = opt_data.site.title;
+              if (typeof dyn22 == 'function') dyn22(); else if (dyn22 != null) itext(dyn22);
               itext('.');
             ie_close('p');
           ie_close('div');
@@ -30892,7 +30884,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_close('div');
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param310}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({elementClasses: 'docs', content: param268}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -30914,23 +30906,10 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsSearch, templ
 
 
 /***/ }),
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30970,7 +30949,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _searchSoy = __webpack_require__(319);
+var _searchSoy = __webpack_require__(311);
 
 var _searchSoy2 = _interopRequireDefault(_searchSoy);
 
@@ -31001,4 +30980,4 @@ _metalSoy2.default.register(pageDocsSearch, _searchSoy2.default);
 exports.default = pageDocsSearch;
 
 /***/ })
-],[336]);
+],[315]);
