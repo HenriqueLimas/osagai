@@ -20389,7 +20389,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null,
         'class', 'content');
-      $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, null, opt_ijData);
+      $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title, href: opt_data.site.basePath}}, null, opt_ijData);
       var dyn9 = opt_data.content;
       if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
@@ -30853,7 +30853,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'class', 'content');
       ie_open('div', null, null,
           'class', 'docs');
-        $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, null, opt_ijData);
+        $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title, href: opt_data.site.basePath}}, null, opt_ijData);
         $templateAlias2({section: opt_data.site.index.children['docs'], site: opt_data.site}, null, opt_ijData);
         $topics(opt_data, null, opt_ijData);
       ie_close('div');

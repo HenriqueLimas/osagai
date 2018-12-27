@@ -20389,7 +20389,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
     ie_open('main', null, null,
         'class', 'content');
-      $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title}}, null, opt_ijData);
+      $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title, href: opt_data.site.basePath}}, null, opt_ijData);
       var dyn9 = opt_data.content;
       if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
@@ -30785,7 +30785,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "usOJg", function() { return usOJg; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JIDOa", function() { return JIDOa; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30801,11 +30801,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace usOJg.
+ * @fileoverview Templates in namespace JIDOa.
  * @public
  */
 
-goog.module('usOJg.incrementaldom');
+goog.module('JIDOa.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30962,7 +30962,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'usOJg.render';
+  $render.soyTemplateName = 'JIDOa.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30972,8 +30972,8 @@ return exports;
 
 });
 
-class usOJg extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(usOJg, templates);
+class JIDOa extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(JIDOa, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -31035,23 +31035,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var usOJg = function (_Component) {
-  _inherits(usOJg, _Component);
+var JIDOa = function (_Component) {
+  _inherits(JIDOa, _Component);
 
-  function usOJg() {
-    _classCallCheck(this, usOJg);
+  function JIDOa() {
+    _classCallCheck(this, JIDOa);
 
-    return _possibleConstructorReturn(this, (usOJg.__proto__ || Object.getPrototypeOf(usOJg)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (JIDOa.__proto__ || Object.getPrototypeOf(JIDOa)).apply(this, arguments));
   }
 
-  return usOJg;
+  return JIDOa;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(usOJg, _indexSoy2.default);
+_metalSoy2.default.register(JIDOa, _indexSoy2.default);
 
-exports.default = usOJg;
+exports.default = JIDOa;
 
 /***/ })
 ],[313]);
