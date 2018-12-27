@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([3,4,5,6,7,8],[
+webpackJsonppageComponent([8,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4571,7 +4571,7 @@ module.exports = $export;
 
 "use strict";
 
-var fails = __webpack_require__(14);
+var fails = __webpack_require__(13);
 
 module.exports = function (method, arg) {
   return !!method && fails(function () {
@@ -4685,8 +4685,7 @@ module.exports = function (it) {
 
 /***/ }),
 /* 12 */,
-/* 13 */,
-/* 14 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -4699,7 +4698,7 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4755,6 +4754,7 @@ exports.ElectricUpdates = _ElectricUpdates2.default;
 exports.default = _ElectricNavigation2.default;
 
 /***/ }),
+/* 15 */,
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4780,7 +4780,7 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(14)(function () {
+module.exports = !__webpack_require__(13)(function () {
   return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -18068,7 +18068,7 @@ var _metalDom = __webpack_require__(5);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 var _metalState = __webpack_require__(12);
 
@@ -19264,7 +19264,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20228,7 +20228,6 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'title');
           var dyn4 = opt_data.page.title;
           if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
-          itext(' Guide');
         ie_close('h1');
       ie_close('div');
     ie_close('header');
@@ -21857,7 +21856,7 @@ module.exports = function (it) {
 /* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(18) && !__webpack_require__(14)(function () {
+module.exports = !__webpack_require__(18) && !__webpack_require__(13)(function () {
   return Object.defineProperty(__webpack_require__(171)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -22457,7 +22456,7 @@ var $export = __webpack_require__(4);
 var createProperty = __webpack_require__(170);
 
 // WebKit Array.of isn't generic
-$export($export.S + $export.F * __webpack_require__(14)(function () {
+$export($export.S + $export.F * __webpack_require__(13)(function () {
   function F() { /* empty */ }
   return !(Array.of.call(F) instanceof F);
 }), 'Array', {
@@ -22521,7 +22520,7 @@ var toLength = __webpack_require__(8);
 var arraySlice = [].slice;
 
 // fallback for not array-like ES3 strings and DOM objects
-$export($export.P + $export.F * __webpack_require__(14)(function () {
+$export($export.P + $export.F * __webpack_require__(13)(function () {
   if (html) arraySlice.call(html);
 }), 'Array', {
   slice: function slice(begin, end) {
@@ -22568,7 +22567,7 @@ $export($export.P + $export.F * !__webpack_require__(6)([].some, true), 'Array',
 var $export = __webpack_require__(4);
 var aFunction = __webpack_require__(32);
 var toObject = __webpack_require__(11);
-var fails = __webpack_require__(14);
+var fails = __webpack_require__(13);
 var $sort = [].sort;
 var test = [1, 2, 3];
 
@@ -23522,7 +23521,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _ElectricCodeSoy = __webpack_require__(250);
 
@@ -23671,7 +23670,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _electricBaseComponents2 = _interopRequireDefault(_electricBaseComponents);
 
@@ -23927,7 +23926,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _ElectricReadingProgressSoy = __webpack_require__(254);
 
@@ -24061,7 +24060,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _ElectricSearchSoy = __webpack_require__(256);
 
@@ -24296,7 +24295,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _ElectricSearchAutocompleteSoy = __webpack_require__(258);
 
@@ -24437,7 +24436,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _ElectricUpdatesSoy = __webpack_require__(260);
 
@@ -24918,7 +24917,7 @@ var _metalDom = __webpack_require__(5);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 var _metalState = __webpack_require__(12);
 
@@ -25259,7 +25258,7 @@ var _metalState = __webpack_require__(12);
 
 var _metalState2 = _interopRequireDefault(_metalState);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 var _metalEvents2 = _interopRequireDefault(_metalEvents);
 
@@ -26430,7 +26429,7 @@ var _metal = __webpack_require__(3);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 var _metalEvents2 = _interopRequireDefault(_metalEvents);
 
@@ -29636,7 +29635,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30785,7 +30784,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "daARn", function() { return daARn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rszfm", function() { return rszfm; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30801,11 +30800,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace daARn.
+ * @fileoverview Templates in namespace rszfm.
  * @public
  */
 
-goog.module('daARn.incrementaldom');
+goog.module('rszfm.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30826,8 +30825,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -30839,115 +30836,15 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param284 = function() {
+  var param352 = function() {
     ie_open('article', null, null,
-        'id', 'install');
+        'id', 'overview');
       ie_open('h2');
-        itext('Install');
-      ie_close('h2');
-      ie_open('h3');
-        itext('Using package managers');
-      ie_close('h3');
-      ie_open('p');
-        itext('You can get it on npm.');
-      ie_close('p');
-      $templateAlias2({code: 'npm install osagai', mode: 'text/x-sh'}, null, opt_ijData);
-      ie_open('p');
-        itext('Or with yarn');
-      ie_close('p');
-      $templateAlias2({code: 'yarn add osagai', mode: 'text/x-sh'}, null, opt_ijData);
-      ie_open('h3');
-        itext('Import from a CDN');
-      ie_close('h3');
-      ie_open('p');
-        itext('You can also import directly from ');
-        ie_open('a', null, null,
-            'href', 'https://unpkg.com/#/');
-          itext('unpkg');
-        ie_close('a');
-      ie_close('p');
-      $templateAlias2({code: 'import { define } from "https://unpkg.com/osagai/osagai.mjs";', mode: 'javascript'}, null, opt_ijData);
-      ie_open('h3');
-        itext('CDN links');
-      ie_close('h3');
-      ie_open('p');
-        itext('Osagai are available over a CDN.');
-      ie_close('p');
-      $templateAlias2({code: '<script src="https://unpkg.com/osagai/osagai.umd.js"><\/script>', mode: 'xml'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'defineComponent');
-      ie_open('h2');
-        itext('Define a Web component');
+        itext('Overview');
       ie_close('h2');
       ie_open('p');
-        itext('Osagai comes with a function called ');
-        ie_open('code');
-          itext('define');
-        ie_close('code');
-        itext(' that defines a new custom element that you can use in your application.');
-        ie_open('code');
-          itext('define');
-        ie_close('code');
-        itext(' receives the name of the custom element (it must contain a hyphen) and the Osagai component. The Osagai component is a function that returns a Template with a string representing the layout of the web component.');
+        itext('Module with functions for manipulating the DOM tree of the custom element.');
       ie_close('p');
-      $templateAlias2({code: 'import { define } from \'osagai\'\n\nfunction MyComponent() {\n    return () => `<h1>Hi \uD83D\uDC4B!</h1>`\n}\n\ndefine(\'waving-hand\', MyComponent)', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Now, you just need to use your new custom element in your application.');
-      ie_close('p');
-      $templateAlias2({code: '<waving-hand></waving-hand>', mode: 'xml'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'modules');
-      ie_open('h2');
-        itext('Modules');
-      ie_close('h2');
-      ie_open('p');
-        itext('Osagai is separated by different modules, in a way that you can import only what you need for your custom element.');
-      ie_close('p');
-      ie_open('h3');
-        itext('osagai');
-      ie_close('h3');
-      ie_open('p');
-        itext('This is the main module where you can find the function for defining your custom element.');
-      ie_close('p');
-      $templateAlias2({code: 'import { define } from \'osagai\'', mode: 'javascript'}, null, opt_ijData);
-      ie_open('h3');
-        itext('dom');
-      ie_close('h3');
-      ie_open('p');
-        itext('This is the module with useful methods like ');
-        ie_open('code');
-          itext('update');
-        ie_close('code');
-        itext(' for efficiently update the DOM tree of your custom element');
-      ie_close('p');
-      $templateAlias2({code: 'import { update } from \'osagai/dom\'', mode: 'javascript'}, null, opt_ijData);
-      ie_open('h3');
-        itext('events');
-      ie_close('h3');
-      ie_open('p');
-        itext('This is the module with useful methods like ');
-        ie_open('code');
-          itext('on');
-        ie_close('code');
-        itext(' for adding event listeners to components');
-      ie_close('p');
-      $templateAlias2({code: 'import { on } from \'osagai/events\'', mode: 'javascript'}, null, opt_ijData);
-      ie_open('h3');
-        itext('lifecycles');
-      ie_close('h3');
-      ie_open('p');
-        itext('This is the module for the custome elements lifecyles like ');
-        ie_open('code');
-          itext('connectedCallback');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('disconnectedCallback');
-        ie_close('code');
-      ie_close('p');
-      $templateAlias2({code: 'import { onConnected, onDisconnected } from \'osagai/lifecycles\'', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -30958,11 +30855,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param284}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'daARn.render';
+  $render.soyTemplateName = 'rszfm.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30972,8 +30869,8 @@ return exports;
 
 });
 
-class daARn extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(daARn, templates);
+class rszfm extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(rszfm, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -30983,7 +30880,13 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(daARn, templates);
 /* 310 */,
 /* 311 */,
 /* 312 */,
-/* 313 */
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31035,23 +30938,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var daARn = function (_Component) {
-  _inherits(daARn, _Component);
+var rszfm = function (_Component) {
+  _inherits(rszfm, _Component);
 
-  function daARn() {
-    _classCallCheck(this, daARn);
+  function rszfm() {
+    _classCallCheck(this, rszfm);
 
-    return _possibleConstructorReturn(this, (daARn.__proto__ || Object.getPrototypeOf(daARn)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (rszfm.__proto__ || Object.getPrototypeOf(rszfm)).apply(this, arguments));
   }
 
-  return daARn;
+  return rszfm;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(daARn, _indexSoy2.default);
+_metalSoy2.default.register(rszfm, _indexSoy2.default);
 
-exports.default = daARn;
+exports.default = rszfm;
 
 /***/ })
-],[313]);
+],[319]);

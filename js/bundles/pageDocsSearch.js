@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([1,4,5,6,7,8],[
+webpackJsonppageComponent([1,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4571,7 +4571,7 @@ module.exports = $export;
 
 "use strict";
 
-var fails = __webpack_require__(14);
+var fails = __webpack_require__(13);
 
 module.exports = function (method, arg) {
   return !!method && fails(function () {
@@ -4685,8 +4685,7 @@ module.exports = function (it) {
 
 /***/ }),
 /* 12 */,
-/* 13 */,
-/* 14 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -4699,7 +4698,7 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4755,6 +4754,7 @@ exports.ElectricUpdates = _ElectricUpdates2.default;
 exports.default = _ElectricNavigation2.default;
 
 /***/ }),
+/* 15 */,
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4780,7 +4780,7 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(14)(function () {
+module.exports = !__webpack_require__(13)(function () {
   return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -18068,7 +18068,7 @@ var _metalDom = __webpack_require__(5);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 var _metalState = __webpack_require__(12);
 
@@ -19264,7 +19264,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -20228,7 +20228,6 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'title');
           var dyn4 = opt_data.page.title;
           if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
-          itext(' Guide');
         ie_close('h1');
       ie_close('div');
     ie_close('header');
@@ -21857,7 +21856,7 @@ module.exports = function (it) {
 /* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(18) && !__webpack_require__(14)(function () {
+module.exports = !__webpack_require__(18) && !__webpack_require__(13)(function () {
   return Object.defineProperty(__webpack_require__(171)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
@@ -22457,7 +22456,7 @@ var $export = __webpack_require__(4);
 var createProperty = __webpack_require__(170);
 
 // WebKit Array.of isn't generic
-$export($export.S + $export.F * __webpack_require__(14)(function () {
+$export($export.S + $export.F * __webpack_require__(13)(function () {
   function F() { /* empty */ }
   return !(Array.of.call(F) instanceof F);
 }), 'Array', {
@@ -22521,7 +22520,7 @@ var toLength = __webpack_require__(8);
 var arraySlice = [].slice;
 
 // fallback for not array-like ES3 strings and DOM objects
-$export($export.P + $export.F * __webpack_require__(14)(function () {
+$export($export.P + $export.F * __webpack_require__(13)(function () {
   if (html) arraySlice.call(html);
 }), 'Array', {
   slice: function slice(begin, end) {
@@ -22568,7 +22567,7 @@ $export($export.P + $export.F * !__webpack_require__(6)([].some, true), 'Array',
 var $export = __webpack_require__(4);
 var aFunction = __webpack_require__(32);
 var toObject = __webpack_require__(11);
-var fails = __webpack_require__(14);
+var fails = __webpack_require__(13);
 var $sort = [].sort;
 var test = [1, 2, 3];
 
@@ -23522,7 +23521,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _ElectricCodeSoy = __webpack_require__(250);
 
@@ -23671,7 +23670,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _electricBaseComponents2 = _interopRequireDefault(_electricBaseComponents);
 
@@ -23927,7 +23926,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _ElectricReadingProgressSoy = __webpack_require__(254);
 
@@ -24061,7 +24060,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _ElectricSearchSoy = __webpack_require__(256);
 
@@ -24296,7 +24295,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _ElectricSearchAutocompleteSoy = __webpack_require__(258);
 
@@ -24437,7 +24436,7 @@ var _metalSoy = __webpack_require__(2);
 
 var _metalSoy2 = _interopRequireDefault(_metalSoy);
 
-var _electricBaseComponents = __webpack_require__(15);
+var _electricBaseComponents = __webpack_require__(14);
 
 var _ElectricUpdatesSoy = __webpack_require__(260);
 
@@ -24918,7 +24917,7 @@ var _metalDom = __webpack_require__(5);
 
 var _metalDom2 = _interopRequireDefault(_metalDom);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 var _metalState = __webpack_require__(12);
 
@@ -25259,7 +25258,7 @@ var _metalState = __webpack_require__(12);
 
 var _metalState2 = _interopRequireDefault(_metalState);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 var _metalEvents2 = _interopRequireDefault(_metalEvents);
 
@@ -26430,7 +26429,7 @@ var _metal = __webpack_require__(3);
 
 var _metal2 = _interopRequireDefault(_metal);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 var _metalEvents2 = _interopRequireDefault(_metalEvents);
 
@@ -29636,7 +29635,7 @@ var _metalComponent = __webpack_require__(1);
 
 var _metalComponent2 = _interopRequireDefault(_metalComponent);
 
-var _metalEvents = __webpack_require__(13);
+var _metalEvents = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30782,7 +30781,12 @@ exports.default = parseFromAnchor;
 /* 308 */,
 /* 309 */,
 /* 310 */,
-/* 311 */
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30906,10 +30910,15 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pageDocsSearch, templ
 
 
 /***/ }),
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30949,7 +30958,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _searchSoy = __webpack_require__(311);
+var _searchSoy = __webpack_require__(316);
 
 var _searchSoy2 = _interopRequireDefault(_searchSoy);
 
@@ -30980,4 +30989,4 @@ _metalSoy2.default.register(pageDocsSearch, _searchSoy2.default);
 exports.default = pageDocsSearch;
 
 /***/ })
-],[315]);
+],[325]);
