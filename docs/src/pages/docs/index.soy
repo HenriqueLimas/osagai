@@ -17,7 +17,8 @@ description: "Everything you need to know to get started."
 					{param items: $site.topbar /}
 					{param style: 'topbar-light topbar-docs' /}
 					{param logo: [
-						'text': $site.logo + ' ' + $site.title
+						'text': $site.logo + ' ' + $site.title,
+						'href': $site.basePath
 					] /}
 				{/call}
 				{call Sidebar.render}
