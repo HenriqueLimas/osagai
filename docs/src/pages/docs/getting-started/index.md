@@ -103,7 +103,7 @@ import { on } from 'osagai/events'
 
 ### lifecycles
 
-This is the module for the custome elements lifecyles like `connectedCallback` and `disconnectedCallback`
+This is the module for the custom elements lifecyles like `connectedCallback` and `disconnectedCallback`
 
 ```javascript
 import { onConnected, onDisconnected } from 'osagai/lifecycles'
