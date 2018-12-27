@@ -20193,7 +20193,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'class', 'guide');
       ie_open('div', null, null,
           'class', 'docs');
-        $templateAlias1(soy.$$assignDefaults({items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title, href: opt_data.site.href}}, opt_data), null, opt_ijData);
+        $templateAlias1(soy.$$assignDefaults({items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title, href: opt_data.site.basePath}}, opt_data), null, opt_ijData);
         $templateAlias2({section: opt_data.site.index.children['docs'], site: opt_data.site}, null, opt_ijData);
         $guide(opt_data, null, opt_ijData);
       ie_close('div');
@@ -30785,7 +30785,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "uQAYM", function() { return uQAYM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "daARn", function() { return daARn; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30801,11 +30801,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace uQAYM.
+ * @fileoverview Templates in namespace daARn.
  * @public
  */
 
-goog.module('uQAYM.incrementaldom');
+goog.module('daARn.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30962,7 +30962,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'uQAYM.render';
+  $render.soyTemplateName = 'daARn.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30972,8 +30972,8 @@ return exports;
 
 });
 
-class uQAYM extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(uQAYM, templates);
+class daARn extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(daARn, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -31035,23 +31035,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var uQAYM = function (_Component) {
-  _inherits(uQAYM, _Component);
+var daARn = function (_Component) {
+  _inherits(daARn, _Component);
 
-  function uQAYM() {
-    _classCallCheck(this, uQAYM);
+  function daARn() {
+    _classCallCheck(this, daARn);
 
-    return _possibleConstructorReturn(this, (uQAYM.__proto__ || Object.getPrototypeOf(uQAYM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (daARn.__proto__ || Object.getPrototypeOf(daARn)).apply(this, arguments));
   }
 
-  return uQAYM;
+  return daARn;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(uQAYM, _indexSoy2.default);
+_metalSoy2.default.register(daARn, _indexSoy2.default);
 
-exports.default = uQAYM;
+exports.default = daARn;
 
 /***/ })
 ],[313]);

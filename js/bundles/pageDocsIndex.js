@@ -20193,7 +20193,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'class', 'guide');
       ie_open('div', null, null,
           'class', 'docs');
-        $templateAlias1(soy.$$assignDefaults({items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title, href: opt_data.site.href}}, opt_data), null, opt_ijData);
+        $templateAlias1(soy.$$assignDefaults({items: opt_data.site.topbar, style: 'topbar-light topbar-docs', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title, href: opt_data.site.basePath}}, opt_data), null, opt_ijData);
         $templateAlias2({section: opt_data.site.index.children['docs'], site: opt_data.site}, null, opt_ijData);
         $guide(opt_data, null, opt_ijData);
       ie_close('div');
