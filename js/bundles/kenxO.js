@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,9,10,11,12,13],[
+webpackJsonppageComponent([5,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30780,12 +30780,14 @@ exports.default = parseFromAnchor;
 /* 307 */,
 /* 308 */,
 /* 309 */,
-/* 310 */
+/* 310 */,
+/* 311 */,
+/* 312 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pUcHN", function() { return pUcHN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kenxO", function() { return kenxO; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30801,11 +30803,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace pUcHN.
+ * @fileoverview Templates in namespace kenxO.
  * @public
  */
 
-goog.module('pUcHN.incrementaldom');
+goog.module('kenxO.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30837,14 +30839,19 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param361 = function() {
+  var param379 = function() {
     ie_open('article', null, null,
         'id', 'overview');
       ie_open('h2');
         itext('Overview');
       ie_close('h2');
       ie_open('p');
-        itext('Module with functions for adding event listeners.');
+        itext('Module with functions for listening the ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
+          itext('lifecyles of the custom element');
+        ie_close('a');
+        itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -30856,11 +30863,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param361}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param379}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'pUcHN.render';
+  $render.soyTemplateName = 'kenxO.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30870,16 +30877,14 @@ return exports;
 
 });
 
-class pUcHN extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pUcHN, templates);
+class kenxO extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(kenxO, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 311 */,
-/* 312 */,
 /* 313 */,
 /* 314 */,
 /* 315 */,
@@ -30887,7 +30892,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pUcHN, templates);
 /* 317 */,
 /* 318 */,
 /* 319 */,
-/* 320 */
+/* 320 */,
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30927,7 +30933,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(310);
+var _indexSoy = __webpack_require__(312);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -30939,23 +30945,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pUcHN = function (_Component) {
-  _inherits(pUcHN, _Component);
+var kenxO = function (_Component) {
+  _inherits(kenxO, _Component);
 
-  function pUcHN() {
-    _classCallCheck(this, pUcHN);
+  function kenxO() {
+    _classCallCheck(this, kenxO);
 
-    return _possibleConstructorReturn(this, (pUcHN.__proto__ || Object.getPrototypeOf(pUcHN)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (kenxO.__proto__ || Object.getPrototypeOf(kenxO)).apply(this, arguments));
   }
 
-  return pUcHN;
+  return kenxO;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pUcHN, _indexSoy2.default);
+_metalSoy2.default.register(kenxO, _indexSoy2.default);
 
-exports.default = pUcHN;
+exports.default = kenxO;
 
 /***/ })
-],[320]);
+],[321]);

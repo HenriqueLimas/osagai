@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([6,9,10,11,12,13],[
+webpackJsonppageComponent([4,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30781,12 +30781,14 @@ exports.default = parseFromAnchor;
 /* 308 */,
 /* 309 */,
 /* 310 */,
-/* 311 */
+/* 311 */,
+/* 312 */,
+/* 313 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MXnaW", function() { return MXnaW; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xFPWG", function() { return xFPWG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30802,11 +30804,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace MXnaW.
+ * @fileoverview Templates in namespace xFPWG.
  * @public
  */
 
-goog.module('MXnaW.incrementaldom');
+goog.module('xFPWG.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30838,51 +30840,16 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param284 = function() {
-    ie_open('p');
-      itext('Osagai is separated in different modules that you can import only what you need for implementing your custom element. These are the modules with a short description:');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'osagai');
-        itext('osagai');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Main module with a function for defining your custom elements.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'dom');
-        itext('dom');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for manipulating the DOM tree of the custom element.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'events');
-        itext('events');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for adding event listeners.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'lifecycles');
-        itext('lifecycles');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for listening the ');
-      ie_open('a', null, null,
-          'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
-        itext('lifecyles of the custom element');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
+  var param370 = function() {
+    ie_open('article', null, null,
+        'id', 'overview');
+      ie_open('h2');
+        itext('Overview');
+      ie_close('h2');
+      ie_open('p');
+        itext('Main module with a function for defining your custom elements.');
+      ie_close('p');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -30892,11 +30859,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param284}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param370}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'MXnaW.render';
+  $render.soyTemplateName = 'xFPWG.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30906,21 +30873,23 @@ return exports;
 
 });
 
-class MXnaW extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(MXnaW, templates);
+class xFPWG extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(xFPWG, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 312 */,
-/* 313 */,
 /* 314 */,
 /* 315 */,
 /* 316 */,
 /* 317 */,
-/* 318 */
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30960,7 +30929,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(311);
+var _indexSoy = __webpack_require__(313);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -30972,23 +30941,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MXnaW = function (_Component) {
-  _inherits(MXnaW, _Component);
+var xFPWG = function (_Component) {
+  _inherits(xFPWG, _Component);
 
-  function MXnaW() {
-    _classCallCheck(this, MXnaW);
+  function xFPWG() {
+    _classCallCheck(this, xFPWG);
 
-    return _possibleConstructorReturn(this, (MXnaW.__proto__ || Object.getPrototypeOf(MXnaW)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (xFPWG.__proto__ || Object.getPrototypeOf(xFPWG)).apply(this, arguments));
   }
 
-  return MXnaW;
+  return xFPWG;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(MXnaW, _indexSoy2.default);
+_metalSoy2.default.register(xFPWG, _indexSoy2.default);
 
-exports.default = MXnaW;
+exports.default = xFPWG;
 
 /***/ })
-],[318]);
+],[322]);
