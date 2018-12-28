@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([8,9,10,11,12,13],[
+webpackJsonppageComponent([4,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30779,12 +30779,16 @@ exports.default = parseFromAnchor;
 /* 306 */,
 /* 307 */,
 /* 308 */,
-/* 309 */
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KSmGD", function() { return KSmGD; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DrCah", function() { return DrCah; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30800,11 +30804,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace KSmGD.
+ * @fileoverview Templates in namespace DrCah.
  * @public
  */
 
-goog.module('KSmGD.incrementaldom');
+goog.module('DrCah.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30825,6 +30829,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -30836,16 +30842,173 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param352 = function() {
+  var param379 = function() {
     ie_open('article', null, null,
         'id', 'overview');
       ie_open('h2');
         itext('Overview');
       ie_close('h2');
+      ie_open('h3');
+        itext('Define custom elements');
+      ie_close('h3');
       ie_open('p');
-        itext('Module with functions for manipulating the DOM tree of the custom element.');
+        itext('Osagai let you define your ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements',
+            'target', '_blank');
+          itext('custom elements');
+        ie_close('a');
+        itext(' in a functional way, making than reusable and think about the separation of the component logic from the view. Custom elements can be defined using the ');
+        ie_open('a', null, null,
+            'href', '#define');
+          ie_open('code');
+            itext('define');
+          ie_close('code');
+        ie_close('a');
+        itext(' function, passing the name of the component with the ');
+        ie_open('code');
+          itext('Component');
+        ie_close('code');
+        itext(' function');
       ie_close('p');
+      ie_open('h4');
+        itext('Component function');
+      ie_close('h4');
+      ie_open('p');
+        itext('Osagai Components are functions that will define your custom element. They need to return a ');
+        ie_open('code');
+          itext('Template');
+        ie_close('code');
+        itext(' function and can be used to add the logic of your custom element. Like adding event listeners, making api calls or initialize variables. Osagai will pass useful arguments to the Component like the ');
+        ie_open('code');
+          itext('element');
+        ie_close('code');
+        itext(' reference and methods like ');
+        ie_open('code');
+          itext('query');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('queryAll');
+        ie_close('code');
+        itext(' that you can use to query elements in the element DOM tree. Both methods return a promise resolving the value as the element that match the query.');
+      ie_close('p');
+      $templateAlias2({code: 'function Component({element, query, queryAll}) {\n  /* \u2728 Some magic here \u2728 */\n  return () => `<h1>Hello</h1>`\n}', mode: 'javascript'}, null, opt_ijData);
+      ie_open('h4');
+        itext('Template function');
+      ie_close('h4');
+      ie_open('p');
+        itext('The template function is what will define the layout of your custom element and it will be executed during the ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks',
+            'target', '_blank');
+          itext('connectedCallback');
+        ie_close('a');
+        itext(' lifecycle. The interface of the ');
+        ie_open('code');
+          itext('Template');
+        ie_close('code');
+        itext(' function is simple, it needs to return a string that will define the layout of the custom element:');
+      ie_close('p');
+      $templateAlias2({code: 'function Template() {\n  return \'<h1>Hello</h1>\'\n}', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('If your components doesn\'t need a layout (Renderless component), you do not need to return a string, just execute your logic inside this function.');
+      ie_close('p');
+      $templateAlias2({code: 'function RenderlessTemplate() {\n  window.addEventListener(\'resize\', runSomething)\n}', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Osagai will pass as argument of the ');
+        ie_open('code');
+          itext('Template');
+        ie_close('code');
+        itext(' function the data needed for your layout. This is usually changed with the ');
+        ie_open('code');
+          itext('update');
+        ie_close('code');
+        itext(' function of the ');
+        ie_open('code');
+          itext('osagai/dom');
+        ie_close('code');
+        itext(' module.');
+      ie_close('p');
+      $templateAlias2({code: 'const initialData = {name: \'world\'}\n\nfunction Template(data = initialData) {\n  return `<h1>Hello ${data.name}</h1>`\n}', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
+    ie_open('h2');
+      itext('Reference');
+    ie_close('h2');
+    ie_open('article', null, null,
+        'id', 'define');
+      ie_open('h2');
+        itext('define');
+      ie_close('h2');
+      $templateAlias2({code: 'define(name, Component[, options])', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Defines a new custom element.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Parameters');
+      ie_close('h5');
+      ie_open('h6');
+        itext('name');
+      ie_close('h6');
+      ie_open('p');
+        itext('Name for the new custom element. Note that custom element names must contain a hyphen (ex. ');
+        ie_open('code');
+          itext('hello-world');
+        ie_close('code');
+        itext(')');
+      ie_close('p');
+      ie_open('h6');
+        itext('Component');
+      ie_close('h6');
+      ie_open('p');
+        itext('Component is the function that will return a Template function that defines the layout of your custom element. Here you can run the logic of the component, like making api calls or add event listeners of the component elements');
+      ie_close('p');
+      ie_open('h6');
+        itext('options ');
+        ie_open('code');
+          itext('Optional');
+        ie_close('code');
+      ie_close('h6');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            itext('BaseElement');
+          ie_close('strong');
+          itext(': element constructor that the component will extend. (Default ');
+          ie_open('code');
+            itext('HTMLElement');
+          ie_close('code');
+          itext(')');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('observeAttributes');
+          ie_close('strong');
+          itext(': array of strings with the attributes to observe and run ');
+          ie_open('a', null, null,
+              'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks',
+              'target', '_blank');
+            itext('attributeChangedCallback');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('...customElementOptions');
+          ie_close('strong');
+          itext(': All the other are options defined by the custom element spec (');
+          ie_open('a', null, null,
+              'href', 'https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define#Parameters',
+              'target', '_blank');
+            itext('MDN link');
+          ie_close('a');
+          itext(').');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -30855,11 +31018,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param379}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'KSmGD.render';
+  $render.soyTemplateName = 'DrCah.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30869,24 +31032,23 @@ return exports;
 
 });
 
-class KSmGD extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(KSmGD, templates);
+class DrCah extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(DrCah, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
 /* 314 */,
 /* 315 */,
 /* 316 */,
 /* 317 */,
 /* 318 */,
-/* 319 */
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30926,7 +31088,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(309);
+var _indexSoy = __webpack_require__(313);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -30938,23 +31100,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var KSmGD = function (_Component) {
-  _inherits(KSmGD, _Component);
+var DrCah = function (_Component) {
+  _inherits(DrCah, _Component);
 
-  function KSmGD() {
-    _classCallCheck(this, KSmGD);
+  function DrCah() {
+    _classCallCheck(this, DrCah);
 
-    return _possibleConstructorReturn(this, (KSmGD.__proto__ || Object.getPrototypeOf(KSmGD)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DrCah.__proto__ || Object.getPrototypeOf(DrCah)).apply(this, arguments));
   }
 
-  return KSmGD;
+  return DrCah;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(KSmGD, _indexSoy2.default);
+_metalSoy2.default.register(DrCah, _indexSoy2.default);
 
-exports.default = KSmGD;
+exports.default = DrCah;
 
 /***/ })
-],[319]);
+],[322]);
