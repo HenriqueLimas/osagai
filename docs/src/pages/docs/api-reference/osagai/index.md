@@ -64,6 +64,28 @@ function Template(data = initialData) {
 }
 ```
 
+#### Custom renderer
+Osagai consider the template of the custom element as string. Initialization and updates of the element are all based of strings, 
+it uses `innerHTML` for the initialization and [morphdom](https://github.com/patrick-steele-idem/morphdom) for the updates. 
+But if you want to have a custom initialization and update, you can use the `renderer` option on the definition of the custom element. 
+This is a function that receives the `element` and the `template` result with the current data. 
+For example, you could use [lit-html](https://lit-html.polymer-project.org/) for manipulating the DOM in this way:
+
+```javascript
+import { define } from 'osagai'
+import { render, html } from 'lit-html';
+
+function renderer(element, template) {
+  render(template, element);
+}
+
+function LitComponent() {
+  return () => html`<h1>Hello</h1>`;
+}
+
+define('lit-component', LitComponent, { renderer });
+```
+
 </article>
 
 <hr />
@@ -95,6 +117,7 @@ like making api calls or add event listeners of the component elements
 
 - **BaseElement**: element constructor that the component will extend. (Default `HTMLElement`)
 - **observeAttributes**: array of strings with the attributes to observe and run <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks" target="_blank">attributeChangedCallback</a>
+- **renderer**: Custom renderer function to use during the render process. The function has two arguments `element` and `template`. Where `element` is the element reference and `template` is the result of the `Template` function with the current data.
 - **...customElementOptions**: All the other are options defined by the custom element spec (<a href="https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define#Parameters" target="_blank">MDN link</a>).
 
 </article>
