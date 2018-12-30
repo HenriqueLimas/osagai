@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([8,9,10,11,12,13],[
+webpackJsonppageComponent([6,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30779,12 +30779,14 @@ exports.default = parseFromAnchor;
 /* 306 */,
 /* 307 */,
 /* 308 */,
-/* 309 */
+/* 309 */,
+/* 310 */,
+/* 311 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eNBOI", function() { return eNBOI; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hVYwB", function() { return hVYwB; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30800,11 +30802,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace eNBOI.
+ * @fileoverview Templates in namespace hVYwB.
  * @public
  */
 
-goog.module('eNBOI.incrementaldom');
+goog.module('hVYwB.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30836,16 +30838,51 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param352 = function() {
-    ie_open('article', null, null,
-        'id', 'overview');
-      ie_open('h2');
-        itext('Overview');
-      ie_close('h2');
-      ie_open('p');
-        itext('Module with functions for manipulating the DOM tree of the custom element.');
-      ie_close('p');
-    ie_close('article');
+  var param284 = function() {
+    ie_open('p');
+      itext('Osagai is separated in different modules that you can import only what you need for implementing your custom element. These are the modules with a short description:');
+    ie_close('p');
+    ie_open('h4');
+      ie_open('a', null, null,
+          'href', 'osagai/');
+        itext('osagai');
+      ie_close('a');
+    ie_close('h4');
+    ie_open('p');
+      itext('Main module with a function for defining your custom elements.');
+    ie_close('p');
+    ie_open('h4');
+      ie_open('a', null, null,
+          'href', 'dom/');
+        itext('dom');
+      ie_close('a');
+    ie_close('h4');
+    ie_open('p');
+      itext('Module with functions for manipulating the DOM tree of the custom element.');
+    ie_close('p');
+    ie_open('h4');
+      ie_open('a', null, null,
+          'href', 'events/');
+        itext('events');
+      ie_close('a');
+    ie_close('h4');
+    ie_open('p');
+      itext('Module with functions for adding event listeners.');
+    ie_close('p');
+    ie_open('h4');
+      ie_open('a', null, null,
+          'href', 'lifecycles/');
+        itext('lifecycles');
+      ie_close('a');
+    ie_close('h4');
+    ie_open('p');
+      itext('Module with functions for listening the ');
+      ie_open('a', null, null,
+          'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
+        itext('lifecyles of the custom element');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -30855,11 +30892,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param284}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'eNBOI.render';
+  $render.soyTemplateName = 'hVYwB.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30869,16 +30906,14 @@ return exports;
 
 });
 
-class eNBOI extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(eNBOI, templates);
+class hVYwB extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(hVYwB, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 310 */,
-/* 311 */,
 /* 312 */,
 /* 313 */,
 /* 314 */,
@@ -30886,7 +30921,8 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(eNBOI, templates);
 /* 316 */,
 /* 317 */,
 /* 318 */,
-/* 319 */
+/* 319 */,
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30926,7 +30962,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(309);
+var _indexSoy = __webpack_require__(311);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -30938,23 +30974,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var eNBOI = function (_Component) {
-  _inherits(eNBOI, _Component);
+var hVYwB = function (_Component) {
+  _inherits(hVYwB, _Component);
 
-  function eNBOI() {
-    _classCallCheck(this, eNBOI);
+  function hVYwB() {
+    _classCallCheck(this, hVYwB);
 
-    return _possibleConstructorReturn(this, (eNBOI.__proto__ || Object.getPrototypeOf(eNBOI)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (hVYwB.__proto__ || Object.getPrototypeOf(hVYwB)).apply(this, arguments));
   }
 
-  return eNBOI;
+  return hVYwB;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(eNBOI, _indexSoy2.default);
+_metalSoy2.default.register(hVYwB, _indexSoy2.default);
 
-exports.default = eNBOI;
+exports.default = hVYwB;
 
 /***/ })
-],[319]);
+],[320]);

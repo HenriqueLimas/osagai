@@ -30788,7 +30788,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DrCah", function() { return DrCah; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bQByz", function() { return bQByz; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30804,11 +30804,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace DrCah.
+ * @fileoverview Templates in namespace bQByz.
  * @public
  */
 
-goog.module('DrCah.incrementaldom');
+goog.module('bQByz.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30931,6 +30931,39 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         itext(' module.');
       ie_close('p');
       $templateAlias2({code: 'const initialData = {name: \'world\'}\n\nfunction Template(data = initialData) {\n  return `<h1>Hello ${data.name}</h1>`\n}', mode: 'javascript'}, null, opt_ijData);
+      ie_open('h4');
+        itext('Custom renderer');
+      ie_close('h4');
+      ie_open('p');
+        itext('Osagai consider the template of the custom element as string. Initialization and updates of the element are all based of strings, it uses ');
+        ie_open('code');
+          itext('innerHTML');
+        ie_close('code');
+        itext(' for the initialization and ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/patrick-steele-idem/morphdom');
+          itext('morphdom');
+        ie_close('a');
+        itext(' for the updates. But if you want to have a custom initialization and update, you can use the ');
+        ie_open('code');
+          itext('renderer');
+        ie_close('code');
+        itext(' option on the definition of the custom element. This is a function that receives the ');
+        ie_open('code');
+          itext('element');
+        ie_close('code');
+        itext(' and the ');
+        ie_open('code');
+          itext('template');
+        ie_close('code');
+        itext(' result with the current data. For example, you could use ');
+        ie_open('a', null, null,
+            'href', 'https://lit-html.polymer-project.org/');
+          itext('lit-html');
+        ie_close('a');
+        itext(' for manipulating the DOM in this way:');
+      ie_close('p');
+      $templateAlias2({code: 'import { define } from \'osagai\'\nimport { render, html } from \'lit-html\';\n\nfunction renderer(element, template) {\n  render(template, element);\n}\n\nfunction LitComponent() {\n  return () => html`<h1>Hello</h1>`;\n}\n\ndefine(\'lit-component\', LitComponent, { renderer });', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('hr');
     ie_close('hr');
@@ -30995,6 +31028,32 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         ie_close('li');
         ie_open('li');
           ie_open('strong');
+            itext('renderer');
+          ie_close('strong');
+          itext(': Custom renderer function to use during the render process. The function has two arguments ');
+          ie_open('code');
+            itext('element');
+          ie_close('code');
+          itext(' and ');
+          ie_open('code');
+            itext('template');
+          ie_close('code');
+          itext('. Where ');
+          ie_open('code');
+            itext('element');
+          ie_close('code');
+          itext(' is the element reference and ');
+          ie_open('code');
+            itext('template');
+          ie_close('code');
+          itext(' is the result of the ');
+          ie_open('code');
+            itext('Template');
+          ie_close('code');
+          itext(' function with the current data.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
             itext('...customElementOptions');
           ie_close('strong');
           itext(': All the other are options defined by the custom element spec (');
@@ -31022,7 +31081,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'DrCah.render';
+  $render.soyTemplateName = 'bQByz.render';
 }
 
 exports.render.params = ["page","site"];
@@ -31032,8 +31091,8 @@ return exports;
 
 });
 
-class DrCah extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(DrCah, templates);
+class bQByz extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(bQByz, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -31100,23 +31159,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var DrCah = function (_Component) {
-  _inherits(DrCah, _Component);
+var bQByz = function (_Component) {
+  _inherits(bQByz, _Component);
 
-  function DrCah() {
-    _classCallCheck(this, DrCah);
+  function bQByz() {
+    _classCallCheck(this, bQByz);
 
-    return _possibleConstructorReturn(this, (DrCah.__proto__ || Object.getPrototypeOf(DrCah)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (bQByz.__proto__ || Object.getPrototypeOf(bQByz)).apply(this, arguments));
   }
 
-  return DrCah;
+  return bQByz;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(DrCah, _indexSoy2.default);
+_metalSoy2.default.register(bQByz, _indexSoy2.default);
 
-exports.default = DrCah;
+exports.default = bQByz;
 
 /***/ })
 ],[322]);
