@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@types/jest": "^23.3.10",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
@@ -26,6 +27,11 @@
     "rollup": "^0.67.3",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-filesize": "^5.0.1",
-    "rollup-plugin-node-resolve": "^3.4.0"
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-typescript": "^1.0.0",
+    "rollup-plugin-typescript2": "^0.18.1",
+    "ts-jest": "^23.10.5",
+    "tslib": "^1.9.3",
+    "typescript": "^3.2.2"
   }
 }
