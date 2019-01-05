@@ -27,6 +27,8 @@ renderer instead of `mophdom`.
 
 </article>
 
+<hr />
+
 ## Reference
 
 <article id="update">
