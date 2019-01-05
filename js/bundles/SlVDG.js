@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([6,9,10,11,12,13],[
+webpackJsonppageComponent([4,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20022,14 +20022,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param99 = function() {
+  var param3 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param99}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -20054,24 +20054,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn8 = opt_data.page.author;
-        if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+        var dyn0 = opt_data.page.author;
+        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn9 = opt_data.page.date;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn1 = opt_data.page.date;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn10 = opt_data.page.title;
-        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+        var dyn2 = opt_data.page.title;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn11 = opt_data.content;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -20093,8 +20093,8 @@ if (goog.DEBUG) {
  * @suppress {checkTypes}
  */
 function $olderPosts(opt_data, opt_ignored, opt_ijData) {
-  var blogObject__soy119 = opt_data.site.index.children['blog'];
-  $templateAlias3({blogObject: blogObject__soy119, url: opt_data.page.url}, null, opt_ijData);
+  var blogObject__soy23 = opt_data.site.index.children['blog'];
+  $templateAlias3({blogObject: blogObject__soy23, url: opt_data.page.url}, null, opt_ijData);
 }
 exports.olderPosts = $olderPosts;
 if (goog.DEBUG) {
@@ -20226,8 +20226,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn12 = opt_data.page.title;
-          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+          var dyn4 = opt_data.page.title;
+          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         ie_close('h1');
       ie_close('div');
     ie_close('header');
@@ -20239,8 +20239,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn13 = opt_data.content;
-            if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+            var dyn5 = opt_data.content;
+            if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -20389,8 +20389,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title, href: opt_data.site.basePath}}, null, opt_ijData);
-      var dyn14 = opt_data.content;
-      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+      var dyn6 = opt_data.content;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('main');
   ie_close('div');
 }
@@ -20523,14 +20523,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn15 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
+        var dyn7 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn16 = opt_data.content;
-        if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
+        var dyn8 = opt_data.content;
+        if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -20555,15 +20555,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy198 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy198.childIds.length) {
+    var tutorialObject__soy102 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy102.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy203 = tutorialObject__soy198.children[tutorialObject__soy198.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy107 = tutorialObject__soy102.children[tutorialObject__soy102.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy203,
+            'href', nextPageUrl__soy107,
             'class', 'btn btn-accent btn-sm');
-          var dyn17 = opt_data.page.buttonTitle;
-          if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
+          var dyn9 = opt_data.page.buttonTitle;
+          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
         ie_close('a');
       }
     }
@@ -20608,7 +20608,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s218_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s122_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -20617,23 +20617,23 @@ function __deltemplate_s218_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn18 = opt_data.page.weight;
-      if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
+      var dyn10 = opt_data.page.weight;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn19 = opt_data.page.title;
-      if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
+      var dyn11 = opt_data.page.title;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s218_88c0813b = __deltemplate_s218_88c0813b;
+exports.__deltemplate_s122_88c0813b = __deltemplate_s122_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s218_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s218_88c0813b';
+  __deltemplate_s122_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s122_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s218_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s122_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -21009,30 +21009,30 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null,
         'class', 'container');
       if (opt_data.posts) {
-        var postList43 = opt_data.posts;
-        var postListLen43 = postList43.length;
-        for (var postIndex43 = 0; postIndex43 < postListLen43; postIndex43++) {
-          var postData43 = postList43[postIndex43];
+        var postList176 = opt_data.posts;
+        var postListLen176 = postList176.length;
+        for (var postIndex176 = 0; postIndex176 < postListLen176; postIndex176++) {
+          var postData176 = postList176[postIndex176];
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', postData43.url);
+                'href', postData176.url);
               ie_open('small');
                 itext('By ');
-                var dyn3 = postData43.author;
-                if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+                var dyn15 = postData176.author;
+                if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn4 = postData43.date;
-                  if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+                  var dyn16 = postData176.date;
+                  if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn5 = postData43.title;
-                if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+                var dyn17 = postData176.title;
+                if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
@@ -21169,7 +21169,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s61_d34389eb(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s194_d34389eb(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''),
       'href', opt_data.page.url);
@@ -21178,16 +21178,16 @@ function __deltemplate_s61_d34389eb(opt_data, opt_ignored, opt_ijData) {
           'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
     }
     ie_open('span');
-      var dyn6 = opt_data.page.title;
-      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+      var dyn18 = opt_data.page.title;
+      if (typeof dyn18 == 'function') dyn18(); else if (dyn18 != null) itext(dyn18);
     ie_close('span');
   ie_close('a');
 }
-exports.__deltemplate_s61_d34389eb = __deltemplate_s61_d34389eb;
+exports.__deltemplate_s194_d34389eb = __deltemplate_s194_d34389eb;
 if (goog.DEBUG) {
-  __deltemplate_s61_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s61_d34389eb';
+  __deltemplate_s194_d34389eb.soyTemplateName = 'Sidebar.__deltemplate_s194_d34389eb';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s61_d34389eb);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s194_d34389eb);
 
 exports.render.params = ["section","site"];
 exports.render.types = {"section":"?","site":"?"};
@@ -21385,8 +21385,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_void('span', null, null,
           'class', 'icon icon-16-clock');
       itext(' ');
-      var dyn7 = opt_data.time;
-      if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+      var dyn19 = opt_data.time;
+      if (typeof dyn19 == 'function') dyn19(); else if (dyn19 != null) itext(dyn19);
     }
   ie_close('p');
 }
@@ -30781,12 +30781,14 @@ exports.default = parseFromAnchor;
 /* 308 */,
 /* 309 */,
 /* 310 */,
-/* 311 */
+/* 311 */,
+/* 312 */,
+/* 313 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pQGbq", function() { return pQGbq; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlVDG", function() { return SlVDG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30802,11 +30804,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace pQGbq.
+ * @fileoverview Templates in namespace SlVDG.
  * @public
  */
 
-goog.module('pQGbq.incrementaldom');
+goog.module('SlVDG.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30827,6 +30829,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -30838,51 +30842,232 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param284 = function() {
-    ie_open('p');
-      itext('Osagai is separated in different modules that you can import only what you need for implementing your custom element. These are the modules with a short description:');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'osagai/');
-        itext('osagai');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Main module with a function for defining your custom elements.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'dom/');
-        itext('dom');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for manipulating the DOM tree of the custom element.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'events/');
-        itext('events');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for adding event listeners.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'lifecycles/');
-        itext('lifecycles');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for listening the ');
-      ie_open('a', null, null,
-          'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
-        itext('lifecyles of the custom element');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
+  var param424 = function() {
+    ie_open('article', null, null,
+        'id', 'overview');
+      ie_open('h2');
+        itext('Overview');
+      ie_close('h2');
+      ie_open('h3');
+        itext('Define custom elements');
+      ie_close('h3');
+      ie_open('p');
+        itext('Osagai let you define your ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements',
+            'target', '_blank');
+          itext('custom elements');
+        ie_close('a');
+        itext(' in a functional way, making than reusable and think about the separation of the component logic from the view. Custom elements can be defined using the ');
+        ie_open('a', null, null,
+            'href', '#define');
+          ie_open('code');
+            itext('define');
+          ie_close('code');
+        ie_close('a');
+        itext(' function, passing the name of the component with the ');
+        ie_open('code');
+          itext('Component');
+        ie_close('code');
+        itext(' function');
+      ie_close('p');
+      ie_open('h4');
+        itext('Component function');
+      ie_close('h4');
+      ie_open('p');
+        itext('Osagai Components are functions that will define your custom element. They need to return a ');
+        ie_open('code');
+          itext('Template');
+        ie_close('code');
+        itext(' function and can be used to add the logic of your custom element. Like adding event listeners, making api calls or initialize variables. Osagai will pass useful arguments to the Component like the ');
+        ie_open('code');
+          itext('element');
+        ie_close('code');
+        itext(' reference and methods like ');
+        ie_open('code');
+          itext('query');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('queryAll');
+        ie_close('code');
+        itext(' that you can use to query elements in the element DOM tree. Both methods return a promise resolving the value as the element that match the query.');
+      ie_close('p');
+      $templateAlias2({code: 'function Component({element, query, queryAll}) {\n  /* \u2728 Some magic here \u2728 */\n  return () => `<h1>Hello</h1>`\n}', mode: 'javascript'}, null, opt_ijData);
+      ie_open('h4');
+        itext('Template function');
+      ie_close('h4');
+      ie_open('p');
+        itext('The template function is what will define the layout of your custom element and it will be executed during the ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks',
+            'target', '_blank');
+          itext('connectedCallback');
+        ie_close('a');
+        itext(' lifecycle. The interface of the ');
+        ie_open('code');
+          itext('Template');
+        ie_close('code');
+        itext(' function is simple, it needs to return a string that will define the layout of the custom element:');
+      ie_close('p');
+      $templateAlias2({code: 'function Template() {\n  return \'<h1>Hello</h1>\'\n}', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('If your components doesn\'t need a layout (Renderless component), you do not need to return a string, just execute your logic inside this function.');
+      ie_close('p');
+      $templateAlias2({code: 'function RenderlessTemplate() {\n  window.addEventListener(\'resize\', runSomething)\n}', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Osagai will pass as argument of the ');
+        ie_open('code');
+          itext('Template');
+        ie_close('code');
+        itext(' function the data needed for your layout. This is usually changed with the ');
+        ie_open('code');
+          itext('update');
+        ie_close('code');
+        itext(' function of the ');
+        ie_open('code');
+          itext('osagai/dom');
+        ie_close('code');
+        itext(' module.');
+      ie_close('p');
+      $templateAlias2({code: 'const initialData = {name: \'world\'}\n\nfunction Template(data = initialData) {\n  return `<h1>Hello ${data.name}</h1>`\n}', mode: 'javascript'}, null, opt_ijData);
+      ie_open('h4');
+        itext('Custom renderer');
+      ie_close('h4');
+      ie_open('p');
+        itext('Osagai consider the template of the custom element as string. Initialization and updates of the element are all based of strings, it uses ');
+        ie_open('code');
+          itext('innerHTML');
+        ie_close('code');
+        itext(' for the initialization and ');
+        ie_open('a', null, null,
+            'href', 'https://github.com/patrick-steele-idem/morphdom');
+          itext('morphdom');
+        ie_close('a');
+        itext(' for the updates. But if you want to have a custom initialization and update, you can use the ');
+        ie_open('code');
+          itext('renderer');
+        ie_close('code');
+        itext(' option on the definition of the custom element. This is a function that receives the ');
+        ie_open('code');
+          itext('element');
+        ie_close('code');
+        itext(' and the ');
+        ie_open('code');
+          itext('template');
+        ie_close('code');
+        itext(' result with the current data. For example, you could use ');
+        ie_open('a', null, null,
+            'href', 'https://lit-html.polymer-project.org/');
+          itext('lit-html');
+        ie_close('a');
+        itext(' for manipulating the DOM in this way:');
+      ie_close('p');
+      $templateAlias2({code: 'import { define } from \'osagai\'\nimport { render, html } from \'lit-html\';\n\nfunction renderer(element, template) {\n  render(template, element);\n}\n\nfunction LitComponent() {\n  return () => html`<h1>Hello</h1>`;\n}\n\ndefine(\'lit-component\', LitComponent, { renderer });', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
+    ie_open('h2');
+      itext('Reference');
+    ie_close('h2');
+    ie_open('article', null, null,
+        'id', 'define');
+      ie_open('h2');
+        itext('define');
+      ie_close('h2');
+      $templateAlias2({code: 'define(name, Component[, options])', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Defines a new custom element.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Parameters');
+      ie_close('h5');
+      ie_open('h6');
+        itext('name');
+      ie_close('h6');
+      ie_open('p');
+        itext('Name for the new custom element. Note that custom element names must contain a hyphen (ex. ');
+        ie_open('code');
+          itext('hello-world');
+        ie_close('code');
+        itext(')');
+      ie_close('p');
+      ie_open('h6');
+        itext('Component');
+      ie_close('h6');
+      ie_open('p');
+        itext('Component is the function that will return a Template function that defines the layout of your custom element. Here you can run the logic of the component, like making api calls or add event listeners of the component elements');
+      ie_close('p');
+      ie_open('h6');
+        itext('options ');
+        ie_open('code');
+          itext('Optional');
+        ie_close('code');
+      ie_close('h6');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            itext('BaseElement');
+          ie_close('strong');
+          itext(': element constructor that the component will extend. (Default ');
+          ie_open('code');
+            itext('HTMLElement');
+          ie_close('code');
+          itext(')');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('observeAttributes');
+          ie_close('strong');
+          itext(': array of strings with the attributes to observe and run ');
+          ie_open('a', null, null,
+              'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks',
+              'target', '_blank');
+            itext('attributeChangedCallback');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('renderer');
+          ie_close('strong');
+          itext(': Custom renderer function to use during the render process. The function has two arguments ');
+          ie_open('code');
+            itext('element');
+          ie_close('code');
+          itext(' and ');
+          ie_open('code');
+            itext('template');
+          ie_close('code');
+          itext('. Where ');
+          ie_open('code');
+            itext('element');
+          ie_close('code');
+          itext(' is the element reference and ');
+          ie_open('code');
+            itext('template');
+          ie_close('code');
+          itext(' is the result of the ');
+          ie_open('code');
+            itext('Template');
+          ie_close('code');
+          itext(' function with the current data.');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('...customElementOptions');
+          ie_close('strong');
+          itext(': All the other are options defined by the custom element spec (');
+          ie_open('a', null, null,
+              'href', 'https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define#Parameters',
+              'target', '_blank');
+            itext('MDN link');
+          ie_close('a');
+          itext(').');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -30892,11 +31077,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param284}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param424}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'pQGbq.render';
+  $render.soyTemplateName = 'SlVDG.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30906,16 +31091,14 @@ return exports;
 
 });
 
-class pQGbq extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(pQGbq, templates);
+class SlVDG extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(SlVDG, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 312 */,
-/* 313 */,
 /* 314 */,
 /* 315 */,
 /* 316 */,
@@ -30964,7 +31147,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(311);
+var _indexSoy = __webpack_require__(313);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -30976,23 +31159,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var pQGbq = function (_Component) {
-  _inherits(pQGbq, _Component);
+var SlVDG = function (_Component) {
+  _inherits(SlVDG, _Component);
 
-  function pQGbq() {
-    _classCallCheck(this, pQGbq);
+  function SlVDG() {
+    _classCallCheck(this, SlVDG);
 
-    return _possibleConstructorReturn(this, (pQGbq.__proto__ || Object.getPrototypeOf(pQGbq)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (SlVDG.__proto__ || Object.getPrototypeOf(SlVDG)).apply(this, arguments));
   }
 
-  return pQGbq;
+  return SlVDG;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(pQGbq, _indexSoy2.default);
+_metalSoy2.default.register(SlVDG, _indexSoy2.default);
 
-exports.default = pQGbq;
+exports.default = SlVDG;
 
 /***/ })
 ],[322]);

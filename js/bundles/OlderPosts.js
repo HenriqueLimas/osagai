@@ -152,30 +152,30 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('div', null, null,
         'class', 'container');
       if (opt_data.posts) {
-        var postList43 = opt_data.posts;
-        var postListLen43 = postList43.length;
-        for (var postIndex43 = 0; postIndex43 < postListLen43; postIndex43++) {
-          var postData43 = postList43[postIndex43];
+        var postList176 = opt_data.posts;
+        var postListLen176 = postList176.length;
+        for (var postIndex176 = 0; postIndex176 < postListLen176; postIndex176++) {
+          var postData176 = postList176[postIndex176];
           ie_open('div', null, null,
               'class', 'post-item container-blog');
             ie_open('a', null, null,
                 'class', 'post-item__link',
-                'href', postData43.url);
+                'href', postData176.url);
               ie_open('small');
                 itext('By ');
-                var dyn3 = postData43.author;
-                if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+                var dyn15 = postData176.author;
+                if (typeof dyn15 == 'function') dyn15(); else if (dyn15 != null) itext(dyn15);
                 itext(' ');
                 ie_open('span');
                   itext('| ');
-                  var dyn4 = postData43.date;
-                  if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+                  var dyn16 = postData176.date;
+                  if (typeof dyn16 == 'function') dyn16(); else if (dyn16 != null) itext(dyn16);
                 ie_close('span');
               ie_close('small');
               ie_open('h4', null, null,
                   'class', 'post-item__title');
-                var dyn5 = postData43.title;
-                if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+                var dyn17 = postData176.title;
+                if (typeof dyn17 == 'function') dyn17(); else if (dyn17 != null) itext(dyn17);
               ie_close('h4');
             ie_close('a');
           ie_close('div');
