@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([3,9,10,11,12,13],[
+webpackJsonppageComponent([6,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30781,15 +30781,12 @@ exports.default = parseFromAnchor;
 /* 308 */,
 /* 309 */,
 /* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */
+/* 311 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UlqfM", function() { return UlqfM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RwkUo", function() { return RwkUo; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30805,11 +30802,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace UlqfM.
+ * @fileoverview Templates in namespace RwkUo.
  * @public
  */
 
-goog.module('UlqfM.incrementaldom');
+goog.module('RwkUo.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30830,8 +30827,6 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
-var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
-
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -30843,116 +30838,51 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param293 = function() {
-    ie_open('article', null, null,
-        'id', 'install');
-      ie_open('h2');
-        itext('Install');
-      ie_close('h2');
-      ie_open('h3');
-        itext('Using package managers');
-      ie_close('h3');
-      ie_open('p');
-        itext('You can get it on npm.');
-      ie_close('p');
-      $templateAlias2({code: 'npm install osagai', mode: 'text/x-sh'}, null, opt_ijData);
-      ie_open('p');
-        itext('Or with yarn');
-      ie_close('p');
-      $templateAlias2({code: 'yarn add osagai', mode: 'text/x-sh'}, null, opt_ijData);
-      ie_open('h3');
-        itext('Import from a CDN');
-      ie_close('h3');
-      ie_open('p');
-        itext('You can also import directly from ');
-        ie_open('a', null, null,
-            'href', 'https://unpkg.com/#/');
-          itext('unpkg');
-        ie_close('a');
-      ie_close('p');
-      $templateAlias2({code: 'import { define } from "https://unpkg.com/osagai/osagai.mjs";', mode: 'javascript'}, null, opt_ijData);
-      ie_open('h3');
-        itext('CDN links');
-      ie_close('h3');
-      ie_open('p');
-        itext('Osagai are available over a CDN.');
-      ie_close('p');
-      $templateAlias2({code: '<script src="https://unpkg.com/osagai/osagai.umd.js"><\/script>', mode: 'xml'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'defineComponent');
-      ie_open('h2');
-        itext('Define a Web component');
-      ie_close('h2');
-      ie_open('p');
-        itext('Osagai comes with a function called ');
-        ie_open('code');
-          itext('define');
-        ie_close('code');
-        itext(' that defines a new custom element that you can use in your application.');
-        ie_open('code');
-          itext('define');
-        ie_close('code');
-        itext(' receives the name of the custom element (it must contain a hyphen) and the Osagai component. The Osagai component is a function that returns a Template with a string representing the layout of the web component.');
-      ie_close('p');
-      $templateAlias2({code: 'import { define } from \'osagai\'\n\nfunction MyComponent() {\n    return () => `<h1>Hi \uD83D\uDC4B!</h1>`\n}\n\ndefine(\'waving-hand\', MyComponent)', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Now, you just need to use your new custom element in your application.');
-      ie_close('p');
-      $templateAlias2({code: '<waving-hand></waving-hand>', mode: 'xml'}, null, opt_ijData);
-    ie_close('article');
-    ie_open('article', null, null,
-        'id', 'modules');
-      ie_open('h2');
-        itext('Modules');
-      ie_close('h2');
-      ie_open('p');
-        itext('Osagai is separated by different modules, in a way that you can import only what you need for your custom element.');
-      ie_close('p');
-      ie_open('h3');
+  var param284 = function() {
+    ie_open('p');
+      itext('Osagai is separated in different modules that you can import only what you need for implementing your custom element. These are the modules with a short description:');
+    ie_close('p');
+    ie_open('h4');
+      ie_open('a', null, null,
+          'href', 'osagai/');
         itext('osagai');
-      ie_close('h3');
-      ie_open('p');
-        itext('This is the main module where you can find the function for defining your custom element.');
-      ie_close('p');
-      $templateAlias2({code: 'import { define } from \'osagai\'', mode: 'javascript'}, null, opt_ijData);
-      ie_open('h3');
+      ie_close('a');
+    ie_close('h4');
+    ie_open('p');
+      itext('Main module with a function for defining your custom elements.');
+    ie_close('p');
+    ie_open('h4');
+      ie_open('a', null, null,
+          'href', 'dom/');
         itext('dom');
-      ie_close('h3');
-      ie_open('p');
-        itext('This is the module with useful methods like ');
-        ie_open('code');
-          itext('update');
-        ie_close('code');
-        itext(' for efficiently update the DOM tree of your custom element');
-      ie_close('p');
-      $templateAlias2({code: 'import { update } from \'osagai/dom\'', mode: 'javascript'}, null, opt_ijData);
-      ie_open('h3');
+      ie_close('a');
+    ie_close('h4');
+    ie_open('p');
+      itext('Module with functions for manipulating the DOM tree of the custom element.');
+    ie_close('p');
+    ie_open('h4');
+      ie_open('a', null, null,
+          'href', 'events/');
         itext('events');
-      ie_close('h3');
-      ie_open('p');
-        itext('This is the module with useful methods like ');
-        ie_open('code');
-          itext('on');
-        ie_close('code');
-        itext(' for adding event listeners to components');
-      ie_close('p');
-      $templateAlias2({code: 'import { on } from \'osagai/events\'', mode: 'javascript'}, null, opt_ijData);
-      ie_open('h3');
+      ie_close('a');
+    ie_close('h4');
+    ie_open('p');
+      itext('Module with functions for adding event listeners.');
+    ie_close('p');
+    ie_open('h4');
+      ie_open('a', null, null,
+          'href', 'lifecycles/');
         itext('lifecycles');
-      ie_close('h3');
-      ie_open('p');
-        itext('This is the module for the custom elements lifecyles like ');
-        ie_open('code');
-          itext('connectedCallback');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('disconnectedCallback');
-        ie_close('code');
-      ie_close('p');
-      $templateAlias2({code: 'import { onConnected, onDisconnected } from \'osagai/lifecycles\'', mode: 'javascript'}, null, opt_ijData);
-    ie_close('article');
+      ie_close('a');
+    ie_close('h4');
+    ie_open('p');
+      itext('Module with functions for listening the ');
+      ie_open('a', null, null,
+          'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
+        itext('lifecyles of the custom element');
+      ie_close('a');
+      itext('.');
+    ie_close('p');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -30962,11 +30892,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param293}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param284}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'UlqfM.render';
+  $render.soyTemplateName = 'RwkUo.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30976,23 +30906,21 @@ return exports;
 
 });
 
-class UlqfM extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(UlqfM, templates);
+class RwkUo extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(RwkUo, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 312 */,
+/* 313 */,
+/* 314 */,
 /* 315 */,
 /* 316 */,
 /* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31032,7 +30960,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(314);
+var _indexSoy = __webpack_require__(311);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -31044,23 +30972,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var UlqfM = function (_Component) {
-  _inherits(UlqfM, _Component);
+var RwkUo = function (_Component) {
+  _inherits(RwkUo, _Component);
 
-  function UlqfM() {
-    _classCallCheck(this, UlqfM);
+  function RwkUo() {
+    _classCallCheck(this, RwkUo);
 
-    return _possibleConstructorReturn(this, (UlqfM.__proto__ || Object.getPrototypeOf(UlqfM)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (RwkUo.__proto__ || Object.getPrototypeOf(RwkUo)).apply(this, arguments));
   }
 
-  return UlqfM;
+  return RwkUo;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(UlqfM, _indexSoy2.default);
+_metalSoy2.default.register(RwkUo, _indexSoy2.default);
 
-exports.default = UlqfM;
+exports.default = RwkUo;
 
 /***/ })
-],[323]);
+],[318]);

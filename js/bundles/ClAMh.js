@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([5,9,10,11,12,13],[
+webpackJsonppageComponent([7,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30780,14 +30780,12 @@ exports.default = parseFromAnchor;
 /* 307 */,
 /* 308 */,
 /* 309 */,
-/* 310 */,
-/* 311 */,
-/* 312 */
+/* 310 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QZLtA", function() { return QZLtA; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ClAMh", function() { return ClAMh; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30803,11 +30801,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace QZLtA.
+ * @fileoverview Templates in namespace ClAMh.
  * @public
  */
 
-goog.module('QZLtA.incrementaldom');
+goog.module('ClAMh.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30828,6 +30826,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -30846,13 +30846,80 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         itext('Overview');
       ie_close('h2');
       ie_open('p');
-        itext('Module with functions for listening the ');
-        ie_open('a', null, null,
-            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
-          itext('lifecyles of the custom element');
-        ie_close('a');
-        itext('.');
+        itext('The ');
+        ie_open('code');
+          itext('osagai/events');
+        ie_close('code');
+        itext(' module has functions for adding event listeners in your custom element DOM tree. Use this module if you need to listen to events.');
       ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '#on');
+            ie_open('code');
+              itext('on');
+            ie_close('code');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
+    ie_open('h2');
+      itext('Reference');
+    ie_close('h2');
+    ie_open('article', null, null,
+        'id', 'on');
+      ie_open('h2');
+        itext('on');
+      ie_close('h2');
+      $templateAlias2({code: 'on(eventType, element, callback) => Promise', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Add an event listener to the element and return a promise when this is done.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Parameters');
+      ie_close('h5');
+      ie_open('h6');
+        itext('eventType');
+      ie_close('h6');
+      ie_open('p');
+        itext('A case-sensitive string representing the ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Events');
+          itext('event type');
+        ie_close('a');
+        itext('to listen for');
+      ie_close('p');
+      ie_open('h6');
+        itext('element');
+      ie_close('h6');
+      ie_open('p');
+        itext('Instance of the element to add the event listener. It could be also a promise that resolve with the element (ex. ');
+        ie_open('code');
+          itext('query');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('queryAll');
+        ie_close('code');
+        itext(' functions from the component function)');
+      ie_close('p');
+      ie_open('h6');
+        itext('callback');
+      ie_close('h6');
+      ie_open('p');
+        itext('A function that runs when the event type occurs. It could also be an object that implements the ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/API/EventListener');
+          itext('EventListener');
+        ie_close('a');
+        itext(' interface.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Example');
+      ie_close('h5');
+      $templateAlias2({code: 'on(\'click\', query(\'button\'), (event) => {\n  api.makeSomeMagic()\n})', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -30867,7 +30934,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'QZLtA.render';
+  $render.soyTemplateName = 'ClAMh.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30877,14 +30944,16 @@ return exports;
 
 });
 
-class QZLtA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QZLtA, templates);
+class ClAMh extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(ClAMh, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 311 */,
+/* 312 */,
 /* 313 */,
 /* 314 */,
 /* 315 */,
@@ -30892,8 +30961,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QZLtA, templates);
 /* 317 */,
 /* 318 */,
 /* 319 */,
-/* 320 */,
-/* 321 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30933,7 +31001,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(312);
+var _indexSoy = __webpack_require__(310);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -30945,23 +31013,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var QZLtA = function (_Component) {
-  _inherits(QZLtA, _Component);
+var ClAMh = function (_Component) {
+  _inherits(ClAMh, _Component);
 
-  function QZLtA() {
-    _classCallCheck(this, QZLtA);
+  function ClAMh() {
+    _classCallCheck(this, ClAMh);
 
-    return _possibleConstructorReturn(this, (QZLtA.__proto__ || Object.getPrototypeOf(QZLtA)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ClAMh.__proto__ || Object.getPrototypeOf(ClAMh)).apply(this, arguments));
   }
 
-  return QZLtA;
+  return ClAMh;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(QZLtA, _indexSoy2.default);
+_metalSoy2.default.register(ClAMh, _indexSoy2.default);
 
-exports.default = QZLtA;
+exports.default = ClAMh;
 
 /***/ })
-],[321]);
+],[320]);

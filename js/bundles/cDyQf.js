@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([4,9,10,11,12,13],[
+webpackJsonppageComponent([5,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30782,13 +30782,12 @@ exports.default = parseFromAnchor;
 /* 309 */,
 /* 310 */,
 /* 311 */,
-/* 312 */,
-/* 313 */
+/* 312 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "YHBjE", function() { return YHBjE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cDyQf", function() { return cDyQf; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30804,11 +30803,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace YHBjE.
+ * @fileoverview Templates in namespace cDyQf.
  * @public
  */
 
-goog.module('YHBjE.incrementaldom');
+goog.module('cDyQf.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30842,128 +30841,76 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param404 = function() {
+  var param395 = function() {
     ie_open('article', null, null,
         'id', 'overview');
       ie_open('h2');
         itext('Overview');
       ie_close('h2');
+      ie_open('p');
+        itext('The ');
+        ie_open('code');
+          itext('osagai/lifecycles');
+        ie_close('code');
+        itext(' module has functions for listening to ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
+          itext('lifecyles of the custom element');
+        ie_close('a');
+        itext('. Use this module if you need to define different callbacks which are fired at different points in the element\'s lifecycle.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '#onConnected');
+            ie_open('code');
+              itext('onConnected');
+            ie_close('code');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '#onDisconnected');
+            ie_open('code');
+              itext('onDisconnected');
+            ie_close('code');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '#onAttributeChanged');
+            ie_open('code');
+              itext('onAttributeChanged');
+            ie_close('code');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
       ie_open('h3');
-        itext('Define custom elements');
+        itext('Lifecycles');
       ie_close('h3');
-      ie_open('p');
-        itext('Osagai let you define your ');
-        ie_open('a', null, null,
-            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements',
-            'target', '_blank');
-          itext('custom elements');
-        ie_close('a');
-        itext(' in a functional way, making than reusable and think about the separation of the component logic from the view. Custom elements can be defined using the ');
-        ie_open('a', null, null,
-            'href', '#define');
-          ie_open('code');
-            itext('define');
-          ie_close('code');
-        ie_close('a');
-        itext(' function, passing the name of the component with the ');
-        ie_open('code');
-          itext('Component');
-        ie_close('code');
-        itext(' function');
-      ie_close('p');
       ie_open('h4');
-        itext('Component function');
+        itext('Connected');
       ie_close('h4');
       ie_open('p');
-        itext('Osagai Components are functions that will define your custom element. They need to return a ');
-        ie_open('code');
-          itext('Template');
-        ie_close('code');
-        itext(' function and can be used to add the logic of your custom element. Like adding event listeners, making api calls or initialize variables. Osagai will pass useful arguments to the Component like the ');
-        ie_open('code');
-          itext('element');
-        ie_close('code');
-        itext(' reference and methods like ');
-        ie_open('code');
-          itext('query');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('queryAll');
-        ie_close('code');
-        itext(' that you can use to query elements in the element DOM tree. Both methods return a promise resolving the value as the element that match the query.');
+        itext('A custom element is consider as connected when the element is appended into a document. This will also happen when the element is moved.');
       ie_close('p');
-      $templateAlias2({code: 'function Component({element, query, queryAll}) {\n  /* \u2728 Some magic here \u2728 */\n  return () => `<h1>Hello</h1>`\n}', mode: 'javascript'}, null, opt_ijData);
       ie_open('h4');
-        itext('Template function');
+        itext('Disconnected');
       ie_close('h4');
       ie_open('p');
-        itext('The template function is what will define the layout of your custom element and it will be executed during the ');
-        ie_open('a', null, null,
-            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks',
-            'target', '_blank');
-          itext('connectedCallback');
-        ie_close('a');
-        itext(' lifecycle. The interface of the ');
-        ie_open('code');
-          itext('Template');
-        ie_close('code');
-        itext(' function is simple, it needs to return a string that will define the layout of the custom element:');
+        itext('The custom element is disconnected when it is removed from the document. It could be useful for any necessary cleanup like subscriptions or cancelling network requests.');
       ie_close('p');
-      $templateAlias2({code: 'function Template() {\n  return \'<h1>Hello</h1>\'\n}', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('If your components doesn\'t need a layout (Renderless component), you do not need to return a string, just execute your logic inside this function.');
-      ie_close('p');
-      $templateAlias2({code: 'function RenderlessTemplate() {\n  window.addEventListener(\'resize\', runSomething)\n}', mode: 'javascript'}, null, opt_ijData);
-      ie_open('p');
-        itext('Osagai will pass as argument of the ');
-        ie_open('code');
-          itext('Template');
-        ie_close('code');
-        itext(' function the data needed for your layout. This is usually changed with the ');
-        ie_open('code');
-          itext('update');
-        ie_close('code');
-        itext(' function of the ');
-        ie_open('code');
-          itext('osagai/dom');
-        ie_close('code');
-        itext(' module.');
-      ie_close('p');
-      $templateAlias2({code: 'const initialData = {name: \'world\'}\n\nfunction Template(data = initialData) {\n  return `<h1>Hello ${data.name}</h1>`\n}', mode: 'javascript'}, null, opt_ijData);
       ie_open('h4');
-        itext('Custom renderer');
+        itext('Attribute changed');
       ie_close('h4');
       ie_open('p');
-        itext('Osagai consider the template of the custom element as string. Initialization and updates of the element are all based of strings, it uses ');
+        itext('This is invoked when an attribute from the ');
         ie_open('code');
-          itext('innerHTML');
+          itext('observedAttributes');
         ie_close('code');
-        itext(' for the initialization and ');
-        ie_open('a', null, null,
-            'href', 'https://github.com/patrick-steele-idem/morphdom');
-          itext('morphdom');
-        ie_close('a');
-        itext(' for the updates. But if you want to have a custom initialization and update, you can use the ');
-        ie_open('code');
-          itext('renderer');
-        ie_close('code');
-        itext(' option on the definition of the custom element. This is a function that receives the ');
-        ie_open('code');
-          itext('element');
-        ie_close('code');
-        itext(' and the ');
-        ie_open('code');
-          itext('template');
-        ie_close('code');
-        itext(' result with the current data. For example, you could use ');
-        ie_open('a', null, null,
-            'href', 'https://lit-html.polymer-project.org/');
-          itext('lit-html');
-        ie_close('a');
-        itext(' for manipulating the DOM in this way:');
+        itext(' list is added, changed or removed. This could be useful to make network request for updating the data.');
       ie_close('p');
-      $templateAlias2({code: 'import { define } from \'osagai\'\nimport { render, html } from \'lit-html\';\n\nfunction renderer(element, template) {\n  render(template, element);\n}\n\nfunction LitComponent() {\n  return () => html`<h1>Hello</h1>`;\n}\n\ndefine(\'lit-component\', LitComponent, { renderer });', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: 'onAttributeChanged(element, ({ name, current }) => {\n  if (name === \'userID\') {\n    update(element, async () => {\n      return await api.getUser(current)\n    })\n  }\n})', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('hr');
     ie_close('hr');
@@ -30971,98 +30918,105 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       itext('Reference');
     ie_close('h2');
     ie_open('article', null, null,
-        'id', 'define');
+        'id', 'onConnected');
       ie_open('h2');
-        itext('define');
+        itext('onConnected');
       ie_close('h2');
-      $templateAlias2({code: 'define(name, Component[, options])', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: 'onConnected(element, callback)', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('Defines a new custom element.');
+        itext('Add a callback to be performed when the element is connected in the document.');
       ie_close('p');
       ie_open('h5');
         itext('Parameters');
       ie_close('h5');
       ie_open('h6');
-        itext('name');
+        itext('element');
       ie_close('h6');
       ie_open('p');
-        itext('Name for the new custom element. Note that custom element names must contain a hyphen (ex. ');
-        ie_open('code');
-          itext('hello-world');
-        ie_close('code');
-        itext(')');
+        itext('Instance of the osagai element');
       ie_close('p');
       ie_open('h6');
-        itext('Component');
+        itext('callback');
       ie_close('h6');
       ie_open('p');
-        itext('Component is the function that will return a Template function that defines the layout of your custom element. Here you can run the logic of the component, like making api calls or add event listeners of the component elements');
+        itext('Function that will be perfomed when the element is connected.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
+    ie_open('article', null, null,
+        'id', 'onDisconnected');
+      ie_open('h2');
+        itext('onDisconnected');
+      ie_close('h2');
+      $templateAlias2({code: 'onDisconnected(element, callback)', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Add a callback to be performed when the element is disconnected from the document.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Parameters');
+      ie_close('h5');
+      ie_open('h6');
+        itext('element');
+      ie_close('h6');
+      ie_open('p');
+        itext('Instance of the osagai element');
       ie_close('p');
       ie_open('h6');
-        itext('options ');
-        ie_open('code');
-          itext('Optional');
-        ie_close('code');
+        itext('callback');
       ie_close('h6');
+      ie_open('p');
+        itext('Function that will be perfomed when the element is disconnected.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
+    ie_open('article', null, null,
+        'id', 'onAttributeChanged');
+      ie_open('h2');
+        itext('onAttributeChanged');
+      ie_close('h2');
+      $templateAlias2({code: 'onAttributeChanged(element, callback)', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Add a callback to be performed when one of the attribute from the ');
+        ie_open('code');
+          itext('observedAttributes');
+        ie_close('code');
+        itext('list is added, changed or removed.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Parameters');
+      ie_close('h5');
+      ie_open('h6');
+        itext('element');
+      ie_close('h6');
+      ie_open('p');
+        itext('Instance of the osagai element');
+      ie_close('p');
+      ie_open('h6');
+        itext('callback');
+      ie_close('h6');
+      ie_open('p');
+        itext('Function that will be runned with an object with the information of the attribute changed:');
+      ie_close('p');
       ie_open('ul');
         ie_open('li');
           ie_open('strong');
-            itext('BaseElement');
+            itext('name');
           ie_close('strong');
-          itext(': element constructor that the component will extend. (Default ');
-          ie_open('code');
-            itext('HTMLElement');
-          ie_close('code');
-          itext(')');
+          itext(': string that represent the name of the attribute that changed');
         ie_close('li');
         ie_open('li');
           ie_open('strong');
-            itext('observeAttributes');
+            itext('current');
           ie_close('strong');
-          itext(': array of strings with the attributes to observe and run ');
-          ie_open('a', null, null,
-              'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks',
-              'target', '_blank');
-            itext('attributeChangedCallback');
-          ie_close('a');
+          itext(': string with the new value');
         ie_close('li');
         ie_open('li');
           ie_open('strong');
-            itext('renderer');
+            itext('old');
           ie_close('strong');
-          itext(': Custom renderer function to use during the render process. The function has two arguments ');
-          ie_open('code');
-            itext('element');
-          ie_close('code');
-          itext(' and ');
-          ie_open('code');
-            itext('template');
-          ie_close('code');
-          itext('. Where ');
-          ie_open('code');
-            itext('element');
-          ie_close('code');
-          itext(' is the element reference and ');
-          ie_open('code');
-            itext('template');
-          ie_close('code');
-          itext(' is the result of the ');
-          ie_open('code');
-            itext('Template');
-          ie_close('code');
-          itext(' function with the current data.');
-        ie_close('li');
-        ie_open('li');
-          ie_open('strong');
-            itext('...customElementOptions');
-          ie_close('strong');
-          itext(': All the other are options defined by the custom element spec (');
-          ie_open('a', null, null,
-              'href', 'https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define#Parameters',
-              'target', '_blank');
-            itext('MDN link');
-          ie_close('a');
-          itext(').');
+          itext(': string with the old value');
         ie_close('li');
       ie_close('ul');
     ie_close('article');
@@ -31077,11 +31031,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param404}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param395}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'YHBjE.render';
+  $render.soyTemplateName = 'cDyQf.render';
 }
 
 exports.render.params = ["page","site"];
@@ -31091,14 +31045,15 @@ return exports;
 
 });
 
-class YHBjE extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(YHBjE, templates);
+class cDyQf extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(cDyQf, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 313 */,
 /* 314 */,
 /* 315 */,
 /* 316 */,
@@ -31106,8 +31061,7 @@ __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(YHBjE, templates);
 /* 318 */,
 /* 319 */,
 /* 320 */,
-/* 321 */,
-/* 322 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31147,7 +31101,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(313);
+var _indexSoy = __webpack_require__(312);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -31159,23 +31113,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var YHBjE = function (_Component) {
-  _inherits(YHBjE, _Component);
+var cDyQf = function (_Component) {
+  _inherits(cDyQf, _Component);
 
-  function YHBjE() {
-    _classCallCheck(this, YHBjE);
+  function cDyQf() {
+    _classCallCheck(this, cDyQf);
 
-    return _possibleConstructorReturn(this, (YHBjE.__proto__ || Object.getPrototypeOf(YHBjE)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (cDyQf.__proto__ || Object.getPrototypeOf(cDyQf)).apply(this, arguments));
   }
 
-  return YHBjE;
+  return cDyQf;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(YHBjE, _indexSoy2.default);
+_metalSoy2.default.register(cDyQf, _indexSoy2.default);
 
-exports.default = YHBjE;
+exports.default = cDyQf;
 
 /***/ })
-],[322]);
+],[321]);
