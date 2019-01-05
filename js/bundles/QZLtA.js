@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([6,9,10,11,12,13],[
+webpackJsonppageComponent([5,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30781,12 +30781,13 @@ exports.default = parseFromAnchor;
 /* 308 */,
 /* 309 */,
 /* 310 */,
-/* 311 */
+/* 311 */,
+/* 312 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AHcQT", function() { return AHcQT; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "QZLtA", function() { return QZLtA; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30802,11 +30803,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace AHcQT.
+ * @fileoverview Templates in namespace QZLtA.
  * @public
  */
 
-goog.module('AHcQT.incrementaldom');
+goog.module('QZLtA.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30838,51 +30839,21 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param284 = function() {
-    ie_open('p');
-      itext('Osagai is separated in different modules that you can import only what you need for implementing your custom element. These are the modules with a short description:');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'osagai/');
-        itext('osagai');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Main module with a function for defining your custom elements.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'dom/');
-        itext('dom');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for manipulating the DOM tree of the custom element.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'events/');
-        itext('events');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for adding event listeners.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'lifecycles/');
-        itext('lifecycles');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for listening the ');
-      ie_open('a', null, null,
-          'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
-        itext('lifecyles of the custom element');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
+  var param376 = function() {
+    ie_open('article', null, null,
+        'id', 'overview');
+      ie_open('h2');
+        itext('Overview');
+      ie_close('h2');
+      ie_open('p');
+        itext('Module with functions for listening the ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
+          itext('lifecyles of the custom element');
+        ie_close('a');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -30892,11 +30863,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param284}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param376}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'AHcQT.render';
+  $render.soyTemplateName = 'QZLtA.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30906,21 +30877,23 @@ return exports;
 
 });
 
-class AHcQT extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(AHcQT, templates);
+class QZLtA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(QZLtA, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 312 */,
 /* 313 */,
 /* 314 */,
 /* 315 */,
 /* 316 */,
 /* 317 */,
-/* 318 */
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30960,7 +30933,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(311);
+var _indexSoy = __webpack_require__(312);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -30972,23 +30945,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var AHcQT = function (_Component) {
-  _inherits(AHcQT, _Component);
+var QZLtA = function (_Component) {
+  _inherits(QZLtA, _Component);
 
-  function AHcQT() {
-    _classCallCheck(this, AHcQT);
+  function QZLtA() {
+    _classCallCheck(this, QZLtA);
 
-    return _possibleConstructorReturn(this, (AHcQT.__proto__ || Object.getPrototypeOf(AHcQT)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (QZLtA.__proto__ || Object.getPrototypeOf(QZLtA)).apply(this, arguments));
   }
 
-  return AHcQT;
+  return QZLtA;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(AHcQT, _indexSoy2.default);
+_metalSoy2.default.register(QZLtA, _indexSoy2.default);
 
-exports.default = AHcQT;
+exports.default = QZLtA;
 
 /***/ })
-],[318]);
+],[321]);

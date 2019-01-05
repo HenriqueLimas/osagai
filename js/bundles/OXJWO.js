@@ -30785,7 +30785,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dSCRp", function() { return dSCRp; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OXJWO", function() { return OXJWO; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30801,11 +30801,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace dSCRp.
+ * @fileoverview Templates in namespace OXJWO.
  * @public
  */
 
-goog.module('dSCRp.incrementaldom');
+goog.module('OXJWO.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30916,6 +30916,10 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         ie_close('a');
         itext(' interface.');
       ie_close('p');
+      ie_open('h5');
+        itext('Example');
+      ie_close('h5');
+      $templateAlias2({code: 'on(\'click\', query(\'button\'), (event) => {\n  api.makeSomeMagic()\n})', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -30930,7 +30934,7 @@ function $render(opt_data, opt_ignored, opt_ijData) {
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'dSCRp.render';
+  $render.soyTemplateName = 'OXJWO.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30940,8 +30944,8 @@ return exports;
 
 });
 
-class dSCRp extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(dSCRp, templates);
+class OXJWO extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(OXJWO, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -31009,23 +31013,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var dSCRp = function (_Component) {
-  _inherits(dSCRp, _Component);
+var OXJWO = function (_Component) {
+  _inherits(OXJWO, _Component);
 
-  function dSCRp() {
-    _classCallCheck(this, dSCRp);
+  function OXJWO() {
+    _classCallCheck(this, OXJWO);
 
-    return _possibleConstructorReturn(this, (dSCRp.__proto__ || Object.getPrototypeOf(dSCRp)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (OXJWO.__proto__ || Object.getPrototypeOf(OXJWO)).apply(this, arguments));
   }
 
-  return dSCRp;
+  return OXJWO;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(dSCRp, _indexSoy2.default);
+_metalSoy2.default.register(OXJWO, _indexSoy2.default);
 
-exports.default = dSCRp;
+exports.default = OXJWO;
 
 /***/ })
 ],[320]);
