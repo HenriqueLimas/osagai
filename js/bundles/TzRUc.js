@@ -30789,7 +30789,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "eMpaN", function() { return eMpaN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TzRUc", function() { return TzRUc; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30805,11 +30805,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace eMpaN.
+ * @fileoverview Templates in namespace TzRUc.
  * @public
  */
 
-goog.module('eMpaN.incrementaldom');
+goog.module('TzRUc.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30843,7 +30843,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param284 = function() {
+  var param293 = function() {
     ie_open('article', null, null,
         'id', 'install');
       ie_open('h2');
@@ -30962,11 +30962,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param284}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param293}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'eMpaN.render';
+  $render.soyTemplateName = 'TzRUc.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30976,8 +30976,8 @@ return exports;
 
 });
 
-class eMpaN extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(eMpaN, templates);
+class TzRUc extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(TzRUc, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -31044,23 +31044,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var eMpaN = function (_Component) {
-  _inherits(eMpaN, _Component);
+var TzRUc = function (_Component) {
+  _inherits(TzRUc, _Component);
 
-  function eMpaN() {
-    _classCallCheck(this, eMpaN);
+  function TzRUc() {
+    _classCallCheck(this, TzRUc);
 
-    return _possibleConstructorReturn(this, (eMpaN.__proto__ || Object.getPrototypeOf(eMpaN)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TzRUc.__proto__ || Object.getPrototypeOf(TzRUc)).apply(this, arguments));
   }
 
-  return eMpaN;
+  return TzRUc;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(eMpaN, _indexSoy2.default);
+_metalSoy2.default.register(TzRUc, _indexSoy2.default);
 
-exports.default = eMpaN;
+exports.default = TzRUc;
 
 /***/ })
 ],[323]);

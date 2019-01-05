@@ -30785,7 +30785,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "XkPOF", function() { return XkPOF; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dSCRp", function() { return dSCRp; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30801,11 +30801,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace XkPOF.
+ * @fileoverview Templates in namespace dSCRp.
  * @public
  */
 
-goog.module('XkPOF.incrementaldom');
+goog.module('dSCRp.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30826,6 +30826,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -30837,14 +30839,82 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param376 = function() {
+  var param385 = function() {
     ie_open('article', null, null,
         'id', 'overview');
       ie_open('h2');
         itext('Overview');
       ie_close('h2');
       ie_open('p');
-        itext('Module with functions for adding event listeners.');
+        itext('The ');
+        ie_open('code');
+          itext('osagai/events');
+        ie_close('code');
+        itext(' module has functions for adding event listeners in your custom element DOM tree. Use this module if you need to listen to events.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '#on');
+            ie_open('code');
+              itext('on');
+            ie_close('code');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
+    ie_open('h2');
+      itext('Reference');
+    ie_close('h2');
+    ie_open('article', null, null,
+        'id', 'on');
+      ie_open('h2');
+        itext('on');
+      ie_close('h2');
+      $templateAlias2({code: 'on(eventType, element, callback) => Promise', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Add an event listener to the element and return a promise when this is done.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Parameters');
+      ie_close('h5');
+      ie_open('h6');
+        itext('eventType');
+      ie_close('h6');
+      ie_open('p');
+        itext('A case-sensitive string representing the ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Events');
+          itext('event type');
+        ie_close('a');
+        itext('to listen for');
+      ie_close('p');
+      ie_open('h6');
+        itext('element');
+      ie_close('h6');
+      ie_open('p');
+        itext('Instance of the element to add the event listener. It could be also a promise that resolve with the element (ex. ');
+        ie_open('code');
+          itext('query');
+        ie_close('code');
+        itext(' and ');
+        ie_open('code');
+          itext('queryAll');
+        ie_close('code');
+        itext(' functions from the component function)');
+      ie_close('p');
+      ie_open('h6');
+        itext('callback');
+      ie_close('h6');
+      ie_open('p');
+        itext('A function that runs when the event type occurs. It could also be an object that implements the ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/API/EventListener');
+          itext('EventListener');
+        ie_close('a');
+        itext(' interface.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -30856,11 +30926,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param376}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param385}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'XkPOF.render';
+  $render.soyTemplateName = 'dSCRp.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30870,8 +30940,8 @@ return exports;
 
 });
 
-class XkPOF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(XkPOF, templates);
+class dSCRp extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(dSCRp, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -30939,23 +31009,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var XkPOF = function (_Component) {
-  _inherits(XkPOF, _Component);
+var dSCRp = function (_Component) {
+  _inherits(dSCRp, _Component);
 
-  function XkPOF() {
-    _classCallCheck(this, XkPOF);
+  function dSCRp() {
+    _classCallCheck(this, dSCRp);
 
-    return _possibleConstructorReturn(this, (XkPOF.__proto__ || Object.getPrototypeOf(XkPOF)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (dSCRp.__proto__ || Object.getPrototypeOf(dSCRp)).apply(this, arguments));
   }
 
-  return XkPOF;
+  return dSCRp;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(XkPOF, _indexSoy2.default);
+_metalSoy2.default.register(dSCRp, _indexSoy2.default);
 
-exports.default = XkPOF;
+exports.default = dSCRp;
 
 /***/ })
 ],[320]);
