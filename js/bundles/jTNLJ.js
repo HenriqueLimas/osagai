@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,9,10,11,12,13],[
+webpackJsonppageComponent([8,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30779,13 +30779,12 @@ exports.default = parseFromAnchor;
 /* 306 */,
 /* 307 */,
 /* 308 */,
-/* 309 */,
-/* 310 */
+/* 309 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hLlNy", function() { return hLlNy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "jTNLJ", function() { return jTNLJ; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30801,11 +30800,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace hLlNy.
+ * @fileoverview Templates in namespace jTNLJ.
  * @public
  */
 
-goog.module('hLlNy.incrementaldom');
+goog.module('jTNLJ.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30826,6 +30825,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -30837,15 +30838,118 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param361 = function() {
+  var param352 = function() {
     ie_open('article', null, null,
         'id', 'overview');
       ie_open('h2');
         itext('Overview');
       ie_close('h2');
       ie_open('p');
-        itext('Module with functions for adding event listeners.');
+        itext('The ');
+        ie_open('code');
+          itext('osagai/dom');
+        ie_close('code');
+        itext(' module has functions responsible for manipulating the DOM tree of the custom element. Use this module if your custom element will need to update the data and efficiently update the DOM.');
       ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '#update');
+            ie_open('code');
+              itext('update');
+            ie_close('code');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('h3');
+        itext('Update DOM elements');
+      ie_close('h3');
+      ie_open('p');
+        itext('Usually, our components needs to be updated reflecting the data passed in the ');
+        ie_open('code');
+          itext('Template');
+        ie_close('code');
+        itext('function into the DOM. This could not be so performant if we always use ');
+        ie_open('code');
+          itext('innerHTML');
+        ie_close('code');
+        itext('for reflecting the template defined. For that reason, ');
+        ie_open('code');
+          itext('osagai');
+        ie_close('code');
+        itext(' use a library called');
+        ie_open('a', null, null,
+            'href', 'https://github.com/patrick-steele-idem/morphdom');
+          ie_open('code');
+            itext('morphdom');
+          ie_close('code');
+        ie_close('a');
+        itext(' that change only the elements in the DOM that differentiate from the previous state. Note: If you use a custom');
+        ie_open('code');
+          itext('renderer');
+        ie_close('code');
+        itext(' in the ');
+        ie_open('code');
+          itext('define');
+        ie_close('code');
+        itext(' function, the ');
+        ie_open('code');
+          itext('update');
+        ie_close('code');
+        itext(' function will use that custom renderer instead of ');
+        ie_open('code');
+          itext('mophdom');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('h2');
+      itext('Reference');
+    ie_close('h2');
+    ie_open('article', null, null,
+        'id', 'update');
+      ie_open('h2');
+        itext('update');
+      ie_close('h2');
+      $templateAlias2({code: 'update(element, dataChanger) => Promise(newData)', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Updates the data of the Component, scheduling a new change in the DOM using the renderer (default to ');
+        ie_open('code');
+          itext('morphdom');
+        ie_close('code');
+        itext(') and return a promise with the new data returned by the ');
+        ie_open('code');
+          itext('dataChanger');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Parameters');
+      ie_close('h5');
+      ie_open('h6');
+        itext('element');
+      ie_close('h6');
+      ie_open('p');
+        itext('Instance of the osagai element');
+      ie_close('p');
+      ie_open('h6');
+        itext('dataChanger');
+      ie_close('h6');
+      ie_open('p');
+        itext('Function that receive as parameter the data that needs to be changed and needs to return the new data. This could also be a promise that will be resolved by the ');
+        ie_open('code');
+          itext('update');
+        ie_close('code');
+        itext(' function.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Example');
+      ie_close('h5');
+      $templateAlias2({code: 'update(element, (data = {}) => {\n  data.changed = true\n  return data\n})', mode: 'javascript'}, null, opt_ijData);
+      ie_open('h6');
+        itext('Async function');
+      ie_close('h6');
+      $templateAlias2({code: 'update(element, async (data = {}) => {\n  const items = await api.getItems()\n  data.items = items\n  return data\n})', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
@@ -30856,11 +30960,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param361}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'hLlNy.render';
+  $render.soyTemplateName = 'jTNLJ.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30870,14 +30974,15 @@ return exports;
 
 });
 
-class hLlNy extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(hLlNy, templates);
+class jTNLJ extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(jTNLJ, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 310 */,
 /* 311 */,
 /* 312 */,
 /* 313 */,
@@ -30926,7 +31031,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(310);
+var _indexSoy = __webpack_require__(309);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -30938,23 +31043,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var hLlNy = function (_Component) {
-  _inherits(hLlNy, _Component);
+var jTNLJ = function (_Component) {
+  _inherits(jTNLJ, _Component);
 
-  function hLlNy() {
-    _classCallCheck(this, hLlNy);
+  function jTNLJ() {
+    _classCallCheck(this, jTNLJ);
 
-    return _possibleConstructorReturn(this, (hLlNy.__proto__ || Object.getPrototypeOf(hLlNy)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (jTNLJ.__proto__ || Object.getPrototypeOf(jTNLJ)).apply(this, arguments));
   }
 
-  return hLlNy;
+  return jTNLJ;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(hLlNy, _indexSoy2.default);
+_metalSoy2.default.register(jTNLJ, _indexSoy2.default);
 
-exports.default = hLlNy;
+exports.default = jTNLJ;
 
 /***/ })
 ],[319]);

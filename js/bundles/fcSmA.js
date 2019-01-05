@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([8,9,10,11,12,13],[
+webpackJsonppageComponent([5,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -30779,12 +30779,15 @@ exports.default = parseFromAnchor;
 /* 306 */,
 /* 307 */,
 /* 308 */,
-/* 309 */
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tCyxp", function() { return tCyxp; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fcSmA", function() { return fcSmA; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30800,11 +30803,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace tCyxp.
+ * @fileoverview Templates in namespace fcSmA.
  * @public
  */
 
-goog.module('tCyxp.incrementaldom');
+goog.module('fcSmA.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30836,14 +30839,19 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param352 = function() {
+  var param385 = function() {
     ie_open('article', null, null,
         'id', 'overview');
       ie_open('h2');
         itext('Overview');
       ie_close('h2');
       ie_open('p');
-        itext('Module with functions for manipulating the DOM tree of the custom element.');
+        itext('Module with functions for listening the ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
+          itext('lifecyles of the custom element');
+        ie_close('a');
+        itext('.');
       ie_close('p');
     ie_close('article');
     ie_open('input', null, null,
@@ -30855,11 +30863,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param385}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'tCyxp.render';
+  $render.soyTemplateName = 'fcSmA.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30869,23 +30877,23 @@ return exports;
 
 });
 
-class tCyxp extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(tCyxp, templates);
+class fcSmA extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(fcSmA, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 310 */,
-/* 311 */,
-/* 312 */,
 /* 313 */,
 /* 314 */,
 /* 315 */,
 /* 316 */,
 /* 317 */,
-/* 318 */
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30925,7 +30933,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(309);
+var _indexSoy = __webpack_require__(312);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -30937,23 +30945,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var tCyxp = function (_Component) {
-  _inherits(tCyxp, _Component);
+var fcSmA = function (_Component) {
+  _inherits(fcSmA, _Component);
 
-  function tCyxp() {
-    _classCallCheck(this, tCyxp);
+  function fcSmA() {
+    _classCallCheck(this, fcSmA);
 
-    return _possibleConstructorReturn(this, (tCyxp.__proto__ || Object.getPrototypeOf(tCyxp)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (fcSmA.__proto__ || Object.getPrototypeOf(fcSmA)).apply(this, arguments));
   }
 
-  return tCyxp;
+  return fcSmA;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(tCyxp, _indexSoy2.default);
+_metalSoy2.default.register(fcSmA, _indexSoy2.default);
 
-exports.default = tCyxp;
+exports.default = fcSmA;
 
 /***/ })
-],[318]);
+],[321]);
