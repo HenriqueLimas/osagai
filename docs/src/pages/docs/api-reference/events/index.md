@@ -43,4 +43,12 @@ with the element (ex. `query` and `queryAll` functions from the component functi
 A function that runs when the event type occurs. It could also be an object
 that implements the [EventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventListener) interface.
 
+##### Example
+
+```javascript
+on('click', query('button'), (event) => {
+  api.makeSomeMagic()
+})
+```
+
 </article>
