@@ -30785,7 +30785,7 @@ exports.default = parseFromAnchor;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DvEMF", function() { return DvEMF; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PZyuU", function() { return PZyuU; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30801,11 +30801,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace DvEMF.
+ * @fileoverview Templates in namespace PZyuU.
  * @public
  */
 
-goog.module('DvEMF.incrementaldom');
+goog.module('PZyuU.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30839,7 +30839,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param376 = function() {
+  var param352 = function() {
     ie_open('article', null, null,
         'id', 'overview');
       ie_open('h2');
@@ -30930,11 +30930,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param376}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'DvEMF.render';
+  $render.soyTemplateName = 'PZyuU.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30944,8 +30944,8 @@ return exports;
 
 });
 
-class DvEMF extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(DvEMF, templates);
+class PZyuU extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(PZyuU, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
@@ -31012,23 +31012,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var DvEMF = function (_Component) {
-  _inherits(DvEMF, _Component);
+var PZyuU = function (_Component) {
+  _inherits(PZyuU, _Component);
 
-  function DvEMF() {
-    _classCallCheck(this, DvEMF);
+  function PZyuU() {
+    _classCallCheck(this, PZyuU);
 
-    return _possibleConstructorReturn(this, (DvEMF.__proto__ || Object.getPrototypeOf(DvEMF)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (PZyuU.__proto__ || Object.getPrototypeOf(PZyuU)).apply(this, arguments));
   }
 
-  return DvEMF;
+  return PZyuU;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(DvEMF, _indexSoy2.default);
+_metalSoy2.default.register(PZyuU, _indexSoy2.default);
 
-exports.default = DvEMF;
+exports.default = PZyuU;
 
 /***/ })
 ],[319]);
