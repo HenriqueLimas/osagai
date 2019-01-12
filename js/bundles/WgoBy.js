@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([7,9,10,11,12,13],[
+webpackJsonppageComponent([5,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20022,14 +20022,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param3 = function() {
+  var param28 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param28}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -20054,24 +20054,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn0 = opt_data.page.author;
-        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
+        var dyn3 = opt_data.page.author;
+        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn1 = opt_data.page.date;
-          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
+          var dyn4 = opt_data.page.date;
+          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn2 = opt_data.page.title;
-        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
+        var dyn5 = opt_data.page.title;
+        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+      var dyn6 = opt_data.content;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -20093,8 +20093,8 @@ if (goog.DEBUG) {
  * @suppress {checkTypes}
  */
 function $olderPosts(opt_data, opt_ignored, opt_ijData) {
-  var blogObject__soy23 = opt_data.site.index.children['blog'];
-  $templateAlias3({blogObject: blogObject__soy23, url: opt_data.page.url}, null, opt_ijData);
+  var blogObject__soy48 = opt_data.site.index.children['blog'];
+  $templateAlias3({blogObject: blogObject__soy48, url: opt_data.page.url}, null, opt_ijData);
 }
 exports.olderPosts = $olderPosts;
 if (goog.DEBUG) {
@@ -20226,8 +20226,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn4 = opt_data.page.title;
-          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+          var dyn7 = opt_data.page.title;
+          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
         ie_close('h1');
       ie_close('div');
     ie_close('header');
@@ -20239,8 +20239,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn5 = opt_data.content;
-            if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+            var dyn8 = opt_data.content;
+            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -20389,8 +20389,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title, href: opt_data.site.basePath}}, null, opt_ijData);
-      var dyn6 = opt_data.content;
-      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
     ie_close('main');
   ie_close('div');
 }
@@ -20523,14 +20523,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn7 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn8 = opt_data.content;
-        if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+        var dyn11 = opt_data.content;
+        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -20555,15 +20555,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy102 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy102.childIds.length) {
+    var tutorialObject__soy127 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy127.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy107 = tutorialObject__soy102.children[tutorialObject__soy102.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy132 = tutorialObject__soy127.children[tutorialObject__soy127.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy107,
+            'href', nextPageUrl__soy132,
             'class', 'btn btn-accent btn-sm');
-          var dyn9 = opt_data.page.buttonTitle;
-          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+          var dyn12 = opt_data.page.buttonTitle;
+          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
         ie_close('a');
       }
     }
@@ -20608,7 +20608,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s122_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s147_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -20617,23 +20617,23 @@ function __deltemplate_s122_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn10 = opt_data.page.weight;
-      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+      var dyn13 = opt_data.page.weight;
+      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn11 = opt_data.page.title;
-      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+      var dyn14 = opt_data.page.title;
+      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s122_88c0813b = __deltemplate_s122_88c0813b;
+exports.__deltemplate_s147_88c0813b = __deltemplate_s147_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s122_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s122_88c0813b';
+  __deltemplate_s147_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s147_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s122_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s147_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -30780,12 +30780,14 @@ exports.default = parseFromAnchor;
 /* 307 */,
 /* 308 */,
 /* 309 */,
-/* 310 */
+/* 310 */,
+/* 311 */,
+/* 312 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PZyuU", function() { return PZyuU; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WgoBy", function() { return WgoBy; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30801,11 +30803,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace PZyuU.
+ * @fileoverview Templates in namespace WgoBy.
  * @public
  */
 
-goog.module('PZyuU.incrementaldom');
+goog.module('WgoBy.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30839,7 +30841,7 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param352 = function() {
+  var param395 = function() {
     ie_open('article', null, null,
         'id', 'overview');
       ie_open('h2');
@@ -30848,20 +30850,67 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       ie_open('p');
         itext('The ');
         ie_open('code');
-          itext('osagai/events');
+          itext('osagai/lifecycles');
         ie_close('code');
-        itext(' module has functions for adding event listeners in your custom element DOM tree. Use this module if you need to listen to events.');
+        itext(' module has functions for listening to ');
+        ie_open('a', null, null,
+            'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
+          itext('lifecyles of the custom element');
+        ie_close('a');
+        itext('. Use this module if you need to define different callbacks which are fired at different points in the element\'s lifecycle.');
       ie_close('p');
       ie_open('ul');
         ie_open('li');
           ie_open('a', null, null,
-              'href', '#on');
+              'href', '#onConnected');
             ie_open('code');
-              itext('on');
+              itext('onConnected');
+            ie_close('code');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '#onDisconnected');
+            ie_open('code');
+              itext('onDisconnected');
+            ie_close('code');
+          ie_close('a');
+        ie_close('li');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '#onAttributeChanged');
+            ie_open('code');
+              itext('onAttributeChanged');
             ie_close('code');
           ie_close('a');
         ie_close('li');
       ie_close('ul');
+      ie_open('h3');
+        itext('Lifecycles');
+      ie_close('h3');
+      ie_open('h4');
+        itext('Connected');
+      ie_close('h4');
+      ie_open('p');
+        itext('A custom element is consider as connected when the element is appended into a document. This will also happen when the element is moved.');
+      ie_close('p');
+      ie_open('h4');
+        itext('Disconnected');
+      ie_close('h4');
+      ie_open('p');
+        itext('The custom element is disconnected when it is removed from the document. It could be useful for any necessary cleanup like subscriptions or cancelling network requests.');
+      ie_close('p');
+      ie_open('h4');
+        itext('Attribute changed');
+      ie_close('h4');
+      ie_open('p');
+        itext('This is invoked when an attribute from the ');
+        ie_open('code');
+          itext('observedAttributes');
+        ie_close('code');
+        itext(' list is added, changed or removed. This could be useful to make network request for updating the data.');
+      ie_close('p');
+      $templateAlias2({code: 'onAttributeChanged(element, ({ name, current }) => {\n  if (name === \'userID\') {\n    update(element, async () => {\n      return await api.getUser(current)\n    })\n  }\n})', mode: 'javascript'}, null, opt_ijData);
     ie_close('article');
     ie_open('hr');
     ie_close('hr');
@@ -30869,58 +30918,110 @@ function $render(opt_data, opt_ignored, opt_ijData) {
       itext('Reference');
     ie_close('h2');
     ie_open('article', null, null,
-        'id', 'on');
+        'id', 'onConnected');
       ie_open('h2');
-        itext('on');
+        itext('onConnected');
       ie_close('h2');
-      $templateAlias2({code: 'on(eventType, element, callback) => Promise', mode: 'javascript'}, null, opt_ijData);
+      $templateAlias2({code: 'onConnected(element, callback)', mode: 'javascript'}, null, opt_ijData);
       ie_open('p');
-        itext('Add an event listener to the element and return a promise when this is done.');
+        itext('Add a callback to be performed when the element is connected in the document.');
       ie_close('p');
       ie_open('h5');
         itext('Parameters');
       ie_close('h5');
       ie_open('h6');
-        itext('eventType');
-      ie_close('h6');
-      ie_open('p');
-        itext('A case-sensitive string representing the ');
-        ie_open('a', null, null,
-            'href', 'https://developer.mozilla.org/en-US/docs/Web/Events');
-          itext('event type');
-        ie_close('a');
-        itext('to listen for');
-      ie_close('p');
-      ie_open('h6');
         itext('element');
       ie_close('h6');
       ie_open('p');
-        itext('Instance of the element to add the event listener. It could be also a promise that resolve with the element (ex. ');
-        ie_open('code');
-          itext('query');
-        ie_close('code');
-        itext(' and ');
-        ie_open('code');
-          itext('queryAll');
-        ie_close('code');
-        itext(' functions from the component function)');
+        itext('Instance of the osagai element');
       ie_close('p');
       ie_open('h6');
         itext('callback');
       ie_close('h6');
       ie_open('p');
-        itext('A function that runs when the event type occurs. It could also be an object that implements the ');
-        ie_open('a', null, null,
-            'href', 'https://developer.mozilla.org/en-US/docs/Web/API/EventListener');
-          itext('EventListener');
-        ie_close('a');
-        itext(' interface.');
+        itext('Function that will be perfomed when the element is connected.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
+    ie_open('article', null, null,
+        'id', 'onDisconnected');
+      ie_open('h2');
+        itext('onDisconnected');
+      ie_close('h2');
+      $templateAlias2({code: 'onDisconnected(element, callback)', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Add a callback to be performed when the element is disconnected from the document.');
       ie_close('p');
       ie_open('h5');
-        itext('Example');
+        itext('Parameters');
       ie_close('h5');
-      $templateAlias2({code: 'on(\'click\', query(\'button\'), (event) => {\n  api.makeSomeMagic()\n})', mode: 'javascript'}, null, opt_ijData);
+      ie_open('h6');
+        itext('element');
+      ie_close('h6');
+      ie_open('p');
+        itext('Instance of the osagai element');
+      ie_close('p');
+      ie_open('h6');
+        itext('callback');
+      ie_close('h6');
+      ie_open('p');
+        itext('Function that will be perfomed when the element is disconnected.');
+      ie_close('p');
     ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
+    ie_open('article', null, null,
+        'id', 'onAttributeChanged');
+      ie_open('h2');
+        itext('onAttributeChanged');
+      ie_close('h2');
+      $templateAlias2({code: 'onAttributeChanged(element, callback)', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Add a callback to be performed when one of the attribute from the ');
+        ie_open('code');
+          itext('observedAttributes');
+        ie_close('code');
+        itext('list is added, changed or removed.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Parameters');
+      ie_close('h5');
+      ie_open('h6');
+        itext('element');
+      ie_close('h6');
+      ie_open('p');
+        itext('Instance of the osagai element');
+      ie_close('p');
+      ie_open('h6');
+        itext('callback');
+      ie_close('h6');
+      ie_open('p');
+        itext('Function that will be runned with an object with the information of the attribute changed:');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            itext('name');
+          ie_close('strong');
+          itext(': string that represent the name of the attribute that changed');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('current');
+          ie_close('strong');
+          itext(': string with the new value');
+        ie_close('li');
+        ie_open('li');
+          ie_open('strong');
+            itext('old');
+          ie_close('strong');
+          itext(': string with the old value');
+        ie_close('li');
+      ie_close('ul');
+    ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -30930,11 +31031,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param395}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'PZyuU.render';
+  $render.soyTemplateName = 'WgoBy.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30944,23 +31045,23 @@ return exports;
 
 });
 
-class PZyuU extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(PZyuU, templates);
+class WgoBy extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(WgoBy, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
-/* 311 */,
-/* 312 */,
 /* 313 */,
 /* 314 */,
 /* 315 */,
 /* 316 */,
 /* 317 */,
 /* 318 */,
-/* 319 */
+/* 319 */,
+/* 320 */,
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31000,7 +31101,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(310);
+var _indexSoy = __webpack_require__(312);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -31012,23 +31113,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var PZyuU = function (_Component) {
-  _inherits(PZyuU, _Component);
+var WgoBy = function (_Component) {
+  _inherits(WgoBy, _Component);
 
-  function PZyuU() {
-    _classCallCheck(this, PZyuU);
+  function WgoBy() {
+    _classCallCheck(this, WgoBy);
 
-    return _possibleConstructorReturn(this, (PZyuU.__proto__ || Object.getPrototypeOf(PZyuU)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (WgoBy.__proto__ || Object.getPrototypeOf(WgoBy)).apply(this, arguments));
   }
 
-  return PZyuU;
+  return WgoBy;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(PZyuU, _indexSoy2.default);
+_metalSoy2.default.register(WgoBy, _indexSoy2.default);
 
-exports.default = PZyuU;
+exports.default = WgoBy;
 
 /***/ })
-],[319]);
+],[321]);
