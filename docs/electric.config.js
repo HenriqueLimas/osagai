@@ -8,12 +8,7 @@ module.exports = {
     includePaths: ["node_modules", marble.src]
   },
   vendorSrc: ["node_modules/marble/build/fonts/**"],
-  basePath: "/osagai",
-  envOptions: {
-    dev: {
-      basePath: ""
-    }
-  },
+  basePath: "/",
   deployOptions: {
     branch: "gh-pages"
   },
