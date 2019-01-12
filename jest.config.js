@@ -1,7 +1,8 @@
 module.exports = {
   globals: {
     customElements: {
-      define: (...props) => props
+      define: (...props) => props,
+      get: () => false
     },
     requestAnimationFrame: fn => fn()
   }
