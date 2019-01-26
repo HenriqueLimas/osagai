@@ -73,3 +73,39 @@ update(element, async (data = {}) => {
 ```
 
 </article>
+
+<article id="attachShadow">
+
+## attachShadow
+
+```javascript
+attachShadow(element, [shadowRootInit]) => ShadowRoot
+```
+
+Adds a shadow DOM tree to the specified `element` and returns the attached ShadowRoot
+
+##### Parameters
+
+###### element
+Instance of the osagai element
+
+###### shadowRootInit
+An object that contain the following field:
+
+- **mode**: A string specyfing the encapsulation mode for the shadow DOM tree.
+  - **open** [default]: Elements from the shadow dom are accessible with the property `element.shadowRoot`
+  - **close**: Elements from the shadow dom are not accessible
+
+
+
+##### Example
+
+```javascript
+const openShadowRoot = attachShadow(element)
+// element.shadowRoot === openShadowRoot
+
+const closedShadowRoot = attachShadow(element, { mode: 'close' })
+// element.shadowRoot === null
+```
+
+</article>
