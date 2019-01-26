@@ -1,4 +1,5 @@
 module.exports = {
+  testMatch: ["**/lib/**/*.test.js"],
   globals: {
     customElements: {
       define: (...props) => props,
