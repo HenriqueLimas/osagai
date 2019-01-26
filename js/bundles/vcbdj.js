@@ -1,5 +1,5 @@
 var pageComponent =
-webpackJsonppageComponent([6,9,10,11,12,13],[
+webpackJsonppageComponent([8,9,10,11,12,13],[
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20022,14 +20022,14 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
   opt_data = opt_data || {};
-  var param28 = function() {
+  var param3 = function() {
     ie_open('div', null, null,
         'class', 'blog');
       $mainPost(opt_data, null, opt_ijData);
       $olderPosts(opt_data, null, opt_ijData);
     ie_close('div');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param28}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param3}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
@@ -20054,24 +20054,24 @@ function $mainPost(opt_data, opt_ignored, opt_ijData) {
     ie_open('header');
       ie_open('small');
         itext('By ');
-        var dyn3 = opt_data.page.author;
-        if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
+        var dyn0 = opt_data.page.author;
+        if (typeof dyn0 == 'function') dyn0(); else if (dyn0 != null) itext(dyn0);
         itext(' ');
         ie_open('span');
           itext('| ');
-          var dyn4 = opt_data.page.date;
-          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
+          var dyn1 = opt_data.page.date;
+          if (typeof dyn1 == 'function') dyn1(); else if (dyn1 != null) itext(dyn1);
         ie_close('span');
       ie_close('small');
       ie_open('h3');
-        var dyn5 = opt_data.page.title;
-        if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
+        var dyn2 = opt_data.page.title;
+        if (typeof dyn2 == 'function') dyn2(); else if (dyn2 != null) itext(dyn2);
       ie_close('h3');
     ie_close('header');
     ie_open('div', null, null,
         'class', 'content');
-      var dyn6 = opt_data.content;
-      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3(); else if (dyn3 != null) itext(dyn3);
     ie_close('div');
     $templateAlias2(opt_data, null, opt_ijData);
   ie_close('article');
@@ -20093,8 +20093,8 @@ if (goog.DEBUG) {
  * @suppress {checkTypes}
  */
 function $olderPosts(opt_data, opt_ignored, opt_ijData) {
-  var blogObject__soy48 = opt_data.site.index.children['blog'];
-  $templateAlias3({blogObject: blogObject__soy48, url: opt_data.page.url}, null, opt_ijData);
+  var blogObject__soy23 = opt_data.site.index.children['blog'];
+  $templateAlias3({blogObject: blogObject__soy23, url: opt_data.page.url}, null, opt_ijData);
 }
 exports.olderPosts = $olderPosts;
 if (goog.DEBUG) {
@@ -20226,8 +20226,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
           'class', 'container-hybrid');
         ie_open('h1', null, null,
             'class', 'title');
-          var dyn7 = opt_data.page.title;
-          if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
+          var dyn4 = opt_data.page.title;
+          if (typeof dyn4 == 'function') dyn4(); else if (dyn4 != null) itext(dyn4);
         ie_close('h1');
       ie_close('div');
     ie_close('header');
@@ -20239,8 +20239,8 @@ function $guide(opt_data, opt_ignored, opt_ijData) {
             'class', 'docs-content col-xs-16 col-md-9');
           ie_open('div', null, null,
               'class', 'guide-content');
-            var dyn8 = opt_data.content;
-            if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
+            var dyn5 = opt_data.content;
+            if (typeof dyn5 == 'function') dyn5(); else if (dyn5 != null) itext(dyn5);
           ie_close('div');
           if (opt_data.site.githubRepo) {
             $contribute(opt_data, null, opt_ijData);
@@ -20389,8 +20389,8 @@ function $render(opt_data, opt_ignored, opt_ijData) {
     ie_open('main', null, null,
         'class', 'content');
       $templateAlias1({items: opt_data.site.topbar, style: 'topbar-light', logo: {text: opt_data.site.logo + ' ' + opt_data.site.title, href: opt_data.site.basePath}}, null, opt_ijData);
-      var dyn9 = opt_data.content;
-      if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
+      var dyn6 = opt_data.content;
+      if (typeof dyn6 == 'function') dyn6(); else if (dyn6 != null) itext(dyn6);
     ie_close('main');
   ie_close('div');
 }
@@ -20523,14 +20523,14 @@ function $tutorials(opt_data, opt_ignored, opt_ijData) {
         'class', 'container');
       ie_open('h6', null, null,
           'class', 'tutorial-title');
-        var dyn10 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
-        if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
+        var dyn7 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId].tutorialTitle;
+        if (typeof dyn7 == 'function') dyn7(); else if (dyn7 != null) itext(dyn7);
       ie_close('h6');
       $templateAlias2(null, null, opt_ijData);
       ie_open('div', null, null,
           'class', 'container-blog card');
-        var dyn11 = opt_data.content;
-        if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
+        var dyn8 = opt_data.content;
+        if (typeof dyn8 == 'function') dyn8(); else if (dyn8 != null) itext(dyn8);
         $footerButtons(opt_data, null, opt_ijData);
       ie_close('div');
     ie_close('div');
@@ -20555,15 +20555,15 @@ if (goog.DEBUG) {
 function $footerButtons(opt_data, opt_ignored, opt_ijData) {
   ie_open('div', null, null,
       'class', 'tutorial-page-nav');
-    var tutorialObject__soy127 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
-    if (opt_data.page.weight < tutorialObject__soy127.childIds.length) {
+    var tutorialObject__soy102 = opt_data.site.index.children['tutorials'].children[opt_data.page.parentId];
+    if (opt_data.page.weight < tutorialObject__soy102.childIds.length) {
       if (opt_data.page.buttonTitle) {
-        var nextPageUrl__soy132 = tutorialObject__soy127.children[tutorialObject__soy127.childIds[opt_data.page.weight]].url;
+        var nextPageUrl__soy107 = tutorialObject__soy102.children[tutorialObject__soy102.childIds[opt_data.page.weight]].url;
         ie_open('a', null, null,
-            'href', nextPageUrl__soy132,
+            'href', nextPageUrl__soy107,
             'class', 'btn btn-accent btn-sm');
-          var dyn12 = opt_data.page.buttonTitle;
-          if (typeof dyn12 == 'function') dyn12(); else if (dyn12 != null) itext(dyn12);
+          var dyn9 = opt_data.page.buttonTitle;
+          if (typeof dyn9 == 'function') dyn9(); else if (dyn9 != null) itext(dyn9);
         ie_close('a');
       }
     }
@@ -20608,7 +20608,7 @@ if (goog.DEBUG) {
  * @return {void}
  * @suppress {checkTypes}
  */
-function __deltemplate_s147_88c0813b(opt_data, opt_ignored, opt_ijData) {
+function __deltemplate_s122_88c0813b(opt_data, opt_ignored, opt_ijData) {
   ie_open('a', null, null,
       'class', 'sidebar-link' + (opt_data.page.active ? ' sidebar-link-selected' : ''),
       'href', opt_data.page.url,
@@ -20617,23 +20617,23 @@ function __deltemplate_s147_88c0813b(opt_data, opt_ignored, opt_ijData) {
         'class', 'before');
     ie_open('span', null, null,
         'class', 'tutorial-step');
-      var dyn13 = opt_data.page.weight;
-      if (typeof dyn13 == 'function') dyn13(); else if (dyn13 != null) itext(dyn13);
+      var dyn10 = opt_data.page.weight;
+      if (typeof dyn10 == 'function') dyn10(); else if (dyn10 != null) itext(dyn10);
     ie_close('span');
     ie_open('span', null, null,
         'class', 'section-title');
-      var dyn14 = opt_data.page.title;
-      if (typeof dyn14 == 'function') dyn14(); else if (dyn14 != null) itext(dyn14);
+      var dyn11 = opt_data.page.title;
+      if (typeof dyn11 == 'function') dyn11(); else if (dyn11 != null) itext(dyn11);
     ie_close('span');
     ie_void('span', null, null,
         'class', 'after');
   ie_close('a');
 }
-exports.__deltemplate_s147_88c0813b = __deltemplate_s147_88c0813b;
+exports.__deltemplate_s122_88c0813b = __deltemplate_s122_88c0813b;
 if (goog.DEBUG) {
-  __deltemplate_s147_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s147_88c0813b';
+  __deltemplate_s122_88c0813b.soyTemplateName = 'tutorial.__deltemplate_s122_88c0813b';
 }
-soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s147_88c0813b);
+soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'tutorial', 0, __deltemplate_s122_88c0813b);
 
 exports.render.params = ["content","page","site","elementClasses"];
 exports.render.types = {"content":"?","page":"?","site":"?","elementClasses":"?"};
@@ -30779,14 +30779,12 @@ exports.default = parseFromAnchor;
 /* 306 */,
 /* 307 */,
 /* 308 */,
-/* 309 */,
-/* 310 */,
-/* 311 */
+/* 309 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gnmDB", function() { return gnmDB; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "vcbdj", function() { return vcbdj; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "templates", function() { return templates; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_metal_component___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_metal_component__);
@@ -30802,11 +30800,11 @@ goog.loadModule(function(exports) {
 // Please don't edit this file by hand.
 
 /**
- * @fileoverview Templates in namespace gnmDB.
+ * @fileoverview Templates in namespace vcbdj.
  * @public
  */
 
-goog.module('gnmDB.incrementaldom');
+goog.module('vcbdj.incrementaldom');
 
 /** @suppress {extraRequire} */
 var soy = goog.require('soy');
@@ -30827,6 +30825,8 @@ var ie_open_end = IncrementalDom.elementOpenEnd;
 var itext = IncrementalDom.text;
 var iattr = IncrementalDom.attr;
 
+var $templateAlias2 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('ElectricCode.incrementaldom', 'render');
+
 var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTemplate('guide.incrementaldom', 'render');
 
 
@@ -30838,51 +30838,179 @@ var $templateAlias1 = __WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.getTempl
  * @suppress {checkTypes}
  */
 function $render(opt_data, opt_ignored, opt_ijData) {
-  var param284 = function() {
-    ie_open('p');
-      itext('Osagai is separated in different modules that you can import only what you need for implementing your custom element. These are the modules with a short description:');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'osagai/');
-        itext('osagai');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Main module with a function for defining your custom elements.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'dom/');
-        itext('dom');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for manipulating the DOM tree of the custom element.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'events/');
-        itext('events');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for adding event listeners.');
-    ie_close('p');
-    ie_open('h4');
-      ie_open('a', null, null,
-          'href', 'lifecycles/');
-        itext('lifecycles');
-      ie_close('a');
-    ie_close('h4');
-    ie_open('p');
-      itext('Module with functions for listening the ');
-      ie_open('a', null, null,
-          'href', 'https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Using_the_lifecycle_callbacks');
-        itext('lifecyles of the custom element');
-      ie_close('a');
-      itext('.');
-    ie_close('p');
+  var param352 = function() {
+    ie_open('article', null, null,
+        'id', 'overview');
+      ie_open('h2');
+        itext('Overview');
+      ie_close('h2');
+      ie_open('p');
+        itext('The ');
+        ie_open('code');
+          itext('osagai/dom');
+        ie_close('code');
+        itext(' module has functions responsible for manipulating the DOM tree of the custom element. Use this module if your custom element will need to update the data and efficiently update the DOM.');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('a', null, null,
+              'href', '#update');
+            ie_open('code');
+              itext('update');
+            ie_close('code');
+          ie_close('a');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('h3');
+        itext('Update DOM elements');
+      ie_close('h3');
+      ie_open('p');
+        itext('Usually, our components needs to be updated reflecting the data passed in the ');
+        ie_open('code');
+          itext('Template');
+        ie_close('code');
+        itext('function into the DOM. This could not be so performant if we always use ');
+        ie_open('code');
+          itext('innerHTML');
+        ie_close('code');
+        itext('for reflecting the template defined. For that reason, ');
+        ie_open('code');
+          itext('osagai');
+        ie_close('code');
+        itext(' use a library called');
+        ie_open('a', null, null,
+            'href', 'https://github.com/patrick-steele-idem/morphdom');
+          ie_open('code');
+            itext('morphdom');
+          ie_close('code');
+        ie_close('a');
+        itext(' that change only the elements in the DOM that differentiate from the previous state. Note: If you use a custom');
+        ie_open('code');
+          itext('renderer');
+        ie_close('code');
+        itext(' in the ');
+        ie_open('code');
+          itext('define');
+        ie_close('code');
+        itext(' function, the ');
+        ie_open('code');
+          itext('update');
+        ie_close('code');
+        itext(' function will use that custom renderer instead of ');
+        ie_open('code');
+          itext('mophdom');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+    ie_close('article');
+    ie_open('hr');
+    ie_close('hr');
+    ie_open('h2');
+      itext('Reference');
+    ie_close('h2');
+    ie_open('article', null, null,
+        'id', 'update');
+      ie_open('h2');
+        itext('update');
+      ie_close('h2');
+      $templateAlias2({code: 'update(element, dataChanger) => Promise(newData)', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Updates the data of the Component, scheduling a new change in the DOM using the renderer (default to ');
+        ie_open('code');
+          itext('morphdom');
+        ie_close('code');
+        itext(') and return a promise with the new data returned by the ');
+        ie_open('code');
+          itext('dataChanger');
+        ie_close('code');
+        itext('.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Parameters');
+      ie_close('h5');
+      ie_open('h6');
+        itext('element');
+      ie_close('h6');
+      ie_open('p');
+        itext('Instance of the osagai element');
+      ie_close('p');
+      ie_open('h6');
+        itext('dataChanger');
+      ie_close('h6');
+      ie_open('p');
+        itext('Function that receive as parameter the data that needs to be changed and needs to return the new data. This could also be a promise that will be resolved by the ');
+        ie_open('code');
+          itext('update');
+        ie_close('code');
+        itext(' function.');
+      ie_close('p');
+      ie_open('h5');
+        itext('Example');
+      ie_close('h5');
+      $templateAlias2({code: 'update(element, (data = {}) => {\n  data.changed = true\n  return data\n})', mode: 'javascript'}, null, opt_ijData);
+      ie_open('h6');
+        itext('Async function');
+      ie_close('h6');
+      $templateAlias2({code: 'update(element, async (data = {}) => {\n  const items = await api.getItems()\n  data.items = items\n  return data\n})', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
+    ie_open('article', null, null,
+        'id', 'attachShadow');
+      ie_open('h2');
+        itext('attachShadow');
+      ie_close('h2');
+      $templateAlias2({code: 'attachShadow(element, [shadowRootInit]) => ShadowRoot', mode: 'javascript'}, null, opt_ijData);
+      ie_open('p');
+        itext('Adds a shadow DOM tree to the specified ');
+        ie_open('code');
+          itext('element');
+        ie_close('code');
+        itext(' and returns the attached ShadowRoot');
+      ie_close('p');
+      ie_open('h5');
+        itext('Parameters');
+      ie_close('h5');
+      ie_open('h6');
+        itext('element');
+      ie_close('h6');
+      ie_open('p');
+        itext('Instance of the osagai element');
+      ie_close('p');
+      ie_open('h6');
+        itext('shadowRootInit');
+      ie_close('h6');
+      ie_open('p');
+        itext('An object that contain the following field:');
+      ie_close('p');
+      ie_open('ul');
+        ie_open('li');
+          ie_open('strong');
+            itext('mode');
+          ie_close('strong');
+          itext(': A string specyfing the encapsulation mode for the shadow DOM tree.');
+          ie_open('ul');
+            ie_open('li');
+              ie_open('strong');
+                itext('open');
+              ie_close('strong');
+              itext(' [default]: Elements from the shadow dom are accessible with the property ');
+              ie_open('code');
+                itext('element.shadowRoot');
+              ie_close('code');
+            ie_close('li');
+            ie_open('li');
+              ie_open('strong');
+                itext('close');
+              ie_close('strong');
+              itext(': Elements from the shadow dom are not accessible');
+            ie_close('li');
+          ie_close('ul');
+        ie_close('li');
+      ie_close('ul');
+      ie_open('h5');
+        itext('Example');
+      ie_close('h5');
+      $templateAlias2({code: 'const openShadowRoot = attachShadow(element)\n// element.shadowRoot === openShadowRoot\n\nconst closedShadowRoot = attachShadow(element, { mode: \'close\' })\n// element.shadowRoot === null', mode: 'javascript'}, null, opt_ijData);
+    ie_close('article');
     ie_open('input', null, null,
         'type', 'hidden',
         'value', opt_data.page.title);
@@ -30892,11 +31020,11 @@ function $render(opt_data, opt_ignored, opt_ijData) {
         'value', opt_data.site.title);
     ie_close('input');
   };
-  $templateAlias1(soy.$$assignDefaults({content: param284}, opt_data), null, opt_ijData);
+  $templateAlias1(soy.$$assignDefaults({content: param352}, opt_data), null, opt_ijData);
 }
 exports.render = $render;
 if (goog.DEBUG) {
-  $render.soyTemplateName = 'gnmDB.render';
+  $render.soyTemplateName = 'vcbdj.render';
 }
 
 exports.render.params = ["page","site"];
@@ -30906,23 +31034,23 @@ return exports;
 
 });
 
-class gnmDB extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
-__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(gnmDB, templates);
+class vcbdj extends __WEBPACK_IMPORTED_MODULE_0_metal_component___default.a {}
+__WEBPACK_IMPORTED_MODULE_1_metal_soy___default.a.register(vcbdj, templates);
 
 /* harmony default export */ __webpack_exports__["default"] = (templates);
 /* jshint ignore:end */
 
 
 /***/ }),
+/* 310 */,
+/* 311 */,
 /* 312 */,
 /* 313 */,
 /* 314 */,
 /* 315 */,
 /* 316 */,
 /* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30962,7 +31090,7 @@ __webpack_require__(166);
 
 __webpack_require__(167);
 
-var _indexSoy = __webpack_require__(311);
+var _indexSoy = __webpack_require__(309);
 
 var _indexSoy2 = _interopRequireDefault(_indexSoy);
 
@@ -30974,23 +31102,23 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var gnmDB = function (_Component) {
-  _inherits(gnmDB, _Component);
+var vcbdj = function (_Component) {
+  _inherits(vcbdj, _Component);
 
-  function gnmDB() {
-    _classCallCheck(this, gnmDB);
+  function vcbdj() {
+    _classCallCheck(this, vcbdj);
 
-    return _possibleConstructorReturn(this, (gnmDB.__proto__ || Object.getPrototypeOf(gnmDB)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (vcbdj.__proto__ || Object.getPrototypeOf(vcbdj)).apply(this, arguments));
   }
 
-  return gnmDB;
+  return vcbdj;
 }(_metalComponent2.default);
 
 ;
 
-_metalSoy2.default.register(gnmDB, _indexSoy2.default);
+_metalSoy2.default.register(vcbdj, _indexSoy2.default);
 
-exports.default = gnmDB;
+exports.default = vcbdj;
 
 /***/ })
-],[320]);
+],[318]);
