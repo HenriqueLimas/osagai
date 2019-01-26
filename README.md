@@ -9,6 +9,8 @@ It should be able to be framework-agnostic and be reused in different libraries.
 use native solutions without VirtualDOM and data binding magics. It should not need build processes for compiling non
 native solution (JSX) and take advantage in what the language has. ([Template literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals))
 
+- [Documentation](https://osagai.js.org/docs/)
+
 ## Install
 
 You can get it on npm.
@@ -22,6 +24,29 @@ Or import from unpkg
 ```js
 import { define } from "https://unpkg.com/osagai/osagai.mjs";
 import { on } from "https://unpkg.com/osagai/events.mjs";
+```
+
+## Define a Web component
+
+Osagai comes with a function called `define` that defines a new custom element that you can use in your application.
+`define` receives the name of the custom element (it must contain a hyphen) and the Osagai component.
+The Osagai component is a function that returns a Template with a string representing the layout of the web component.
+
+```javascript
+import { define } from 'osagai'
+
+function MyComponent() {
+	return () => `<h1>Hi 👋!</h1>`
+}
+
+define('waving-hand', MyComponent)
+
+```
+
+Now, you just need to use your new custom element in your application.
+
+```html
+<waving-hand></waving-hand>
 ```
 
 ## Example
