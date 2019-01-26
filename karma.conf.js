@@ -1,7 +1,10 @@
+const resolveRollupPlugin = require("rollup-plugin-node-resolve");
+const commonjsRollupPlugin = require("rollup-plugin-commonjs");
+
 module.exports = function(config) {
   config.set({
     frameworks: ["jasmine"],
-    files: ["test/*.js"],
+    files: ["test/**/*.js"],
     reporters: ["progress"],
     port: 9876,
     colors: true,
@@ -19,7 +22,8 @@ module.exports = function(config) {
         format: "iife",
         name: "osagai",
         sourcemap: "inline"
-      }
+      },
+      plugins: [resolveRollupPlugin({ browser: true }), commonjsRollupPlugin()]
     }
   });
 };
