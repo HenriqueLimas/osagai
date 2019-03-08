@@ -1,7 +1,7 @@
 {
   "name": "osagai",
-  "version": "0.3.0",
-  "description": "",
+  "version": "0.3.1",
+  "description": "A tiny library for creating WebComponents in a Functional way",
   "main": "osagai.js",
   "repository": "github:HenriqueLimas/osagai",
   "homepage": "https://henriquelimas.github.io/osagai/",
@@ -17,6 +17,7 @@
     "release": "npm run build && npm run cp:package && npm run test:all && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist"
   },
   "author": "Henrique Limas <henrique.ramos.limas@gmail.com>",
+  "keywords": ["osagai", "webcomponents", "functional-programming"],
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
