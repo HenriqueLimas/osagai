@@ -1,6 +1,5 @@
 import define from "../../lib/define";
-import update from "../../lib/dom/update";
-import attachShadow from "../../lib/dom/attachShadow";
+import { update, attachShadow } from "../../lib/dom";
 
 describe("attachShadow()", () => {
   it("should render the template in the shadowRoot", () => {
