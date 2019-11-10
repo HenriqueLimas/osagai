@@ -82,4 +82,50 @@ describe("attachShadow()", () => {
     expect(items[0].textContent).toBe("Item 1");
     expect(items[1].textContent).toBe("Item 2");
   });
+
+  it("should update the shadowRoot with more than one child", async () => {
+    const Component = ({ element }) => {
+      attachShadow(element);
+
+      const initialState = {
+        state: "loading"
+      };
+
+      return ({ state, items = [] } = initialState) => `
+      <button class="btn" id="onlyButton">Click me</button>
+      ${state === "loading" ? '<span class="loading">Loading...</span>' : ""}
+      ${
+        state === "loaded"
+          ? `<ul class="list">
+          ${items.map(item => `<li>${item.name}</li>`).join("")}
+        </ul>`
+          : ""
+      }`;
+    };
+
+    define("shadow-root-update-children", Component);
+
+    const element = document.createElement("shadow-root-update-children");
+    document.body.appendChild(element);
+
+    expect(element.shadowRoot.querySelector(".btn").textContent).toBe(
+      "Click me"
+    );
+    expect(element.shadowRoot.querySelector(".loading").textContent).toBe(
+      "Loading..."
+    );
+
+    await update(element, () => ({
+      state: "loaded",
+      items: [{ name: "Ford Prefect" }]
+    }));
+
+    expect(element.shadowRoot.querySelector(".btn").textContent).toBe(
+      "Click me"
+    );
+    expect(element.shadowRoot.querySelector(".loading")).toBe(null);
+    const list = element.shadowRoot.querySelector(".list");
+
+    expect(list.querySelector("li").textContent).toBe("Ford Prefect");
+  });
 });
