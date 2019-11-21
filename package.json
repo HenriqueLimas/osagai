@@ -17,7 +17,11 @@
     "release": "npm run build && npm run cp:package && npm run test:all && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist"
   },
   "author": "Henrique Limas <henrique.ramos.limas@gmail.com>",
-  "keywords": ["osagai", "webcomponents", "functional-programming"],
+  "keywords": [
+    "osagai",
+    "webcomponents",
+    "functional-programming"
+  ],
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
@@ -27,10 +31,10 @@
     "electric-cli": "^3.0.4",
     "jasmine-core": "^3.3.0",
     "jest": "^23.6.0",
-    "karma": "^4.0.0",
+    "karma": "^4.4.1",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^2.0.1",
-    "karma-rollup-preprocessor": "^6.1.2",
+    "karma-rollup-preprocessor": "^7.0.2",
     "prettier": "1.15.3",
     "regenerator-runtime": "^0.13.1",
     "rollup": "^0.67.3",
