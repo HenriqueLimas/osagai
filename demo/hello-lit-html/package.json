@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "lit-html": "^0.14.0",
-    "osagai": "^0.2.0"
+    "osagai": "^0.3.5"
   }
 }
