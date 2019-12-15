@@ -34,7 +34,7 @@ This is invoked when an attribute from the `observedAttributes` list is added, c
 removed. This could be useful to make network request for updating the data.
 
 ```javascript
-let unsubscribe = onAttributeChanged(element, ({ name, current }) => {
+const unsubscribe = onAttributeChanged(element, ({ name, current }) => {
   if (name === 'userID') {
     update(element, async () => {
       return await api.getUser(current)
