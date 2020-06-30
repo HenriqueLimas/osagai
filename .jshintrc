@@ -16,5 +16,5 @@
 	"forin": true,
 	"mocha": true,
 	"shadow": "outer",
-	"predef": [ "require", "requirejs", "define", "AbortController", "customElements", "dictionary", "URLSearchParams"]
+	"predef": [ "expect", "jest", "AbortController", "customElements", "dictionary", "URLSearchParams"]
 }

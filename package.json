@@ -1,6 +1,6 @@
 {
   "name": "osagai",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "description": "A tiny library for creating WebComponents in a Functional way",
   "main": "osagai.js",
   "repository": "github:HenriqueLimas/osagai",
@@ -8,12 +8,8 @@
   "scripts": {
     "build": "rollup -c",
     "cp:package": "npm run build && cp package.json dist/ && cp README.md dist/",
-    "test": "jest --config jest.config.js",
+    "test": "echo 'tests no configured'",
     "test:all": "npm test && npm run test:integration:ci",
-    "test:integration": "karma start karma.conf.js",
-    "test:integration:watch": "karma start karma.conf.js --no-single-run --auto-watch",
-    "test:integration:ci": "karma start karma.conf.js --browsers ChromeHeadless",
-    "prettier": "prettier --write 'lib/**/*.js'",
     "release": "npm run build && npm run cp:package && npm run test:all && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist"
   },
   "author": "Henrique Limas <henrique.ramos.limas@gmail.com>",
@@ -25,21 +21,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-jest": "^23.6.0",
-    "babel-preset-env": "^1.7.0",
-    "electric-cli": "^3.0.4",
-    "jasmine-core": "^3.3.0",
-    "jest": "^23.6.0",
-    "karma": "^4.4.1",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-jasmine": "^2.0.1",
-    "karma-rollup-preprocessor": "^7.0.2",
-    "prettier": "^1.15.3",
-    "regenerator-runtime": "^0.13.1",
-    "rollup": "^2.8.2",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-filesize": "^9.0.2",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "@ungap/custom-elements-builtin": "^0.6.2",
+    "rollup": "^2.18.1"
   }
 }
