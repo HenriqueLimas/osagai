@@ -1,74 +1,61 @@
 import define from "../lib/define.js";
+import chai from './chai.mjs';
+import '../node_modules/@ungap/custom-elements-builtin/esm/index.js';
 
-describe("define", () => {
-  it("should create custom element", () => {
-    define("hello-world", () => () => "Hello");
+const
+	assert = chai.assert;
 
-    const wrapper = document.createElement("hello-world");
-    document.body.appendChild(wrapper);
-
-    expect(wrapper.textContent).toBe("Hello");
-  });
-
-  it("should not thrown on defining the element more than one time", () => {
-    expect(() => {
-      define("same-element", () => () => "Hello 1");
-      define("same-element", () => () => "Hello 2");
-    }).not.toThrow();
-  });
-
-  it('should have a "element" property that represent the element', () => {
-    let _elm;
-
-    define("element-test", ({ element }) => {
-      _elm = element;
-    });
-
-    const elmTest = document.createElement("element-test");
-
-    expect(elmTest).toBe(_elm);
-  });
-
-  it('should have a "query" method that query the element in the tree', () => {
-    let _query;
-
-    define("query-test", ({ query }) => {
-      _query = query;
-
-      return () => '<div id="findMe">Found</div>';
-    });
-
-    const queryTest = document.createElement("query-test");
-    document.body.appendChild(queryTest);
-
-    return _query("#findMe").then(element => {
-      expect(element.textContent).toBe("Found");
-    });
-  });
-
-  it('should have a "queryAll" method that query the element in the tree', () => {
-    let _queryAll;
-
-    define("query-all-test", ({ queryAll }) => {
-      _queryAll = queryAll;
-
-      return () => `<div>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        </ul>
-      </div>`;
-    });
-
-    const queryAllTest = document.createElement("query-all-test");
-    document.body.appendChild(queryAllTest);
-
-    return _queryAll("li").then(elements => {
-      expect(elements.length).toBe(3);
-      elements.forEach((elm, i) => {
-        expect(elm.textContent).toBe(i + 1 + "");
-      });
-    });
-  });
+describe("define", function () {
+	afterEach(function() {
+		document.querySelectorAll('c-component').forEach(element => element.remove());
+	});
+	
+	it("returns an object with the name and the component class definition", () => {
+		function Component() {}
+		
+		const definedResult = define("a-component", Component);
+		
+		assert.hasAllKeys(definedResult, ['name', 'component']);
+		assert.propertyVal(definedResult, 'name', "a-component");
+		assert.isFunction(definedResult.component);
+	});
+	
+	it("defines the customElement in the CE registry", () => {
+		function Component() {}
+		
+		define("b-component", Component);
+		
+		return customElements.whenDefined('b-component');
+	});
+	
+	it.skip("does not define the customElement when already exists", () => {});
+	
+	it("sets the innerHTML property with the returned value of the template on connectedCallback", () => {
+		function Component() {
+			return () => "<div>Template</div>";
+		}
+		
+		define("c-component", Component);
+		
+		const element = document.createElement('c-component');
+		document.body.appendChild(element);
+		
+		assert.strictEqual(element.innerHTML, "<div>Template</div>");
+	});
+	
+	it("extends builtin elements", () => {
+		function Component(){
+			return () => "<li>Item</li>";
+		}
+		
+		define("expanding-list", Component, { BaseElement: HTMLUListElement, extends: 'ul' });
+		
+		document.body.insertAdjacentHTML('beforeend', '<ul is="expanding-list"></ul>');
+		
+		const element = document.querySelector('ul[is=expanding-list]');
+		
+		assert.isNotNull(element);
+		assert.instanceOf(element, HTMLUListElement);
+		assert.strictEqual(element.innerHTML, "<li>Item</li>");
+	});
 });

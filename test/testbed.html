@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="referrer" content="no-referrer"/>
+	<meta name="referrer" content="never"/>
+	<title>WebComponent Tester</title>
+	<link rel="shortcut icon" href="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cpath d='M3.5 0c-1.19 0-1.98 1.69-1.19 2.5-.09.07-.2.14-.28.22l-1.31-.66a.5.5 0 0 0-.34-.06.5.5 0 0 0-.09.94l1.16.56c-.09.16-.19.33-.25.5h-.69a.5.5 0 0 0-.09 0 .5.5 0 1 0 .09 1h.5c0 .23.02.45.06.66l-.78.41a.5.5 0 1 0 .44.88l.66-.34c.25.46.62.85 1.03 1.09.35-.19.59-.44.59-.72v-1.44a.5.5 0 0 0 0-.09v-.81a.5.5 0 0 0 0-.22c.05-.23.26-.41.5-.41.28 0 .5.22.5.5v.88a.5.5 0 0 0 0 .09v.06a.5.5 0 0 0 0 .09v1.34c0 .27.24.53.59.72.41-.25.79-.63 1.03-1.09l.66.34a.5.5 0 1 0 .44-.88l-.78-.41c.04-.21.06-.43.06-.66h.5a.5.5 0 1 0 0-1h-.69c-.06-.17-.16-.34-.25-.5l1.16-.56a.5.5 0 0 0-.31-.94.5.5 0 0 0-.13.06l-1.31.66c-.09-.08-.19-.15-.28-.22.78-.83 0-2.5-1.19-2.5z' /%3E%3C/svg%3E"/>
+	<style type="text/css">
+		:root {
+			color-scheme: light dark;
+		}
+
+		:root, body {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
+
+		body {
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+<body>
+
+<script>
+	window.addEventListener('load', () => console.log("window.onload"));
+	document.addEventListener('readystatechange', () => console.log(document.readyState));
+</script>
+
+<script defer src="../node_modules/es-module-shims/dist/es-module-shims.js"></script>
+<script type="importmap-shim">
+{
+	"imports": {
+		"ramda": "../../../node_modules/ramda/es/index.js",
+		"hirestime": "../../../node_modules/hirestime/hirestime.mjs"
+	}
+}
+</script>
+<script type="module-shim">
+
+	import { defineAlertDialogWebComponent } from '../../shared_browser_lib/alert-dialog.js';
+
+
+
+	defineAlertDialogWebComponent(new URL("../../shared_browser_lib", document.URL).toString());
+
+</script>
+</body>
+</html>
