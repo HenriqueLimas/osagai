@@ -1,0 +1,20 @@
+{
+	"laxbreak": true,
+	"noempty": true,
+	"noarg": true,
+	"laxcomma": true,
+	"unused": "strict",
+	"esversion": 9,
+	"sub": true,
+	"devel": true,
+	"immed": true,
+	"browser": true,
+	"node": true,
+	"curly": true,
+	"undef": true,
+	"nonew": true,
+	"forin": true,
+	"mocha": true,
+	"shadow": "outer",
+	"predef": [ "require", "requirejs", "define", "AbortController", "customElements", "dictionary", "URLSearchParams"]
+}
