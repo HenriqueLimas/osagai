@@ -43,19 +43,84 @@ describe("define", function () {
 		assert.strictEqual(element.innerHTML, "<div>Template</div>");
 	});
 	
-	it("extends builtin elements", () => {
-		function Component(){
-			return () => "<li>Item</li>";
+	it("does not set the innerHTML property when there is not template function", () => {
+		const testCaseValues = [undefined, null, 42, "string", true, {}];
+		
+		testCaseValues.forEach((testCaseValue, idx) => {
+			function Component() {
+				return testCaseValue;
+			}
+			
+			const { component: Template } = define(`x-ce${idx}`, Component);
+			
+			const element = new Template();
+			element.connectedCallback();
+			
+			assert.isEmpty(element.innerHTML, `for the returned value of ${testCaseValue}`);
+		});
+	});
+	
+	it("extends builtin elements", () =>
+		new Promise((resolve, reject) => {
+			function Component(){
+				return () => "<li>Item</li>";
+			}
+			
+			define("expanding-list", Component, { BaseElement: HTMLUListElement, extends: 'ul' });
+			
+			document.body.insertAdjacentHTML('beforeend', '<ul is="expanding-list"></ul>');
+			
+			const element = document.querySelector('ul[is=expanding-list]');
+			
+			assert.isNotNull(element);
+			assert.instanceOf(element, HTMLUListElement);
+			
+			setTimeout(resolve, 10, element); // rendering is asynchronous with the polyfill
+		})
+		.then(element => {
+			assert.strictEqual(element.innerHTML, "<li>Item</li>");
+		})
+	);
+	
+	it("creates a class constructor the CE is an instance of which", () => {
+		let elementArgument;
+		function Component({element}) {
+			elementArgument = element;
 		}
 		
-		define("expanding-list", Component, { BaseElement: HTMLUListElement, extends: 'ul' });
+		const { component: Template } = define('d-ce', Component);
 		
-		document.body.insertAdjacentHTML('beforeend', '<ul is="expanding-list"></ul>');
+		document.body.insertAdjacentHTML('beforeend', "<d-ce></d-ce>");
+		const domElement = document.querySelector('d-ce');
 		
-		const element = document.querySelector('ul[is=expanding-list]');
-		
-		assert.isNotNull(element);
-		assert.instanceOf(element, HTMLUListElement);
-		assert.strictEqual(element.innerHTML, "<li>Item</li>");
+		assert.strictEqual(domElement, elementArgument, "Element parameter in the factory fn should be equal to the DOM element");
+		assert.instanceOf(domElement, Template);
 	});
+	
+	it("provides query and queryAll for querying the inserted HTML", () =>
+		new Promise(resolve => {
+			let queryArg, queryAllArg;
+			
+			function Component({ queryAll, query }) {
+				queryArg = query;
+				queryAllArg = queryAll;
+				
+				return () => "<div>foo</div><i>bar</i>";
+			}
+			
+			define("e-ce", Component);
+			
+			const element = document.createElement('e-ce');
+			document.body.appendChild(element);
+			
+			resolve(Promise.all([queryArg('div'), queryAllArg('i')]));
+		})
+		.then(([aDiv, allIs]) => {
+			assert.strictEqual(aDiv.innerHTML, "foo");
+			
+			assert.instanceOf(allIs, NodeList);
+			assert.lengthOf(allIs, 1);
+			assert.strictEqual(allIs[0].innerHTML, "bar");
+		})
+	);
 });

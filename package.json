@@ -1,34 +1,35 @@
 {
-  "name": "osagai",
-  "version": "0.4.0",
-  "description": "A tiny library for creating WebComponents in a Functional way",
-  "main": "osagai.js",
-  "repository": "github:HenriqueLimas/osagai",
-  "homepage": "https://henriquelimas.github.io/osagai/",
-  "scripts": {
-    "build": "rollup -c",
-    "cp:package": "npm run build && cp package.json dist/ && cp README.md dist/",
-    "test": "karma run",
-    "release": "npm run build && npm run cp:package && npm run test:all && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist"
-  },
-  "author": "Henrique Limas <henrique.ramos.limas@gmail.com>",
-  "keywords": [
-    "osagai",
-    "webcomponents",
-    "functional-programming"
-  ],
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "@ungap/custom-elements-builtin": "^0.6.2",
-    "chai": "^4.2.0",
-    "karma": "^5.1.0",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-firefox-launcher": "^1.3.0",
-    "karma-mocha": "^2.0.1",
-    "karma-safari-launcher": "^1.0.0",
-    "karma-summary-reporter": "^1.8.0",
-    "mocha": "^8.0.1",
-    "rollup": "^2.18.1"
-  }
+	"author": "Henrique Limas <henrique.ramos.limas@gmail.com>",
+	"dependencies": {},
+	"description": "A tiny library for creating WebComponents in a Functional way",
+	"devDependencies": {
+		"@ungap/custom-elements-builtin": "^0.6.2",
+		"chai": "^4.2.0",
+		"karma": "^5.1.0",
+		"karma-chrome-launcher": "^3.1.0",
+		"karma-firefox-launcher": "^1.3.0",
+		"karma-mocha": "^2.0.1",
+		"karma-safari-launcher": "^1.0.0",
+		"karma-summary-reporter": "^1.8.0",
+		"mocha": "^8.0.1",
+		"rollup": "^2.18.1"
+	},
+	"homepage": "https://henriquelimas.github.io/osagai/",
+	"keywords": [
+		"osagai",
+		"webcomponents",
+		"functional-programming"
+	],
+	"license": "ISC",
+	"main": "osagai.js",
+	"name": "osagai",
+	"repository": "github:HenriqueLimas/osagai",
+	"scripts": {
+		"build": "rollup -c",
+		"cp:package": "npm run build && cp package.json dist/ && cp README.md dist/",
+		"release": "npm run build && npm run cp:package && npm run test:all && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist",
+		"test": "karma run",
+		"test:prepare": "karma start karma.conf.js"
+	},
+	"version": "0.4.0"
 }
