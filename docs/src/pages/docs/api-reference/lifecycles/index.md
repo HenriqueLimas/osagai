@@ -34,7 +34,7 @@ This is invoked when an attribute from the `observedAttributes` list is added, c
 removed. This could be useful to make network request for updating the data.
 
 ```javascript
-onAttributeChanged(element, ({ name, current }) => {
+const unsubscribe = onAttributeChanged(element, ({ name, current }) => {
   if (name === 'userID') {
     update(element, async () => {
       return await api.getUser(current)
@@ -98,11 +98,12 @@ Function that will be perfomed when the element is disconnected.
 ## onAttributeChanged
 
 ```javascript
-onAttributeChanged(element, callback)
+onAttributeChanged(element, callback) => function
 ```
 
 Add a callback to be performed when one of the attribute from the `observedAttributes`
-list is added, changed or removed.
+list is added, changed or removed. Returns an unsubscriber function which when called
+removes the callback to get more updates of attribute changes.
 
 ##### Parameters
 
