@@ -28,8 +28,7 @@
 		"build": "rollup -c",
 		"cp:package": "npm run build && cp package.json dist/ && cp README.md dist/",
 		"release": "npm run build && npm run cp:package && npm run test:all && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish dist",
-		"test": "karma run",
-		"test:prepare": "karma start karma.conf.js"
+		"test": "karma start karma.conf.js --single-run"
 	},
 	"version": "0.4.0"
 }
